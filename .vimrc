@@ -6,122 +6,101 @@
 "=============================================================================
 
 "=============================================================================
-" Vundle config
+" Vundle plugin manager config
 "=============================================================================
-set nocompatible              " disable compatibility with vi, required
-filetype off                  " required for vundle to work
+
+" disable compatibility with vi, required
+set nocompatible              
+filetype off                  
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'
+" color theme
 Plugin 'https://github.com/morhetz/gruvbox'
+" autocmpletion
 Plugin 'https://github.com/neoclide/coc.nvim'
+" file browsing
 Plugin 'https://github.com/preservim/nerdtree'
+" status line
 Plugin 'https://github.com/vim-airline/vim-airline'
+" quick commenting
 Plugin 'https://github.com/tpope/vim-commentary'
+" better pattern searching
 Plugin 'https://github.com/qxxxb/vim-searchhi'
+" quick moving
 Plugin 'https://github.com/easymotion/vim-easymotion'
+" object motions for any kind of parenthesis and quotation marks
 Plugin 'https://github.com/tpope/vim-surround'
 
+call vundle#end()            
+" Charger automatiquement le greffon et les paramétrages
+" d'indentation spécifiques à chaque type de fichier à l'ouverture
+filetype plugin indent on    
+filetype plugin on
 
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-" filetype plugin on
-"
-" Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
+ 
+"=============================================================================
+" Remmaping
+"=============================================================================
 
-"=============================================================================
-" Personal stuff
-"=============================================================================
 let mapleader = "\<space>"
-noremap <leader>n :NERDTreeToggle<cr> 
+noremap <leader>n :NERDTreeToggle<cr>              
+" Remap in command mode 
+cnoremap jk <C-C>         
+" Remap in Insert and Replace mode
+inoremap jk <esc>         
+
+" Shortcut split opening
+"=============================================================================
+
 noremap <leader>w <c-w>
-noremap <leader>j :ToggleTerm<cr> 
-inoremap jk <esc>
-" Load help files for all plugins. »
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+"=============================================================================
+" Common settings
+"=============================================================================
+
+" Load help files for all plugins
 silent! helptags ALL  
+" Run shell in interactive mode to allow use of user alias
+set shellcmdflag=-ic
 
-" -- Affichage
-set title                 " Met a jour le titre de votre fenetre ou de
-                          " votre terminal
-set number                " Affiche le numero des lignes
-set ruler                 " Affiche la position actuelle du curseur
-set wrap                  " Affiche les lignes trop longues sur plusieurs
-                          " lignes
-
-set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
-                          " (pour le scroll)
-
-" -- Recherche
-set ignorecase            " Ignore la casse lors d'une recherche
-set smartcase             " Si une recherche contient une majuscule,
-                          " re-active la sensibilite a la casse
-set incsearch             " Surligne les resultats de recherche pendant la
-                          " saisie
-set hlsearch              " Surligne les resultats de recherche
-
-" -- Beep
-set visualbell            " Empeche Vim de beeper
-set noerrorbells          " Empeche Vim de beeper
-
-" Permet à vim de rechercher des fichiers dans les sous répertoires du projet
-set path+=**
-" Active le comportement 'habituel' de la touche retour en arriere
-set backspace=indent,eol,start
-
-" Cache les fichiers lors de l'ouverture d'autres fichiers
-set hidden
+" Affichage
+"=============================================================================
 
 " Encoding par défaut
 set encoding=utf-8
-
-" Charger automatiquement le greffon et les paramétrages
-" d'indentation spécifiques à chaque type de fichier à l'ouverture
-filetype plugin indent on
-filetype plugin on
+" Define vim's theme
+set background=dark
+colorscheme gruvbox
+" Met a jour le titre de votre fenetre ou de votre terminal
+set title                 
+" Affiche le numero des lignes                         
+set number                
+" Affiche la position actuelle du curseur
+set ruler                 
+" Affiche les lignes trop longues sur plusieurs lignes
+set wrap                  
+" Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
+set scrolloff=3           
 " Largeur par défaut d'une tabulation = 4 espaces
 set tabstop=4
 " Insérer des espaces au lieu de tabulations
 " set expandtab
 " Chaque indentation insère 4 caractères (4 espaces)
 set shiftwidth=4
-
 " Activer la coloration syntaxique
 syntax enable
-" Autoriser les sélections visuelles à la souris
-set mouse=a
-
-" Mémoriser les 100 dernières actions (pour annulation p. ex.)
-set history=100
-
-" Ne pas créer une sauvegarde des fichiers lors de leur
-" enregistrement
-set nobackup
-
-" Effectuer les recherches sans sensibilité à la casse (une
-" recherche de "var" trouvera "var", "Var" ou encore "VAR")
-set ignorecase
-" ... mais ne pas l'ignorer si le texte recherché contient une
-" casse précise (une recherche de "Var" ne trouvera que "Var")
-set smartcase
-" Mettre en surbrillance les chaînes correspondant à la
-" recherche effectuée
-set hlsearch
-" Effectuer la recherche dès le premier caractère tapé et la
-" mettre à jour lors de la frappe
-set incsearch
-
 " Conserver systématiquement 2 lignes visibles au-dessus et
 " en-dessous de la ligne courante (le défilement se fait avant que
 " le curseur n'atteigne la dernière ou la première ligne affichée
@@ -129,31 +108,51 @@ set incsearch
 set scrolloff=2
 " Display all matching file when we tab complete
 set wildmenu
-
 " afficher une ligne verticale rouge à la 80e colonne
 "set colorcolumn=80
 
-" Define vim's theme
-set background=dark
-colorscheme gruvbox
+" Search
+"=============================================================================
 
+" Ignore la casse lors d'une recherche
+set ignorecase            
+" Si une recherche contient une majuscule, re-active la sensibilite a la casse
+set smartcase             
+" Surligne les resultats de recherche pendant la saisie 
+set incsearch             
+" Surligne les resultats de recherche                         
+set hlsearch              
+" Permet à vim de rechercher des fichiers dans les sous répertoires du projet
+set path+=**
+
+" Beep
+"=============================================================================
+
+" Empeche Vim de beeper
+set visualbell            
+" Empeche Vim de beeper
+set noerrorbells          
+
+" Other
+"=============================================================================
+
+" Active le comportement 'habituel' de la touche retour en arriere
+set backspace=indent,eol,start
+" Cache les fichiers lors de l'ouverture d'autres fichiers
+set hidden
+" Autoriser les sélections visuelles à la souris, required for Coc plugin
+set mouse=a
+" Mémoriser les 100 dernières actions (pour annulation p. ex.)
+set history=100
+" Ne pas créer une sauvegarde des fichiers lors de leur enregistrement
+set nobackup
+set nowritebackup
 " Look for a tags file recursively in parent directories. 
 set tags=tags; 
 
 "=============================================================================
 " Coc plugin configuration
 "=============================================================================
-
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
-
-" TextEdit might fail if hidden is not set.
-set hidden
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
 
 " Give more space for displaying messages.
 set cmdheight=2
