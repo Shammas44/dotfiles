@@ -1,6 +1,8 @@
 # My own .vimrc
 
-## Installation
+By default, `.vimrc`should be located in `~` folder
+
+## Plugin installation
 
 1. Without further ado, [Vundle](https://github.com/VundleVim/Vundle.vim), is required in order to load all plugins.
 2. Launch vim.
