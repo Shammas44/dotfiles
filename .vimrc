@@ -20,8 +20,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " color theme
 Plugin 'https://github.com/morhetz/gruvbox'
-" autocmpletion
-Plugin 'https://github.com/neoclide/coc.nvim'
 " file browsing
 Plugin 'https://github.com/preservim/nerdtree'
 " status line
@@ -34,6 +32,21 @@ Plugin 'https://github.com/qxxxb/vim-searchhi'
 Plugin 'https://github.com/easymotion/vim-easymotion'
 " object motions for any kind of parenthesis and quotation marks
 Plugin 'https://github.com/tpope/vim-surround'
+" Terminal popup
+Plugin 'https://github.com/voldikss/vim-floaterm'
+" personal wiki
+Plugin 'https://github.com/vimwiki/vimwiki'
+" Markdown features
+Plugin 'https://github.com/SidOfc/mkdx'
+" Distraction free
+Plugin 'https://github.com/junegunn/goyo.vim'
+" vim file manager
+Plugin 'https://github.com/vifm/vifm.vim'
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+" markdown table
+Plugin 'https://github.com/dhruvasagar/vim-table-mode'
 
 call vundle#end()            
 " Charger automatiquement le greffon et les paramétrages
@@ -45,22 +58,43 @@ filetype plugin on
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
- 
+
+"=============================================================================
+" Autocommandes at start
+"=============================================================================
+
+" set bold color highlight for md file at launch
+au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
+au BufEnter * :noh
 "=============================================================================
 " Remmaping
 "=============================================================================
 
 let mapleader = "\<space>"
+let g:maplocalleader = ','
 noremap <leader>n :NERDTreeToggle<cr>              
 " Remap in command mode 
 cnoremap jk <C-C>         
 " Remap in Insert and Replace mode
 inoremap jk <esc>         
+" moving lines
+" º = alt+j ∆ = alt+k
+nnoremap º :m .+1<cr>==
+nnoremap ∆ :m .-2<cr>==
+inoremap º <esc>:m .+1<cr>==gi
+inoremap ∆ <esc>:m .-2<cr>==gi
+vnoremap º :m '>+1<cr>gv=gv
+vnoremap ∆ :m '<-2<cr>gv=gv
+
+" allow to idenify colorHighlight group of current cursor position
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 " Shortcut split opening
 "=============================================================================
 
-noremap <leader>w <c-w>
+noremap <leader>f <c-w>
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -73,7 +107,15 @@ map <C-l> <C-w>l
 " Load help files for all plugins
 silent! helptags ALL  
 " Run shell in interactive mode to allow use of user alias
-set shellcmdflag=-ic
+" set shellcmdflag=-ic
+" Edit vimr configuration file
+nnoremap confe :e $MYVIMRC<CR>
+" Reload vims configuration file
+nnoremap confr :source $MYVIMRC<CR>
+" Edit vimr configuration file
+nnoremap <Leader>ve :e $MYVIMRC<CR>
+" Reload vimr configuration file
+nnoremap <Leader>vr :source $MYVIMRC<CR>
 
 " Affichage
 "=============================================================================
@@ -109,7 +151,9 @@ set scrolloff=2
 " Display all matching file when we tab complete
 set wildmenu
 " afficher une ligne verticale rouge à la 80e colonne
-"set colorcolumn=80
+set colorcolumn=80
+" set line length
+setl tw=80
 
 " Search
 "=============================================================================
@@ -151,160 +195,77 @@ set nowritebackup
 set tags=tags; 
 
 "=============================================================================
-" Coc plugin configuration
+" Plugin vim-floaterm
 "=============================================================================
 
-" Give more space for displaying messages.
-set cmdheight=2
+let g:floaterm_keymap_toggle = '<F1>'
+let g:floaterm_keymap_next   = '<F2>'
+let g:floaterm_keymap_prev   = '<F3>'
+let g:floaterm_keymap_new    = '<F4>'
 
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
+" Floaterm
+let g:floaterm_gitcommit='floaterm'
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.8
+let g:floaterm_height=0.8
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
+"
+"=============================================================================
+" Plugin UltiSnips
+"=============================================================================
 
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
+		
+"=============================================================================
+" Plugin vim wiki
+"=============================================================================
 
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+" enable markdown support
+let g:vimwiki_table_mappings = 0
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                   \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext = 0
 
-" Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+"=============================================================================
+" Emoji shortcuts
+"=============================================================================
 
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+ab :white_check_mark: ✅
+ab :warning: ⚠️
+ab :bulb: 💡
+ab :pushpin: 📌
+ab :bomb: 💣
+ab :pill: 💊
+ab :construction: 🚧
+ab :pencil: 📝
+ab :point_right: 👉
+ab :book: 📖
+ab :link: 🔗
+ab :wrench: 🔧
+ab :info: 🛈
+ab :telephone: 📞
+ab :email: 📧
+ab :computer: 💻
 
-" Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
+"=============================================================================
+" Plugin mkdx
+"=============================================================================
 
-" Make <CR> auto-select the first completion item and notify coc.nvim to
-" format on enter, <cr> could be remapped by other vim plugin
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+let g:mkdx#settings     = { 'highlight': { 'enable': 1 },
+                        \ 'enter': { 'shift': 1 },
+                        \ 'links': { 'external': { 'enable': 1 } },
+                        \ 'toc': { 'text': 'Table of Contents', 'update_on_write': 1 },
+                        \ 'fold': { 'enable': 1 } }
 
-" Use `[g` and `]g` to navigate diagnostics
-" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+" allow to jump to a markdown header
+nnoremap <leader>j :call mkdx#JumpToHeader()<CR>
 
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+"=============================================================================
+" Plugin table-mode
+"=============================================================================
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
-    call CocActionAsync('doHover')
-  else
-    execute '!' . &keywordprg . " " . expand('<cword>')
-  endif
-endfunction
-
-" Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
-
-" Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
-augroup mygroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder.
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
-
-" Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-
-" Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
-" Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
-
-" Map function and class text objects
-" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-omap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap af <Plug>(coc-funcobj-a)
-xmap ic <Plug>(coc-classobj-i)
-omap ic <Plug>(coc-classobj-i)
-xmap ac <Plug>(coc-classobj-a)
-omap ac <Plug>(coc-classobj-a)
-
-" Remap <C-f> and <C-b> for scroll float windows/popups.
-if has('nvim-0.4.0') || has('patch-8.2.0750')
-  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-endif
-
-" Use CTRL-S for selections ranges.
-" Requires 'textDocument/selectionRange' support of language server.
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
-
-" Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
-
-" Add `:Fold` command to fold current buffer.
-command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-
-" Add `:OR` command for organize imports of the current buffer.
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-
-" Add (Neo)Vim's native statusline support.
-" NOTE: Please see `:h coc-status` for integrations with external plugins that
-" provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
-" Mappings for CoCList
-" Show all diagnostics.
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
-" Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
-" Show commands.
-nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
-" Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
-" Do default action for next item.
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
-" Do default action for previous item.
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list.
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+" table mode always enable
+let g:table_mode_always_active = 0
