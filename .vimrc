@@ -207,6 +207,26 @@ set nowritebackup
 " Look for a tags file recursively in parent directories. 
 set tags=tags; 
 
+"=============================================================================
+" Emoji shortcuts
+"=============================================================================
+
+ab :white_check_mark: ✅
+ab :warning: ⚠️
+ab :bulb: 💡
+ab :pushpin: 📌
+ab :bomb: 💣
+ab :pill: 💊
+ab :construction: 🚧
+ab :pencil: 📝
+ab :point_right: 👉
+ab :book: 📖
+ab :link: 🔗
+ab :wrench: 🔧
+ab :telephone: 📞
+ab :email: 📧
+ab :computer: 💻
+
 
 "        _             _           
 "  _ __ | |_   _  __ _(_)_ __  ___ 
@@ -249,27 +269,6 @@ let g:vimwiki_table_mappings = 0
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                    \ 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_global_ext = 0
-
-"=============================================================================
-" Emoji shortcuts
-"=============================================================================
-
-ab :white_check_mark: ✅
-ab :warning: ⚠️
-ab :bulb: 💡
-ab :pushpin: 📌
-ab :bomb: 💣
-ab :pill: 💊
-ab :construction: 🚧
-ab :pencil: 📝
-ab :point_right: 👉
-ab :book: 📖
-ab :link: 🔗
-ab :wrench: 🔧
-ab :info: 🛈
-ab :telephone: 📞
-ab :email: 📧
-ab :computer: 💻
 
 "=============================================================================
 " Plugin mkdx
