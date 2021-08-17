@@ -1,9 +1,8 @@
-"=============================================================================
+
 " __   _(_)_ __ ___  _ __ ___ 
 " \ \ / / | '_ ` _ \| '__/ __|
 "  \ V /| | | | | | | | | (__ 
 " (_)_/ |_|_| |_| |_|_|  \___|
-"=============================================================================
 
 "=============================================================================
 " Vundle plugin manager config
@@ -47,6 +46,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 " markdown table
 Plugin 'https://github.com/dhruvasagar/vim-table-mode'
+" better buffer navigation
+Plugin 'https://github.com/tpope/vim-unimpaired'
 
 call vundle#end()            
 " Charger automatiquement le greffon et les paramétrages
@@ -65,18 +66,25 @@ filetype plugin on
 
 " set bold color highlight for md file at launch
 au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
-au BufEnter * :noh
+let foldmethod='marker'
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
+
 "=============================================================================
 " Remmaping
 "=============================================================================
 
 let mapleader = "\<space>"
 let g:maplocalleader = ','
-noremap <leader>n :NERDTreeToggle<cr>              
+noremap <leader>n :NERDTreeToggle %<cr>              
 " Remap in command mode 
 cnoremap jk <C-C>         
 " Remap in Insert and Replace mode
 inoremap jk <esc>         
+" noremap <leader>no :noh<cr>
 " moving lines
 " º = alt+j ∆ = alt+k
 nnoremap º :m .+1<cr>==
@@ -91,6 +99,7 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
+"=============================================================================
 " Shortcut split opening
 "=============================================================================
 
@@ -117,6 +126,7 @@ nnoremap <Leader>ve :e $MYVIMRC<CR>
 " Reload vimr configuration file
 nnoremap <Leader>vr :source $MYVIMRC<CR>
 
+"=============================================================================
 " Affichage
 "=============================================================================
 
@@ -155,6 +165,7 @@ set colorcolumn=80
 " set line length
 setl tw=80
 
+"=============================================================================
 " Search
 "=============================================================================
 
@@ -169,6 +180,7 @@ set hlsearch
 " Permet à vim de rechercher des fichiers dans les sous répertoires du projet
 set path+=**
 
+"=============================================================================
 " Beep
 "=============================================================================
 
@@ -177,6 +189,7 @@ set visualbell
 " Empeche Vim de beeper
 set noerrorbells          
 
+"=============================================================================
 " Other
 "=============================================================================
 
@@ -194,6 +207,14 @@ set nowritebackup
 " Look for a tags file recursively in parent directories. 
 set tags=tags; 
 
+
+"        _             _           
+"  _ __ | |_   _  __ _(_)_ __  ___ 
+" | '_ \| | | | |/ _` | | '_ \/ __|
+" | |_) | | |_| | (_| | | | | \__ \
+" | .__/|_|\__,_|\__, |_|_| |_|___/
+" |_|            |___/             
+
 "=============================================================================
 " Plugin vim-floaterm
 "=============================================================================
@@ -210,7 +231,7 @@ let g:floaterm_width=0.8
 let g:floaterm_height=0.8
 let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
-"
+
 "=============================================================================
 " Plugin UltiSnips
 "=============================================================================
@@ -269,3 +290,15 @@ nnoremap <leader>j :call mkdx#JumpToHeader()<CR>
 
 " table mode always enable
 let g:table_mode_always_active = 0
+
+"=============================================================================
+" Plugin unimpaired
+"=============================================================================
+
+nmap è [
+nmap ¨ ]
+omap è [
+omap ¨ ]
+xmap è [
+xmap ¨ ]
+
