@@ -48,6 +48,10 @@ Plugin 'honza/vim-snippets'
 Plugin 'https://github.com/dhruvasagar/vim-table-mode'
 " better buffer navigation
 Plugin 'https://github.com/tpope/vim-unimpaired'
+" multi cursor
+Plugin 'https://github.com/terryma/vim-multiple-cursors'
+
+
 
 call vundle#end()            
 " Charger automatiquement le greffon et les paramétrages
@@ -66,6 +70,7 @@ filetype plugin on
 
 " set bold color highlight for md file at launch
 au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
+" enable fold saving
 let foldmethod='marker'
 augroup remember_folds
   autocmd!
@@ -163,7 +168,7 @@ set wildmenu
 " afficher une ligne verticale rouge à la 80e colonne
 set colorcolumn=80
 " set line length
-setl tw=80
+set tw=80
 
 "=============================================================================
 " Search
