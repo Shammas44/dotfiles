@@ -49,7 +49,7 @@ Plugin 'https://github.com/dhruvasagar/vim-table-mode'
 " better buffer navigation
 Plugin 'https://github.com/tpope/vim-unimpaired'
 " multi cursor
-Plugin 'https://github.com/terryma/vim-multiple-cursors'
+Plugin 'https://github.com/mg979/vim-visual-multi'
 
 
 
