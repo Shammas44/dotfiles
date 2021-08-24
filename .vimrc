@@ -4,6 +4,7 @@
 "  \ V /| | | | | | | | | (__ 
 " (_)_/ |_|_| |_| |_|_|  \___|
 
+"=============================================================================
 " Vundle plugin manager config
 "=============================================================================
 
@@ -67,7 +68,6 @@ filetype plugin on
 " Autocommandes at start
 "=============================================================================
 
-"=============================================================================
 " set bold color highlight for md file at launch
 au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
 let foldmethod='manual'
