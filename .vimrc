@@ -44,8 +44,6 @@ Plugin 'https://github.com/vifm/vifm.vim'
 " Snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-" markdown table
-Plugin 'https://github.com/dhruvasagar/vim-table-mode'
 " better buffer navigation
 Plugin 'https://github.com/tpope/vim-unimpaired'
 " fuzzy file 
@@ -88,7 +86,7 @@ noremap <leader>n :NERDTreeToggle %<cr>
 " Remap in command mode 
 cnoremap jk <C-C>         
 " Remap in Insert and Replace mode
-inoremap jk <esc>         
+" inoremap jk <esc>         
 " noremap <leader>no :noh<cr>
 " moving lines
 " º = alt+j ∆ = alt+k
@@ -130,6 +128,8 @@ nnoremap confr :source $MYVIMRC<CR>
 nnoremap <Leader>ve :e $MYVIMRC<CR>
 " Reload vimr configuration file
 nnoremap <Leader>vr :source $MYVIMRC<CR>
+" toogle Goyo
+nnoremap <Leader>g :Goyo<CR>
 
 "=============================================================================
 " Affichage
@@ -148,14 +148,12 @@ set number
 set ruler                 
 " Affiche les lignes trop longues sur plusieurs lignes
 set wrap                  
+" Avoid word beaing cut on wrap
+set linebreak
 " Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
 set scrolloff=3           
 " Largeur par défaut d'une tabulation = 4 espaces
 set tabstop=4
-" Insérer des espaces au lieu de tabulations
-" set expandtab
-" Chaque indentation insère 4 caractères (4 espaces)
-set shiftwidth=4
 " Activer la coloration syntaxique
 syntax enable
 " Conserver systématiquement 2 lignes visibles au-dessus et
@@ -168,7 +166,7 @@ set wildmenu
 " afficher une ligne verticale rouge à la 80e colonne
 set colorcolumn=80
 " set line length
-set tw=82
+set tw=0
 set foldcolumn=2
 
 "=============================================================================
@@ -210,7 +208,7 @@ set history=100
 " Ne pas créer une sauvegarde des fichiers lors de leur enregistrement
 set nobackup
 set nowritebackup
-" Look for a tags file recursively in parent directories. 
+" Look for a tags file recursively in parent directories. 
 set tags=tags; 
 
 "=============================================================================
@@ -271,12 +269,11 @@ let g:UltiSnipsEditSplit="vertical"
 "=============================================================================
 
 " enable markdown support
-let g:vimwiki_table_mappings = 0
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                    \ 'syntax': 'markdown', 'ext': '.md'}]
 " set to 0 to prevent vimwiki consider every md files as vimwiki files
 let g:vimwiki_global_ext = 0
-let g:vimwiki_folding = 'custom'
+let g:vimwiki_folding = ''
 
 "=============================================================================
 " Plugin mkdx
@@ -286,17 +283,10 @@ let g:mkdx#settings     = { 'highlight': { 'enable': 1 },
                         \ 'enter': { 'shift': 1 },
                         \ 'links': { 'external': { 'enable': 1 } },
                         \ 'toc': { 'text': 'Table of Contents', 'update_on_write': 1 },
-                        \ 'fold': { 'enable': 1 } }
+                        \ 'fold': { 'enable': 0 } }
 
 " allow to jump to a markdown header
 nnoremap <leader>j :call mkdx#JumpToHeader()<CR>
-
-"=============================================================================
-" Plugin table-mode
-"=============================================================================
-
-" table mode always enable
-let g:table_mode_always_active = 0
 
 "=============================================================================
 " Plugin unimpaired
@@ -322,6 +312,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Plugin markdown-preview.nvim
 "=============================================================================
 
+let g:vimwiki_table_mappings=0
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
 let g:mkdp_auto_start = 0
