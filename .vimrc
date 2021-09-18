@@ -50,8 +50,6 @@ Plugin 'https://github.com/tpope/vim-unimpaired'
 Plugin 'https://github.com/kien/ctrlp.vim'
 " markdown preview
 Plugin 'https://github.com/iamcco/markdown-preview.nvim'
-" :BufOnly without an argument will unload all buffers but the current one.
-" :BufOnly with an argument will close all buffers but the supplied buffer name/number.
 
 call vundle#end()            
 " Charger automatiquement le greffon et les paramétrages
