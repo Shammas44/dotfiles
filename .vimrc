@@ -172,6 +172,8 @@ set colorcolumn=80
 " set line length
 set tw=0
 set foldcolumn=2
+" PWD always follows the file I'm editing.
+set autochdir
 
 "=============================================================================
 " Search
@@ -273,7 +275,7 @@ let g:UltiSnipsEditSplit="vertical"
 "=============================================================================
 
 " enable markdown support
-let g:vimwiki_list = [{'path': '~/vimwiki/',
+let g:vimwiki_list = [{'path': '~/Google\ Drive/vimwiki/',
                    \ 'syntax': 'markdown', 'ext': '.md'}]
 " set to 0 to prevent vimwiki consider every md files as vimwiki files
 let g:vimwiki_global_ext = 0
