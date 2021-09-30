@@ -477,4 +477,4 @@ function! BufOnly(buffer, bang)
 	endif
 
 endfunction
-
+" test
