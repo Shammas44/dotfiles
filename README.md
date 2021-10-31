@@ -1,8 +1,9 @@
-# My own .vimrc
+# Dotfiles
 
-By default, `.vimrc`should be located in `~` folder
+This repository contains all the configuration files I'd like to track
+## Vim Plugin installation
 
-## Plugin installation
+By default, `.vimrc`should be located in `~` folder or in `~/.vim` as `vimrc`
 
 1. Without further ado, [Vundle](https://github.com/VundleVim/Vundle.vim) is required in order to load all plugins.
 2. Launch vim.

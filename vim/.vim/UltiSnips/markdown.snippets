@@ -1,0 +1,132 @@
+
+snippet code "description" b
+\`\`\`${1:name}
+$2
+\`\`\`
+$0
+endsnippet
+
+snippet break "description" b
+<p style="page-break-before: always"></p>
+endsnippet
+
+snippet arr1 "description" b
+|name |       
+|:---:| 
+|     | 
+endsnippet
+
+snippet arr2 "description" b
+|name |name |     
+|:---:|:---:|
+|     |     |  
+endsnippet
+
+snippet arr3 "description" b
+|name |name |name |
+|:---:|:---:|:---:|
+|     |     |     |
+endsnippet
+
+snippet arr4 "description" b
+|name |name |name |name |
+|:---:|:---:|:---:|:---:|
+|     |     |     |     |
+endsnippet
+
+snippet arr5 "description" b
+|name |name |name |name |name |
+|:---:|:---:|:---:|:---:|:---:|
+|     |     |     |     |     |
+endsnippet
+
+snippet arr6 "description" b
+|name |name |name |name |name |name |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|     |     |     |     |     |     |
+endsnippet
+
+snippet arr7 "description" b
+|name |name |name |name |name |name |name |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|     |     |     |     |     |     |     |
+endsnippet
+
+snippet arr8 "description" b
+|name |name |name |name |name |name |name |name |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|     |     |     |     |     |     |     |     |
+endsnippet
+
+snippet arr9 "description" b
+|name |name |name |name |name |name |name |name |name |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|     |     |     |     |     |     |     |     |     |
+endsnippet
+
+snippet arr10 "description" b
+|name |name |name |name |name |name |name |name |name |name |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|     |     |     |     |     |     |     |     |     |     |
+endsnippet
+
+snippet img "description" b
+![${1:alt}](../src/img/${2:link})
+$0
+endsnippet
+
+snippet imgref "description" b
+![${1:alt}][../src/img/${2:reference}]
+
+[$2]:<${3:link}>
+$0
+endsnippet
+
+snippet !1 "description" b
+# Title
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+
+# Table of Contents
+- [Title](#title)
+
+<!-- /code_chunk_output -->
+
+# Title
+endsnippet
+
+
+snippet !2 "description" b
+<!-- @import "src/styles/style.less" -->
+<nav markdown="1">
+<details id="menu" markdown="1"><summary>
+<div markdown="1" id="header-div"></div>
+
+</summary>
+
+# Table of Contents
+- [Title](#title)
+
+</nav>
+<main markdown="1"><!-- début du contenu ============-->
+
+# Title
+
+</main><!-- fin du contenu ==========================-->
+endsnippet
+
+snippet bloc1 "description" b
+<div class="bloc1" markdown="1"><!--Start-->
+
+### ${1:title}
+
+</div><!------------------------------End-->
+endsnippet
+
+snippet bloc2 "description" b
+<div class="bloc2" markdown="1"><!--Start-->
+
+### ${1:title}
+
+</div><!------------------------------End-->
+endsnippet
