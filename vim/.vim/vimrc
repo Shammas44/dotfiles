@@ -1,7 +1,7 @@
 
-" __   _(_)_ __ ___  _ __ ___ 
+" __   _(_)_ __ ___  _ __ ___
 " \ \ / / | '_ ` _ \| '__/ __|
-"  \ V /| | | | | | | | | (__ 
+"  \ V /| | | | | | | | | (__
 " (_)_/ |_|_| |_| |_|_|  \___|
 
 "=============================================================================
@@ -9,8 +9,8 @@
 "=============================================================================
 
 " disable compatibility with vi, required
-set nocompatible              
-filetype off                  
+set nocompatible
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -27,8 +27,6 @@ Plugin 'https://github.com/vim-airline/vim-airline'
 Plugin 'https://github.com/tpope/vim-commentary'
 " better pattern searching
 Plugin 'https://github.com/qxxxb/vim-searchhi'
-" quick moving
-Plugin 'https://github.com/easymotion/vim-easymotion'
 " object motions for any kind of parenthesis and quotation marks
 Plugin 'https://github.com/tpope/vim-surround'
 " Terminal popup
@@ -46,15 +44,19 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 " better buffer navigation
 Plugin 'https://github.com/tpope/vim-unimpaired'
-" fuzzy file 
+" fuzzy file
 Plugin 'https://github.com/kien/ctrlp.vim'
 " markdown preview
 Plugin 'https://github.com/iamcco/markdown-preview.nvim'
+" Dash
+Plugin 'https://github.com/rizzatti/dash.vim'
+" Emoji
+Plugin 'https://github.com/kyuhi/vim-emoji-complete'
 
-call vundle#end()            
+call vundle#end()
 " Charger automatiquement le greffon et les paramétrages
 " d'indentation spécifiques à chaque type de fichier à l'ouverture
-filetype plugin indent on    
+filetype plugin indent on
 filetype plugin on
 
 " :PluginList       - lists configured plugins
@@ -65,9 +67,12 @@ filetype plugin on
 "=============================================================================
 " Autocommandes at start
 "=============================================================================
-
+"
+set viminfo+=n~/.vim/viminfo
 " set bold color highlight for md file at launch
 au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
+" set italic color highlight for md file at launch
+au BufEnter *.md :hi VimwikiItalic cterm=italic ctermfg=175 guifg=#d3869b 
 let foldmethod='manual'
 " enable fold saving
 augroup remember_folds
@@ -77,16 +82,35 @@ augroup remember_folds
 augroup END
 
 "=============================================================================
+" Templates
+"=============================================================================
+
+:autocmd BufNewFile *.md 0r ~/.vim/templates/template.md
+
+"=============================================================================
+" Sign
+"=============================================================================
+
+sign define piet text= texthl=Folded linehl=
+" :exe ":sign place 2 line=23 name=piet file=" . expand("%:p")
+
+"=============================================================================
+" Spell check
+"=============================================================================
+
+set spelllang=fr
+
+"=============================================================================
 " Remmaping
 "=============================================================================
 
 let mapleader = "\<space>"
 let g:maplocalleader = ','
-noremap <leader>n :NERDTreeToggle %<cr>              
-" Remap in command mode 
-cnoremap jk <C-C>         
+noremap <leader>n :NERDTreeToggle %<cr>
+" Remap in command mode
+cnoremap jk <C-C>
 " Remap in Insert and Replace mode
-" inoremap jk <esc>         
+" inoremap jk <esc>
 " noremap <leader>no :noh<cr>
 " moving lines
 " º = alt+j ∆ = alt+k
@@ -101,6 +125,9 @@ vnoremap ∆ :m '<-2<cr>gv=gv
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+" Ngrep command allow searching in the whole wiki
+command! -nargs=1 Ngrep lvimgrep "<args>" **/*.md
+command! -nargs=1 Ngreps lvimgrep "<args>"  ~/Google\ Drive/vimwiki/**/*.md
 
 "=============================================================================
 " Shortcut split opening
@@ -111,15 +138,23 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+nnoremap <C-n> :cnext<cr>z.
+nnoremap <C-p> :cprev<cr>z.
 
 "=============================================================================
 " Common settings
 "=============================================================================
 
 " Load help files for all plugins
-silent! helptags ALL  
+silent! helptags ALL
 " Run shell in interactive mode to allow use of user alias
 " set shellcmdflag=-ic
+" disable swap files
+set noswapfile
+" character to show for non printable character
+set lcs=tab:>-,eol:<,nbsp:%,trail:$
+" diable the ability to modify a same file in two distinct instance of vim
+set autoread
 " Edit vimr configuration file
 nnoremap confe :e $MYVIMRC<CR>
 " Reload vims configuration file
@@ -139,19 +174,21 @@ nnoremap <Leader>g :Goyo<CR>
 set encoding=utf-8
 " Define vim's theme
 set background=dark
+" show spellcheck errors
+let g:gruvbox_guisp_fallback = "bg"
 colorscheme gruvbox
 " Met a jour le titre de votre fenetre ou de votre terminal
-set title                 
-" Affiche le numero des lignes                         
-set number                
+set title
+" Affiche le numero des lignes
+set number
 " Affiche la position actuelle du curseur
-set ruler                 
+set ruler
 " Affiche les lignes trop longues sur plusieurs lignes
-set wrap                  
+set wrap
 " Avoid word beaing cut on wrap
 set linebreak
 " Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
-set scrolloff=3           
+set scrolloff=3
 " Largeur par défaut d'une tabulation = 4 espaces
 set tabstop=4
 " Insérer des espaces au lieu de tabulations
@@ -180,13 +217,13 @@ set autochdir
 "=============================================================================
 
 " Ignore la casse lors d'une recherche
-set ignorecase            
+set ignorecase
 " Si une recherche contient une majuscule, re-active la sensibilite a la casse
-set smartcase             
+set smartcase
 " Surligne les resultats de recherche pendant la saisie 
-set incsearch             
-" Surligne les resultats de recherche                         
-set hlsearch              
+set incsearch
+" Surligne les resultats de recherche
+set hlsearch
 " Permet à vim de rechercher des fichiers dans les sous répertoires du projet
 set path+=**
 
@@ -195,9 +232,9 @@ set path+=**
 "=============================================================================
 
 " Empeche Vim de beeper
-set visualbell            
+set visualbell
 " Empeche Vim de beeper
-set noerrorbells          
+set noerrorbells
 
 "=============================================================================
 " Other
@@ -215,7 +252,7 @@ set history=100
 set nobackup
 set nowritebackup
 " Look for a tags file recursively in parent directories. 
-set tags=tags; 
+set tags=tags;
 
 "=============================================================================
 " Emoji shortcuts
@@ -237,13 +274,12 @@ ab :telephone: 📞
 ab :email: 📧
 ab :computer: 💻
 
-
-"        _             _           
-"  _ __ | |_   _  __ _(_)_ __  ___ 
+"        _             _
+"  _ __ | |_   _  __ _(_)_ __  ___
 " | '_ \| | | | |/ _` | | '_ \/ __|
 " | |_) | | |_| | (_| | | | | \__ \
 " | .__/|_|\__,_|\__, |_|_| |_|___/
-" |_|            |___/             
+" |_|            |___/
 
 "=============================================================================
 " Plugin vim-floaterm
@@ -269,7 +305,7 @@ let g:floaterm_autoclose=1
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
-		
+
 "=============================================================================
 " Plugin vim wiki
 "=============================================================================
@@ -285,6 +321,8 @@ let g:vimwiki_folding = 'custom'
 " Plugin mkdx
 "=============================================================================
 
+" let g:mkdx#settings.tokens.bold = '__'
+" let g:mkdx#settings.tokens.italic = '_'
 let g:mkdx#settings     = { 'highlight': { 'enable': 1 },
                         \ 'enter': { 'shift': 1 },
                         \ 'links': { 'external': { 'enable': 1 } },
@@ -416,7 +454,7 @@ let g:mkdp_filetypes = ['markdown']
 
 " Usage:
 
-" :Bonly / :BOnly / :Bufonly / :BufOnly [buffer] 
+" :Bonly / :BOnly / :Bufonly / :BufOnly [buffer]
 
 " Without any arguments the current buffer is kept.  With an argument the
 " buffer name/number supplied is kept.
@@ -477,3 +515,4 @@ function! BufOnly(buffer, bang)
 	endif
 
 endfunction
+
