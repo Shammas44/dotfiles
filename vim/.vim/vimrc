@@ -510,7 +510,7 @@ function! BufOnly(buffer, bang)
 
 	if delete_count == 1
 		echomsg delete_count "buffer deleted"
-	elseif delete_count > 1
+	elseif delete_count > 2
 		echomsg delete_count "buffers deleted"
 	endif
 
