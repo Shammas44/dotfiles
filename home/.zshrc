@@ -92,9 +92,9 @@ ZSH_THEME="robbyrussell"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # set vim mod
-bindkey -v
+# bindkey -v
 # quicker key response
-export KEYTIMEOUT=1
+# export KEYTIMEOUT=1
 
 #=============================================================================
 # Oh-my-zsh plugins
