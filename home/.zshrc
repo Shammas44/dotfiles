@@ -12,7 +12,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/sebastientraber/.oh-my-zsh"
 export PATH=$PATH:~/bin:/Applications/Postgres.app/Contents/Versions/12/bin
-export PATH="usr/local/bin:/usr/local/opt/icu4c/bin:/Users/sebastientraber/Library/Python/3.9/bin:/usr/texbin:/usr/local/sbin/:$PATH"
+export PATH="usr/local/bin:/usr/local/opt/icu4c/bin:/Users/sebastientraber/Library/Python/3.9/bin:/usr/texbin:/usr/local/sbin/:~/.gem/ruby/2.3.0/bin:$PATH"
 # Path to current directory, set at zsh start
 export DIR="$(pwd)"
 
@@ -221,6 +221,12 @@ dshg() {
 	vim -c ":Dash! $1" -c "qa"
 }
 
+cdb() {
+	curl -X "${1}" http://admin:root@127.0.0.1:5984/"${2}"
+}
+
+alias json="python -m json.tool"
+
 #=============================================================================
 # Functions
 #=============================================================================
@@ -245,4 +251,5 @@ SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="true"
 SPACESHIP_USER_SHOW="true"
 
 eval "$(navi widget zsh)"
+eval "$(rbenv init -)"
 
