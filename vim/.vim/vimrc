@@ -72,7 +72,7 @@ set viminfo+=n~/.vim/viminfo
 " set bold color highlight for md file at launch
 au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
 " set italic color highlight for md file at launch
-au BufEnter *.md :hi VimwikiItalic cterm=italic ctermfg=175 guifg=#d3869b 
+au BufEnter *.md :hi VimwikiItalic cterm=bold ctermfg=175 guifg=#d3869b 
 let foldmethod='manual'
 " enable fold saving
 augroup remember_folds

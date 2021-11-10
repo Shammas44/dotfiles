@@ -105,7 +105,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #=============================================================================
-plugins=(git history zsh-vi-mode)
+plugins=(git history)
 source $ZSH/oh-my-zsh.sh
 # zsh-vi-mode
 
@@ -207,6 +207,7 @@ alias svim='vim -u ~/.SpaceVim/vimrc'
 alias wiki="cd ~/Google\ Drive/vimwiki ; vim ~/Google\ Drive/vimwiki/index.md"
 alias w="wiki"
 alias f="vifm"
+alias post="vim ~/Google\ Drive/vimwiki/common/post-it.md"
 
 # @description Perform a search in dash
 # @param $1 search querry
