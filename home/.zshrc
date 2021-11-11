@@ -229,6 +229,22 @@ cdb() {
 alias json="python -m json.tool"
 
 #=============================================================================
+# Tmux
+#=============================================================================
+
+function tmuxnew(){
+	tmux new -s $1
+}
+alias tat="tmux new-session -As $(basename $PWD | tr .-)"
+function tmuxopen(){
+	tmux attach -t $1
+}
+function tmuxkill(){
+	tmux kill-session -t $1
+}
+alias tmuxkillall="tmux ls |cut -d:-f1 | xargs -I {} tmux kill-session -t {}"
+
+#=============================================================================
 # Functions
 #=============================================================================
 
