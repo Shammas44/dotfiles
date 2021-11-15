@@ -223,7 +223,10 @@ dshg() {
 }
 
 cdb() {
-	curl -X "${1}" http://admin:root@127.0.0.1:5984/"${2}"
+	param=$(sed -E 's/^[A-Za-z0-9]+ *//g' <<< "${@}")
+	command=$(echo curl -X "${1:u}" http://admin:root@127.0.0.1:5984/"${param}")
+	echo "$command"
+	# eval "$command"
 }
 
 alias json="python -m json.tool"
@@ -235,10 +238,10 @@ alias json="python -m json.tool"
 function tmuxnew(){
 	tmux new -s $1
 }
-alias tat="tmux new-session -As $(basename $PWD | tr .-)"
-function tmuxopen(){
-	tmux attach -t $1
-}
+# alias tat="tmux new-session -As $(basename $PWD | tr .-)"
+# function tmuxopen(){
+# 	tmux attach -t $1
+# }
 function tmuxkill(){
 	tmux kill-session -t $1
 }
