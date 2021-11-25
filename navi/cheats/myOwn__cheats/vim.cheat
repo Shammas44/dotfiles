@@ -1,0 +1,67 @@
+% vim
+
+# Search-replace in the whole buffer
+:%s/<searchPattern>/<replacePattern>/g
+
+# Search-replace in the whole buffer and ask for confirmation
+:%s/<searchPattern>/<replacePattern>/gc
+
+# Search-replace in the whole buffer case sensitive
+:%s/<searchPattern>/<replacePattern>/gci
+
+# open help at right
+:vert bo h <search>
+
+# open help at left
+:vert to h <search>
+
+## set syntax highlight for current buffer
+:set filetype=java
+
+# Time traveling
+:earlier 2m
+:later 2m
+
+# Advanced commandes
+g/<pattern>/ exe "norm dd\<Esc>\" 
+g/ - / exe "norm /-\<Enter>xi\<Enter>~ "
+
+# vimgrep search on current buffer
+:vimgrep /<pattern>/ %
+
+# vimgrep recursiv search
+:vimgrep /<pattern>/ **
+
+# vimgrep send result to location-list
+:lvimgrep /<pattern>/
+
+# quickfix-list open
+:open
+
+# quickfix-list close
+:ccl
+
+# quickfix-list jump to next result
+:cp
+
+# quickfix-list jump to previous result
+:cn
+
+# quickfix-list jump to first result
+:cfirst
+
+# quickfix-list jump to last result
+:clast
+
+# activate spell check for current buffer
+:setlocal spell
+
+# activate spell check globally
+:set spell
+
+# desactivate spell check globally
+:set nospell
+
+# set spell check language
+:set spell spelllang=<language>
+

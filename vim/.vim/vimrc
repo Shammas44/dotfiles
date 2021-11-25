@@ -167,6 +167,9 @@ nnoremap <Leader>ve :e $MYVIMRC<CR>
 nnoremap <Leader>vr :source $MYVIMRC<CR>
 " toogle Goyo
 nnoremap <Leader>g :Goyo<CR>
+" vim doesn't lose selection anymore when using indentation 
+vnoremap < <gv
+vnoremap > >gv
 
 "=============================================================================
 " Affichage
