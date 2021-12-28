@@ -140,6 +140,9 @@ command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! reload :write | restart full
 
+" Permet de changer le répertoire courant lorsque vifm est quitté avec :Q
+command! Q :execute '!echo %d > ~/dotfiles/vifm/vifm/lastdir' | quit
+
 " ------------------------------------------------------------------------------
 
 " The file type is for the default programs to be used with
@@ -449,3 +452,4 @@ nnoremap <c-u> <c-w>x
 "     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
+

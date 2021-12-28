@@ -273,3 +273,18 @@ SPACESHIP_USER_SHOW="true"
 eval "$(navi widget zsh)"
 eval "$(rbenv init -)"
 
+#=============================================================================
+# VIFM
+#=============================================================================
+
+vifm()
+{
+    if [ -f ~/dotfiles/vifm/vifm/lastdir ]; then
+        rm ~/dotfiles/vifm/vifm/lastdir
+    fi
+    # "command" prevents recursive call
+    command vifm "$@"
+    if [ -f ~/dotfiles/vifm/vifm/lastdir ]; then
+        cd `cat ~/dotfiles/vifm/vifm/lastdir`
+    fi
+}
