@@ -285,6 +285,6 @@ vifm()
     # "command" prevents recursive call
     command vifm "$@"
     if [ -f ~/dotfiles/vifm/vifm/lastdir ]; then
-        cd `cat ~/dotfiles/vifm/vifm/lastdir`
+		 cd "`cat ~/dotfiles/vifm/vifm/lastdir`"
     fi
 }

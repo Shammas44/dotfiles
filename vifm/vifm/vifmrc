@@ -141,7 +141,7 @@ command! mkcd :mkdir %a | cd %a
 command! reload :write | restart full
 
 " Permet de changer le répertoire courant lorsque vifm est quitté avec :Q
-command! Q :execute '!echo %d > ~/dotfiles/vifm/vifm/lastdir' | quit
+command! Q :execute "!echo %d > ~/dotfiles/vifm/vifm/lastdir" | quit
 
 " ------------------------------------------------------------------------------
 
