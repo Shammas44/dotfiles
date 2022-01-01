@@ -1,9 +1,12 @@
 ---
 title: "TODO"
 author: [Sébastien Traber]
+syntax: markdown
 date: "TODO"
 keywords: [TODO]
-...
+tags: [TODO]
+
+---
     
 # Title
 - [index](index.md)
