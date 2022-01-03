@@ -105,7 +105,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #=============================================================================
-plugins=(git history zsh-vi-mode)
+plugins=(zsh-vi-mode git history)
 source $ZSH/oh-my-zsh.sh
 # zsh-vi-mode
 
@@ -156,6 +156,7 @@ alias update='sudo softwareupdate -ia --verbose; brew bundle -v; brew cleanup; b
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias words='cat /usr/share/dict/words'
 alias tmux="TERM=screen-256color-bce tmux"
+alias cheatv="cheat -p vimwiki"
 
 #=============================================================================
 # Alias zsh

@@ -50,8 +50,6 @@ Plugin 'https://github.com/kien/ctrlp.vim'
 Plugin 'https://github.com/iamcco/markdown-preview.nvim'
 " Dash
 Plugin 'https://github.com/rizzatti/dash.vim'
-" Emoji
-Plugin 'https://github.com/kyuhi/vim-emoji-complete'
 
 call vundle#end()
 " Charger automatiquement le greffon et les paramétrages
