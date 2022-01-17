@@ -130,3 +130,42 @@ snippet bloc2 "description" b
 
 </div><!------------------------------End-->
 endsnippet
+
+snippet pandoc "description" b
+---
+note_type: reference
+writing_type: draft
+#title: title
+#author: [Sébastien Traber]
+titlepage: true
+titlepage-rule-color: "ff0d8a"
+titlepage-color: "0088d7"
+titlepage-rule-height: 0
+titlepage-background: "cover.png"
+titlepage-text-color: "ffffff"
+page-background-opacity: 1
+page-background: "footer.png"
+toc: true
+toc-own-page: true
+mainfont: "Open Sans"
+sansfont: "Open Sans Bold"
+monofont: Menlo
+linkcolor: cyan
+urlcolor: cyan
+listings-no-page-break: true
+code-block-font-size: \normalsize
+output:
+  pdf:
+    pdf-engine: xelatex
+    output: "main.pdf"
+    from: markdown
+    template: eisvogel.tex
+    listings: true
+header-includes:
+  - \usepackage{fancyhdr}
+  # clear all header and footers
+  - \fancyhf{}
+  # - \rfoot{\color{white}\vspace*{2\baselineskip}\thepage}
+  - \rfoot{\vspace*{1.5\baselineskip}\thepage}
+---
+endsnippet

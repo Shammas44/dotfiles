@@ -205,10 +205,21 @@ alias nvimplug="cd ~/.local/share/nvim/site/pack/packer/start"
 alias svimrc="${editor} ~/.SpaceVim.d/init.toml"
 alias srcvimrc='source ~/.vim/.vimrc'
 alias svim='vim -u ~/.SpaceVim/vimrc'
-alias wiki="cd ~/Google\ Drive/vimwiki ; vim ~/Google\ Drive/vimwiki/index.md"
-alias w="wiki"
 alias f="vifm"
 alias post="vim ~/Google\ Drive/vimwiki/common/post-it.md"
+
+# @descritpion open chosen vim wiki
+# @param $1 vimwiki number, default value is 1
+function wiki() {
+	if [[ "$1" -eq "1" ]] then
+		cd ~/Google\ Drive/vimwiki ; vim ~/Google\ Drive/vimwiki/index.md
+	elif [[ "$1" -eq "2" ]] then
+		cd ~/Documents/HEIG ; vim ~/Documents/HEIG/index.md
+	else 
+		cd ~/Google\ Drive/vimwiki ; vim ~/Google\ Drive/vimwiki/index.md
+	fi
+}
+alias w="wiki"
 
 # @description Perform a search in dash
 # @param $1 search querry
