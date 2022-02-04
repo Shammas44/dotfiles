@@ -44,12 +44,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 " better buffer navigation
 Plugin 'https://github.com/tpope/vim-unimpaired'
-" fuzzy file
-Plugin 'https://github.com/kien/ctrlp.vim'
 " markdown preview
 Plugin 'https://github.com/iamcco/markdown-preview.nvim'
-" Dash
-Plugin 'https://github.com/rizzatti/dash.vim'
 " Git fugitive
 Plugin 'https://github.com/tpope/vim-fugitive'
 
@@ -406,6 +402,7 @@ let wiki_2.syntax = 'markdown'
 let wiki_2.ext = '.md'
 
 let g:vimwiki_list = [wiki_1, wiki_2]
+
 "=============================================================================
 " Plugin mkdx
 "=============================================================================
