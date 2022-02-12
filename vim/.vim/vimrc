@@ -25,8 +25,6 @@ Plugin 'https://github.com/preservim/nerdtree'
 Plugin 'https://github.com/vim-airline/vim-airline'
 " quick commenting
 Plugin 'https://github.com/tpope/vim-commentary'
-" better pattern searching
-Plugin 'https://github.com/qxxxb/vim-searchhi'
 " object motions for any kind of parenthesis and quotation marks
 Plugin 'https://github.com/tpope/vim-surround'
 " Terminal popup
