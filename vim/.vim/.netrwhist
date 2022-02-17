@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/Applications/MAMP/htdocs/app'
-let g:netrw_dirhist_1='/Users/sebastientraber/.oh-my-zsh'
+let g:netrw_dirhist_2='/Users/sebastientraber/Google Drive/vimwiki'
+let g:netrw_dirhist_1='/Users/sebastientraber/Google Drive/vimwiki/db'
+let g:netrw_dirhist_0='/Users/sebastientraber/Google Drive/vimwiki'
+let g:netrw_dirhist_9='/Users/sebastientraber/Google Drive/vimwiki/db'
+let g:netrw_dirhist_8='/Users/sebastientraber/Google Drive/vimwiki'
+let g:netrw_dirhist_7='/Users/sebastientraber/Google Drive/vimwiki/prog'
+let g:netrw_dirhist_6='/Users/sebastientraber/Google Drive/vimwiki'
+let g:netrw_dirhist_5='/Users/sebastientraber/Google Drive/vimwiki/db'
+let g:netrw_dirhist_4='/Users/sebastientraber/Google Drive/vimwiki'
+let g:netrw_dirhist_3='/Users/sebastientraber/Google Drive/vimwiki/shell'

@@ -19,8 +19,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " color theme
 Plugin 'https://github.com/morhetz/gruvbox'
-" file browsing
-Plugin 'https://github.com/preservim/nerdtree'
 " status line
 Plugin 'https://github.com/vim-airline/vim-airline'
 " quick commenting
@@ -100,7 +98,6 @@ set spelllang=fr
 
 let mapleader = "\<space>"
 let g:maplocalleader = ','
-noremap <leader>n :NERDTreeToggle %<cr>
 " Remap in command mode
 cnoremap jk <C-C>
 " Remap in Insert and Replace mode
@@ -114,6 +111,9 @@ inoremap º <esc>:m .+1<cr>==gi
 inoremap ∆ <esc>:m .-2<cr>==gi
 vnoremap º :m '>+1<cr>gv=gv
 vnoremap ∆ :m '<-2<cr>gv=gv
+" Compile current file with TeXShop
+:command Tex w | !pdflatex %
+nnoremap <leader>x :Tex<CR>
 
 " allow to idenify colorHighlight group of current cursor position
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
@@ -275,6 +275,27 @@ ab :email: 📧
 ab :computer: 💻
 
 "=============================================================================
+" Netrw
+"=============================================================================
+
+" fix some probleme with Netrw
+let g:netrw_keepdir = 0
+" Set Netrw window size
+let g:netrw_winsize = 20
+" Remove banner
+let g:netrw_banner = 0
+" Hide dotfiles on load
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+" Change the copy command. Mostly to enable recursive copy of directories
+let g:netrw_localcopydircmd = 'cp -r'
+" Highlight marked files in the same way search matches are
+hi! link netrwMarkFile Search
+" open Netrw in the directory of the current file
+nnoremap <leader>N :Lexplore %:p:h<CR>
+" open Netrw in the current working directory
+nnoremap <Leader>n :Lexplore<CR>
+
+"=============================================================================
 " BufOnly command - Delete all the buffers except the current/named buffer.
 "=============================================================================
 
@@ -379,10 +400,6 @@ let g:UltiSnipsEditSplit="vertical"
 " Plugin vim wiki
 "=============================================================================
 
-" enable markdown support
-" let g:vimwiki_list = [{'path': '~/Google\ Drive/vimwiki/'},
-"                    \ {'path': '~/Documents/HEIG/'},
-"                    \ 'syntax': 'markdown', 'ext': '.md'}]
 " set to 0 to prevent vimwiki consider every md files as vimwiki files
 let g:vimwiki_global_ext = 0
 let g:vimwiki_folding = 'custom'
@@ -518,8 +535,7 @@ let g:mkdp_preview_options = {
 
 " use a custom markdown style must be absolute path
 " like '/Users/username/markdown.css' or expand('~/markdown.css')
-let g:mkdp_markdown_css = '~/vimwiki/src/styles/style.css'
-" let g:mkdp_markdown_css = '~/vimwiki/src/styles/github.css'
+let g:mkdp_markdown_css = '~/dotfiles/vim/.vim/styles/github.css'
 
 " use a custom highlight style must absolute path
 " like '/Users/username/highlight.css' or expand('~/highlight.css')

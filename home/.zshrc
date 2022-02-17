@@ -219,7 +219,7 @@ function wiki() {
 		cd ~/Google\ Drive/vimwiki ; vim ~/Google\ Drive/vimwiki/index.md
 	fi
 }
-alias w="wiki"
+alias w="~/dotfiles/vim/.vim/getIndex.ps1 && wiki"
 
 # @description Perform a search in dash
 # @param $1 search querry
