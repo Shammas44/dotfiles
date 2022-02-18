@@ -9,7 +9,6 @@ tags: [TODO]
 ---
     
 # Title
-- [index](index.md)
 
 # Table of Contents
 

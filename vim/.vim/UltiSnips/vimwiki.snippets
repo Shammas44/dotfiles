@@ -82,59 +82,15 @@ snippet imgref "description" b
 $0
 endsnippet
 
-snippet !1 "description" b
-# Title
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-<!-- code_chunk_output -->
-
-# Table of Contents
-- [Title](#title)
-
-<!-- /code_chunk_output -->
-
-# Title
-endsnippet
-
-
-snippet !2 "description" b
-<!-- @import "src/styles/style.less" -->
-<nav markdown="1">
-<details id="menu" markdown="1"><summary>
-<div markdown="1" id="header-div"></div>
-
-</summary>
-
-# Table of Contents
-- [Title](#title)
-
-</nav>
-<main markdown="1"><!-- début du contenu ============-->
-
-# Title
-
-</main><!-- fin du contenu ==========================-->
-endsnippet
-
-snippet bloc1 "description" b
-<div class="bloc1" markdown="1"><!--Start-->
-
-### ${1:title}
-
-</div><!------------------------------End-->
-endsnippet
-
-snippet bloc2 "description" b
-<div class="bloc2" markdown="1"><!--Start-->
-
-### ${1:title}
-
-</div><!------------------------------End-->
-endsnippet
-
-snippet c "description" b
-
+snippet c "description" 
 \`${1:content}\`
+endsnippet
 
+snippet date "print current date"
+`
+#!/bin/bash
+date
+`
 endsnippet
 
 snippet pandoc "description" b
