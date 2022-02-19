@@ -73,9 +73,6 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
-" Add fzf to the runtimepath
-set rtp+=/usr/local/opt/fzf
-
 "=============================================================================
 " Templates
 "=============================================================================
@@ -114,8 +111,8 @@ inoremap º <esc>:m .+1<cr>==gi
 inoremap ∆ <esc>:m .-2<cr>==gi
 vnoremap º :m '>+1<cr>gv=gv
 vnoremap ∆ :m '<-2<cr>gv=gv
-" Compile current file with TeXShop
-:command Tex w | !pdflatex %
+" Compile current file with pdflatex
+:command Tex w | !pdflatex --shell-escape %
 nnoremap <leader>x :Tex<CR>
 " Open vifm
 nnoremap <leader>v :Vifm<CR>
@@ -278,6 +275,11 @@ ab :wrench: 🔧
 ab :telephone: 📞
 ab :email: 📧
 ab :computer: 💻
+ab :book: 📚
+ab :gem: 💎
+ab :boom: 💥
+ab :!: ❗
+ab :?: ❓
 
 "=============================================================================
 " Netrw

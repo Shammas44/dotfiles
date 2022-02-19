@@ -300,3 +300,4 @@ vifm()
 		 cd "`cat ~/dotfiles/vifm/vifm/lastdir`"
     fi
 }
+
