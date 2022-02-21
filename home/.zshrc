@@ -12,7 +12,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/sebastientraber/.oh-my-zsh"
 export PATH=$PATH:~/bin:/Applications/Postgres.app/Contents/Versions/12/bin
-export PATH="usr/local/bin:/usr/local/opt/icu4c/bin:/Users/sebastientraber/Library/Python/3.9/bin:/usr/texbin:/usr/local/sbin/:~/.gem/ruby/2.3.0/bin:$PATH"
+export PATH="usr/local/bin:/usr/local/opt/icu4c/bin:/Users/sebastientraber/Library/Python/3.9/bin:/usr/texbin:/usr/local/sbin/:~/.gem/ruby/2.3.0/bin:$HOME/.composer/vendor/bin:$PATH"
 # Path to current directory, set at zsh start
 export DIR="$(pwd)"
 
@@ -105,9 +105,12 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #=============================================================================
-plugins=(zsh-vi-mode git history)
+plugins=(zsh-vi-mode git history fzf)
 source $ZSH/oh-my-zsh.sh
-# zsh-vi-mode
+# required to make both fzf and zsh-vi-mode works 
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+# fzf: CTRL-T allow file search
+# fzf: CTRL-R allow history research
 
 #=============================================================================
 # User configuration
@@ -299,5 +302,12 @@ vifm()
     if [ -f ~/dotfiles/vifm/vifm/lastdir ]; then
 		 cd "`cat ~/dotfiles/vifm/vifm/lastdir`"
     fi
+}
+
+# $1 = tag
+# $2 = search query
+cheats()
+{
+	cheat -t "personal,$1" -s "$2" | mdless
 }
 
