@@ -161,7 +161,7 @@ nnoremap <C-p> :cprev<cr>z.
 " Load help files for all plugins
 silent! helptags ALL
 " Run shell in interactive mode to allow use of user alias
-" set shellcmdflag=-ic
+set shellcmdflag=-ic
 " disable swap files
 set noswapfile
 " character to show for non printable character
