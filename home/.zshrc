@@ -308,6 +308,8 @@ vifm()
 # $2 = search query
 cheats()
 {
-	cheat -t "personal,$1" -s "$2" | mdless
+	local output=$(cheat -t "personal,$1" -s "$2")
+	local result=$(echo "$output" | sed '/2m(personal)/d')
+	echo "$result" 
 }
 
