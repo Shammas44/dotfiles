@@ -3,8 +3,8 @@
 " You can edit this file by hand.
 " The " character at the beginning of a line comments out the line.
 " Blank lines are ignored.
-" The basic format for each item is shown with an example.
 
+" The basic format for each item is shown with an example.
 " ------------------------------------------------------------------------------
 
 " Command used to edit files in various contexts.  The default is vim.
@@ -397,7 +397,13 @@ nnoremap yd :!printf %d | pbcopy<cr>
 nnoremap yf :!printf %c:p | pbcopy<cr>
 
 " View preview in Quick Look
-nnoremap <space> :!qlmanage -p %f > /dev/null 2>&1<cr>
+" nnoremap <space> :!qlmanage -p %f > /dev/null 2>&1<cr>
+
+" enter search mode
+nnoremap <space><space> /
+
+" remove highlight
+nnoremap <space>l :noh<cr>
 
 " Mappings for faster renaming
 nnoremap I cw<c-a>
