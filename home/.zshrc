@@ -22,7 +22,6 @@ export DIR="$(pwd)"
 export EDITOR="vim"
 export VISUAL="vim"
 editor="vim"
-
 #=============================================================================
 # Zsh theme
 # 
@@ -56,6 +55,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
+
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
@@ -209,7 +209,7 @@ alias svimrc="${editor} ~/.SpaceVim.d/init.toml"
 alias srcvimrc='source ~/.vim/.vimrc'
 alias svim='vim -u ~/.SpaceVim/vimrc'
 alias f="vifm"
-alias post="vim ~/Google\ Drive/vimwiki/common/post-it.md"
+alias note="vim ~/Google\ Drive/vimwiki/common/note.md"
 
 # @descritpion open chosen vim wiki
 # @param $1 vimwiki number, default value is 1
@@ -303,6 +303,10 @@ vifm()
 		 cd "`cat ~/dotfiles/vifm/vifm/lastdir`"
     fi
 }
+
+#=============================================================================
+# Cheat
+#=============================================================================
 
 # $1 = tag
 # $2 = search query
