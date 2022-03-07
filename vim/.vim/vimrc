@@ -4,386 +4,365 @@
 "  \ V /| | | | | | | | | (__
 " (_)_/ |_|_| |_| |_|_|  \___|
 
-"=============================================================================
-" Vundle plugin manager config
-"=============================================================================
+"==============================================================================
+    " Vundle plugin manager config 
+    "==========================================================================
 
-" disable compatibility with vi, required
-set nocompatible
-filetype off
+    " disable compatibility with vi, required
+    set nocompatible
+    filetype off
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-" color theme
-Plugin 'https://github.com/morhetz/gruvbox'
-" status line
-Plugin 'https://github.com/vim-airline/vim-airline'
-" quick commenting
-Plugin 'https://github.com/tpope/vim-commentary'
-" object motions for any kind of parenthesis and quotation marks
-Plugin 'https://github.com/tpope/vim-surround'
-" Terminal popup
-Plugin 'https://github.com/voldikss/vim-floaterm'
-" personal wiki
-Plugin 'https://github.com/vimwiki/vimwiki'
-" Markdown features
-Plugin 'https://github.com/SidOfc/mkdx'
-" Distraction free
-Plugin 'https://github.com/junegunn/goyo.vim'
-" vim file manager
-Plugin 'https://github.com/vifm/vifm.vim'
-" Snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-" better buffer navigation
-Plugin 'https://github.com/tpope/vim-unimpaired'
-" markdown preview
-Plugin 'https://github.com/iamcco/markdown-preview.nvim'
-" Git fugitive
-Plugin 'https://github.com/tpope/vim-fugitive'
-" file explorer
-Plugin 'https://github.com/preservim/nerdtree'
-" fzf
-Plugin 'https://github.com/junegunn/fzf.vim'
-Plugin 'https://github.com/junegunn/fzf'
+    Plugin 'VundleVim/Vundle.vim'
+    " color theme
+    Plugin 'https://github.com/morhetz/gruvbox'
+    " status line
+    Plugin 'https://github.com/vim-airline/vim-airline'
+    " quick commenting
+    Plugin 'https://github.com/tpope/vim-commentary'
+    " object motions for any kind of parenthesis and quotation marks
+    Plugin 'https://github.com/tpope/vim-surround'
+    " Terminal popup
+    Plugin 'https://github.com/voldikss/vim-floaterm'
+    " personal wiki
+    Plugin 'https://github.com/vimwiki/vimwiki'
+    " Markdown features
+    Plugin 'https://github.com/SidOfc/mkdx'
+    " Distraction free
+    Plugin 'https://github.com/junegunn/goyo.vim'
+    " vim file manager
+    Plugin 'https://github.com/vifm/vifm.vim'
+    " Snippets
+    Plugin 'SirVer/ultisnips'
+    Plugin 'honza/vim-snippets'
+    " better buffer navigation
+    Plugin 'https://github.com/tpope/vim-unimpaired'
+    " markdown preview
+    Plugin 'https://github.com/iamcco/markdown-preview.nvim'
+    " Git fugitive
+    Plugin 'https://github.com/tpope/vim-fugitive'
+    " file explorer
+    Plugin 'https://github.com/preservim/nerdtree'
+    " fzf
+    Plugin 'https://github.com/junegunn/fzf.vim'
+    Plugin 'https://github.com/junegunn/fzf'
 
-call vundle#end()
-" Charger automatiquement le greffon et les paramétrages
-" d'indentation spécifiques à chaque type de fichier à l'ouverture
-filetype plugin indent on
-filetype plugin on
+    call vundle#end()
+    " Charger automatiquement le greffon et les paramétrages
+    " d'indentation spécifiques à chaque type de fichier à l'ouverture
+    filetype plugin indent on
+    filetype plugin on
 
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+    " :PluginList       - lists configured plugins
+    " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+    " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+    " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
-"=============================================================================
-" Autocommandes at start
-"=============================================================================
-"
-set viminfo+=n~/.vim/viminfo
-" set bold color highlight for md file at launch
-au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
-" set italic color highlight for md file at launch
-au BufEnter *.md :hi VimwikiItalic cterm=bold ctermfg=175 guifg=#d3869b 
-let foldmethod='manual'
-" enable fold saving
-augroup remember_folds
-  autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent! loadview
-augroup END
+    " Autocommandes at start 
+    "==========================================================================
+    set viminfo+=n~/.vim/viminfo
+    " set bold color highlight for md file at launch
+    au BufEnter *.md :hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 
+    " set italic color highlight for md file at launch
+    au BufEnter *.md :hi VimwikiItalic cterm=bold ctermfg=175 guifg=#d3869b 
+    let foldmethod='manual'
+    " enable fold saving
+    augroup remember_folds
+      autocmd!
+      autocmd BufWinLeave * mkview
+      autocmd BufWinEnter * silent! loadview
+    augroup END
+"==============================================================================
+    " Templates 
+    "==========================================================================
+    :autocmd BufNewFile *.md 0r ~/.vim/templates/template.md
+"==============================================================================
+    " Sign 
+    "==========================================================================
+    sign define piet text= texthl=Folded linehl=
+    " :exe ":sign place 2 line=23 name=piet file=" . expand("%:p")
+"==============================================================================
+    " Spell Check 
+    "==========================================================================
+    set spelllang=fr
+"==============================================================================
+    " Remmaping 
+    "==========================================================================
+    let mapleader = "\<space>"
+    let g:maplocalleader = ','
+    " Remap in command mode
+    cnoremap jk <C-C>
+    " Remap in Insert and Replace mode
+    inoremap jk <esc>
+    " noremap <leader>no :noh<cr>
+    " moving lines
+    " º = alt+j ∆ = alt+k
+    nnoremap º :m .+1<cr>==
+    nnoremap ∆ :m .-2<cr>==
+    inoremap º <esc>:m .+1<cr>==gi
+    inoremap ∆ <esc>:m .-2<cr>==gi
+    vnoremap º :m '>+1<cr>gv=gv
+    vnoremap ∆ :m '<-2<cr>gv=gv
+    " Compile current file with pdflatex
+    :command Tex w | !pdflatex --shell-escape %
+    nnoremap <leader>x :Tex<cr>
+    " Open vifm
+    nnoremap <leader>v :Vifm<cr>
+    " remove current highlight
+    nnoremap <leader>l :noh<cr>
+    " Delete all buffers except the current one
+    nnoremap <leader>o :Bonly<cr>
+    " open/close NERDTree
+    nnoremap <leader>n :NERDTreeToggle<cr>
+    nnoremap <leader><leader> /
+    " Open fzf
+    nnoremap <leader>ff :FZF<cr>
+    " allow to idenify colorHighlight group of current cursor position
+    map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+                \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+                \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+    " Ngrep command allow searching in the whole wiki
+    command! -nargs=1 Ngrep lvimgrep "<args>" **/*.md
+    command! -nargs=1 Ngreps lvimgrep "<args>"  ~/Google\ Drive/vimwiki/**/*.md
+    " print current date
+    command! Date put =strftime('%a %Y-%m-%d %H:%M:%S%z')
+    command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> -
+"==============================================================================
+    " Shortcut split opening 
+    "==========================================================================
 
-"=============================================================================
-" Templates
-"=============================================================================
+    noremap <leader>f <c-w>
+    map <C-h> <C-w>h
+    map <C-j> <C-w>j
+    map <C-k> <C-w>k
+    map <C-l> <C-w>l
+    nnoremap <C-n> :cnext<cr>z.
+    nnoremap <C-p> :cprev<cr>z.
+"==============================================================================
+    " Common settings 
+    "==========================================================================
 
-:autocmd BufNewFile *.md 0r ~/.vim/templates/template.md
+    " Load help files for all plugins
+    silent! helptags ALL
+    " Run shell in interactive mode to allow use of user alias
+    set shellcmdflag=-ic
+    " disable swap files
+    set noswapfile
+    " character to show for non printable character
+    set lcs=tab:>-,eol:<,nbsp:%,trail:$
+    " diable the ability to modify a same file in two distinct instance of vim
+    set autoread
+    " Edit vimr configuration file
+    nnoremap confe :e $MYVIMRC<CR>
+    " Reload vims configuration file
+    nnoremap confr :source $MYVIMRC<CR>
+    " Edit vimr configuration file
+    nnoremap <Leader>ve :e $MYVIMRC<CR>
+    " Reload vimr configuration file
+    nnoremap <Leader>vr :source $MYVIMRC<CR>
+    " toogle Goyo
+    nnoremap <Leader>g :Goyo<CR>
+    " vim doesn't lose selection anymore when using indentation 
+    vnoremap < <gv
+    vnoremap > >gv
+"==============================================================================
+    " Affichage 
+    "==========================================================================
 
-"=============================================================================
-" Sign
-"=============================================================================
+    " Encoding par défaut
+    set encoding=utf-8
+    " Define vim's theme
+    set background=dark
+    " show spellcheck errors
+    let g:gruvbox_guisp_fallback = "bg"
+    colorscheme gruvbox
+    " Met a jour le titre de votre fenetre ou de votre terminal
+    set title
+    " Affiche le numero des lignes
+    set number
+    " Affiche la position actuelle du curseur
+    set ruler
+    " Affiche les lignes trop longues sur plusieurs lignes
+    set wrap
+    " Avoid word beaing cut on wrap
+    set linebreak
+    " Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
+    set scrolloff=3
+    " Largeur par défaut d'une tabulation = 4 espaces
+    set tabstop=4
+    " Insérer des espaces au lieu de tabulations
+    set expandtab
+    " Chaque indentation insère 4 caractères (4 espaces)
+    set shiftwidth=4
+    " Activer la coloration syntaxique
+    syntax enable
+    " Conserver systématiquement 2 lignes visibles au-dessus et
+    " en-dessous de la ligne courante (le défilement se fait avant que
+    " le curseur n'atteigne la dernière ou la première ligne affichée
+    " à l'écran)
+    set scrolloff=2
+    " Display all matching file when we tab complete
+    set wildmenu
+    " afficher une ligne verticale rouge à la 80e colonne
+    set colorcolumn=80
+    " set line length
+    set tw=0
+    set foldcolumn=2
+    " PWD always follows the file I'm editing.
+    set autochdir
+"==============================================================================
+    " Search 
+    "==========================================================================
 
-sign define piet text= texthl=Folded linehl=
-" :exe ":sign place 2 line=23 name=piet file=" . expand("%:p")
+    " Ignore la casse lors d'une recherche
+    set ignorecase
+    " Si une recherche contient une majuscule, re-active la sensibilite a la casse
+    set smartcase
+    " Surligne les resultats de recherche pendant la saisie 
+    set incsearch
+    " Surligne les resultats de recherche
+    set hlsearch
+    " Permet à vim de rechercher des fichiers dans les sous répertoires du projet
+    set path+=**
+"==============================================================================
+    " Beep 
+    "==========================================================================
 
-"=============================================================================
-" Spell check
-"=============================================================================
+    " Empeche Vim de beeper
+    set visualbell
+    " Empeche Vim de beeper
+    set noerrorbells
+"==============================================================================
+    " Other 
+    "==========================================================================
 
-set spelllang=fr
+    " Active le comportement 'habituel' de la touche retour en arriere
+    set backspace=indent,eol,start
+    " Cache les fichiers lors de l'ouverture d'autres fichiers
+    set hidden
+    " Autoriser les sélections visuelles à la souris, required for Coc plugin
+    set mouse=a
+    " Mémoriser les 100 dernières actions (pour annulation p. ex.)
+    set history=100
+    " Ne pas créer une sauvegarde des fichiers lors de leur enregistrement
+    set nobackup
+    set nowritebackup
+    " Look for a tags file recursively in parent directories. 
+    set tags=tags;
+"==============================================================================
+    " Emoji shortcuts 
+    "==========================================================================
 
-"=============================================================================
-" Remmaping
-"=============================================================================
+    ab :check: ✅
+    ab :warning: ⚠️
+    ab :bulb: 💡
+    ab :pushpin: 📌
+    ab :bomb: 💣
+    ab :pill: 💊
+    ab :construction: 🚧
+    ab :pencil: 📝
+    ab :point_right: 👉
+    ab :book: 📖
+    ab :link: 🔗
+    ab :wrench: 🔧
+    ab :telephone: 📞
+    ab :email: 📧
+    ab :computer: 💻
+    ab :book: 📚
+    ab :gem: 💎
+    ab :boom: 💥
+    ab :!: ❗
+    ab :?: ❓
+    ab :cross: 𐄂
+    ab :tick: ✓
+"==============================================================================
+    " Netrw 
+    "==========================================================================
 
-let mapleader = "\<space>"
-let g:maplocalleader = ','
-" Remap in command mode
-cnoremap jk <C-C>
-" Remap in Insert and Replace mode
-inoremap jk <esc>
-" noremap <leader>no :noh<cr>
-" moving lines
-" º = alt+j ∆ = alt+k
-nnoremap º :m .+1<cr>==
-nnoremap ∆ :m .-2<cr>==
-inoremap º <esc>:m .+1<cr>==gi
-inoremap ∆ <esc>:m .-2<cr>==gi
-vnoremap º :m '>+1<cr>gv=gv
-vnoremap ∆ :m '<-2<cr>gv=gv
-" Compile current file with pdflatex
-:command Tex w | !pdflatex --shell-escape %
-nnoremap <leader>x :Tex<cr>
-" Open vifm
-nnoremap <leader>v :Vifm<cr>
-" remove current highlight
-nnoremap <leader>l :noh<cr>
-" Delete all buffers except the current one
-nnoremap <leader>o :Bonly<cr>
-" open/close NERDTree
-nnoremap <leader>n :NERDTreeToggle<cr>
-nnoremap <leader><leader> /
-" Open fzf
-nnoremap <leader>ff :FZF<cr>
+    " fix some probleme with Netrw
+    let g:netrw_keepdir = 0
+    " Set Netrw window size
+    let g:netrw_winsize = 20
+    " Remove banner
+    let g:netrw_banner = 0
+    " Hide dotfiles on load
+    let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+    " Change the copy command. Mostly to enable recursive copy of directories
+    let g:netrw_localcopydircmd = 'cp -r'
+    " Highlight marked files in the same way search matches are
+    hi! link netrwMarkFile Search
+"==============================================================================
+    " BufOnly command - Delete all the buffers except the current/named buffer. 
+    "==========================================================================
 
-" allow to idenify colorHighlight group of current cursor position
-map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-" Ngrep command allow searching in the whole wiki
-command! -nargs=1 Ngrep lvimgrep "<args>" **/*.md
-command! -nargs=1 Ngreps lvimgrep "<args>"  ~/Google\ Drive/vimwiki/**/*.md
-" print current date
-command! Date put =strftime('%a %Y-%m-%d %H:%M:%S%z')
-command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> -
+    " Usage:
 
-"=============================================================================
-" Shortcut split opening
-"=============================================================================
+    " :Bonly / :BOnly / :Bufonly / :BufOnly [buffer]
 
-noremap <leader>f <c-w>
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-nnoremap <C-n> :cnext<cr>z.
-nnoremap <C-p> :cprev<cr>z.
+    " Without any arguments the current buffer is kept.  With an argument the
+    " buffer name/number supplied is kept.
 
-"=============================================================================
-" Common settings
-"=============================================================================
+    command! -nargs=? -complete=buffer -bang Bonly
+        \ :call BufOnly('<args>', '<bang>')
+    command! -nargs=? -complete=buffer -bang BOnly
+        \ :call BufOnly('<args>', '<bang>')
+    command! -nargs=? -complete=buffer -bang Bufonly
+        \ :call BufOnly('<args>', '<bang>')
+    command! -nargs=? -complete=buffer -bang BufOnly
+        \ :call BufOnly('<args>', '<bang>')
 
-" Load help files for all plugins
-silent! helptags ALL
-" Run shell in interactive mode to allow use of user alias
-set shellcmdflag=-ic
-" disable swap files
-set noswapfile
-" character to show for non printable character
-set lcs=tab:>-,eol:<,nbsp:%,trail:$
-" diable the ability to modify a same file in two distinct instance of vim
-set autoread
-" Edit vimr configuration file
-nnoremap confe :e $MYVIMRC<CR>
-" Reload vims configuration file
-nnoremap confr :source $MYVIMRC<CR>
-" Edit vimr configuration file
-nnoremap <Leader>ve :e $MYVIMRC<CR>
-" Reload vimr configuration file
-nnoremap <Leader>vr :source $MYVIMRC<CR>
-" toogle Goyo
-nnoremap <Leader>g :Goyo<CR>
-" vim doesn't lose selection anymore when using indentation 
-vnoremap < <gv
-vnoremap > >gv
+    function! BufOnly(buffer, bang)
+        if a:buffer == ''
+            " No buffer provided, use the current buffer.
+            let buffer = bufnr('%')
+        elseif (a:buffer + 0) > 0
+            " A buffer number was provided.
+            let buffer = bufnr(a:buffer + 0)
+        else
+            " A buffer name was provided.
+            let buffer = bufnr(a:buffer)
+        endif
 
-"=============================================================================
-" Affichage
-"=============================================================================
+        if buffer == -1
+            echohl ErrorMsg
+            echomsg "No matching buffer for" a:buffer
+            echohl None
+            return
+        endif
 
-" Encoding par défaut
-set encoding=utf-8
-" Define vim's theme
-set background=dark
-" show spellcheck errors
-let g:gruvbox_guisp_fallback = "bg"
-colorscheme gruvbox
-" Met a jour le titre de votre fenetre ou de votre terminal
-set title
-" Affiche le numero des lignes
-set number
-" Affiche la position actuelle du curseur
-set ruler
-" Affiche les lignes trop longues sur plusieurs lignes
-set wrap
-" Avoid word beaing cut on wrap
-set linebreak
-" Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
-set scrolloff=3
-" Largeur par défaut d'une tabulation = 4 espaces
-set tabstop=4
-" Insérer des espaces au lieu de tabulations
-set expandtab
-" Chaque indentation insère 4 caractères (4 espaces)
-set shiftwidth=4
-" Activer la coloration syntaxique
-syntax enable
-" Conserver systématiquement 2 lignes visibles au-dessus et
-" en-dessous de la ligne courante (le défilement se fait avant que
-" le curseur n'atteigne la dernière ou la première ligne affichée
-" à l'écran)
-set scrolloff=2
-" Display all matching file when we tab complete
-set wildmenu
-" afficher une ligne verticale rouge à la 80e colonne
-set colorcolumn=80
-" set line length
-set tw=0
-set foldcolumn=2
-" PWD always follows the file I'm editing.
-set autochdir
+        let last_buffer = bufnr('$')
 
-"=============================================================================
-" Search
-"=============================================================================
+        let delete_count = 0
+        let n = 1
+        while n <= last_buffer
+            if n != buffer && buflisted(n)
+                if a:bang == '' && getbufvar(n, '&modified')
+                    echohl ErrorMsg
+                    echomsg 'No write since last change for buffer'
+                                \ n '(add ! to override)'
+                    echohl None
+                else
+                    silent exe 'bdel' . a:bang . ' ' . n
+                    if ! buflisted(n)
+                        let delete_count = delete_count+1
+                    endif
+                endif
+            endif
+            let n = n+1
+        endwhile
 
-" Ignore la casse lors d'une recherche
-set ignorecase
-" Si une recherche contient une majuscule, re-active la sensibilite a la casse
-set smartcase
-" Surligne les resultats de recherche pendant la saisie 
-set incsearch
-" Surligne les resultats de recherche
-set hlsearch
-" Permet à vim de rechercher des fichiers dans les sous répertoires du projet
-set path+=**
+        if delete_count == 1
+            echomsg delete_count "buffer deleted"
+        elseif delete_count > 2
+            echomsg delete_count "buffers deleted"
+        endif
 
-"=============================================================================
-" Beep
-"=============================================================================
+    endfunction
 
-" Empeche Vim de beeper
-set visualbell
-" Empeche Vim de beeper
-set noerrorbells
-
-"=============================================================================
-" Other
-"=============================================================================
-
-" Active le comportement 'habituel' de la touche retour en arriere
-set backspace=indent,eol,start
-" Cache les fichiers lors de l'ouverture d'autres fichiers
-set hidden
-" Autoriser les sélections visuelles à la souris, required for Coc plugin
-set mouse=a
-" Mémoriser les 100 dernières actions (pour annulation p. ex.)
-set history=100
-" Ne pas créer une sauvegarde des fichiers lors de leur enregistrement
-set nobackup
-set nowritebackup
-" Look for a tags file recursively in parent directories. 
-set tags=tags;
-
-"=============================================================================
-" Emoji shortcuts
-"=============================================================================
-
-ab :check: ✅
-ab :warning: ⚠️
-ab :bulb: 💡
-ab :pushpin: 📌
-ab :bomb: 💣
-ab :pill: 💊
-ab :construction: 🚧
-ab :pencil: 📝
-ab :point_right: 👉
-ab :book: 📖
-ab :link: 🔗
-ab :wrench: 🔧
-ab :telephone: 📞
-ab :email: 📧
-ab :computer: 💻
-ab :book: 📚
-ab :gem: 💎
-ab :boom: 💥
-ab :!: ❗
-ab :?: ❓
-ab :cross: 𐄂
-ab :tick: ✓
-
-"=============================================================================
-" Netrw
-"=============================================================================
-
-" fix some probleme with Netrw
-let g:netrw_keepdir = 0
-" Set Netrw window size
-let g:netrw_winsize = 20
-" Remove banner
-let g:netrw_banner = 0
-" Hide dotfiles on load
-let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
-" Change the copy command. Mostly to enable recursive copy of directories
-let g:netrw_localcopydircmd = 'cp -r'
-" Highlight marked files in the same way search matches are
-hi! link netrwMarkFile Search
-
-
-"=============================================================================
-" BufOnly command - Delete all the buffers except the current/named buffer.
-"=============================================================================
-
-" Usage:
-
-" :Bonly / :BOnly / :Bufonly / :BufOnly [buffer]
-
-" Without any arguments the current buffer is kept.  With an argument the
-" buffer name/number supplied is kept.
-
-command! -nargs=? -complete=buffer -bang Bonly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang BOnly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang Bufonly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang BufOnly
-    \ :call BufOnly('<args>', '<bang>')
-
-function! BufOnly(buffer, bang)
-	if a:buffer == ''
-		" No buffer provided, use the current buffer.
-		let buffer = bufnr('%')
-	elseif (a:buffer + 0) > 0
-		" A buffer number was provided.
-		let buffer = bufnr(a:buffer + 0)
-	else
-		" A buffer name was provided.
-		let buffer = bufnr(a:buffer)
-	endif
-
-	if buffer == -1
-		echohl ErrorMsg
-		echomsg "No matching buffer for" a:buffer
-		echohl None
-		return
-	endif
-
-	let last_buffer = bufnr('$')
-
-	let delete_count = 0
-	let n = 1
-	while n <= last_buffer
-		if n != buffer && buflisted(n)
-			if a:bang == '' && getbufvar(n, '&modified')
-				echohl ErrorMsg
-				echomsg 'No write since last change for buffer'
-							\ n '(add ! to override)'
-				echohl None
-			else
-				silent exe 'bdel' . a:bang . ' ' . n
-				if ! buflisted(n)
-					let delete_count = delete_count+1
-				endif
-			endif
-		endif
-		let n = n+1
-	endwhile
-
-	if delete_count == 1
-		echomsg delete_count "buffer deleted"
-	elseif delete_count > 2
-		echomsg delete_count "buffers deleted"
-	endif
-
-endfunction
-
-
+" 
 "        _             _
 "  _ __ | |_   _  __ _(_)_ __  ___
 " | '_ \| | | | |/ _` | | '_ \/ __|
@@ -391,211 +370,203 @@ endfunction
 " | .__/|_|\__,_|\__, |_|_| |_|___/
 " |_|            |___/
 
-"=============================================================================
-" Plugin vim-floaterm
-"=============================================================================
+"==============================================================================
+    " Plugin vim-floaterm 
+    "==========================================================================
 
-let g:floaterm_keymap_toggle = '<F1>'
-let g:floaterm_keymap_next   = '<F2>'
-let g:floaterm_keymap_prev   = '<F3>'
-let g:floaterm_keymap_new    = '<F4>'
+    let g:floaterm_keymap_toggle = '<F1>'
+    let g:floaterm_keymap_next   = '<F2>'
+    let g:floaterm_keymap_prev   = '<F3>'
+    let g:floaterm_keymap_new    = '<F4>'
 
-" Floaterm
-let g:floaterm_gitcommit='floaterm'
-let g:floaterm_autoinsert=1
-let g:floaterm_width=0.8
-let g:floaterm_height=0.8
-let g:floaterm_wintitle=0
-let g:floaterm_autoclose=1
+    " Floaterm
+    let g:floaterm_gitcommit='floaterm'
+    let g:floaterm_autoinsert=1
+    let g:floaterm_width=0.8
+    let g:floaterm_height=0.8
+    let g:floaterm_wintitle=0
+    let g:floaterm_autoclose=1
+"==============================================================================
+    " Plugin UltiSnips 
+    "==========================================================================
 
-"=============================================================================
-" Plugin UltiSnips
-"=============================================================================
+    let g:UltiSnipsJumpForwardTrigger="<c-b>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+    let g:UltiSnipsEditSplit="vertical"
+"==============================================================================
+    " Plugin vim wiki 
+    "==========================================================================
 
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
+    " set to 0 to prevent vimwiki consider every md files as vimwiki files
+    let g:vimwiki_global_ext = 0
+    let g:vimwiki_folding = 'custom'
 
-"=============================================================================
-" Plugin vim wiki
-"=============================================================================
+    let wiki_1 = {}
+    let wiki_1.path = '~/Google\ Drive/vimwiki/'
+    let wiki_1.index = 'index'
+    let wiki_1.syntax = 'markdown'
+    let wiki_1.ext = '.md'
 
-" set to 0 to prevent vimwiki consider every md files as vimwiki files
-let g:vimwiki_global_ext = 0
-let g:vimwiki_folding = 'custom'
+    let wiki_2 = {}
+    let wiki_2.path = '~/Documents/HEIG/'
+    let wiki_2.index = 'index'
+    let wiki_2.syntax = 'markdown'
+    let wiki_2.ext = '.md'
 
-let wiki_1 = {}
-let wiki_1.path = '~/Google\ Drive/vimwiki/'
-let wiki_1.index = 'index'
-let wiki_1.syntax = 'markdown'
-let wiki_1.ext = '.md'
-
-let wiki_2 = {}
-let wiki_2.path = '~/Documents/HEIG/'
-let wiki_2.index = 'index'
-let wiki_2.syntax = 'markdown'
-let wiki_2.ext = '.md'
-
-let g:vimwiki_list = [wiki_1, wiki_2]
-
-"=============================================================================
-" Plugin mkdx
-"=============================================================================
+    let g:vimwiki_list = [wiki_1, wiki_2]
+"==============================================================================
+    " Plugin mkdx 
+    "==========================================================================
 
 
-let g:mkdx#settings     = { 'highlight': { 'enable': 1 },
-                        \ 'enter': { 'shift': 1 },
-                        \ 'links': { 'external': { 'enable': 1 } },
-                        \ 'toc': { 'text': 'Table of Contents', 'update_on_write': 1 },
-                        \ 'fold': { 'enable': 0 } ,
-                        \ 'tokens': { 'bold': '__', 'italic': '_' } }
+    let g:mkdx#settings     = { 'highlight': { 'enable': 1 },
+                            \ 'enter': { 'shift': 1 },
+                            \ 'links': { 'external': { 'enable': 1 } },
+                            \ 'toc': { 'text': 'Table of Contents', 'update_on_write': 1 },
+                            \ 'fold': { 'enable': 0 } ,
+                            \ 'tokens': { 'bold': '__', 'italic': '_' } }
 
-" allow to jump to a markdown header
-nnoremap <leader>j :call mkdx#JumpToHeader()<CR>
+    " allow to jump to a markdown header
+    nnoremap <leader>j :call mkdx#JumpToHeader()<CR>
+"==============================================================================
+    " Plugin unimpaired 
+    "==========================================================================
 
-"=============================================================================
-" Plugin unimpaired
-"=============================================================================
+    nmap è [
+    nmap ¨ ]
+    omap è [
+    omap ¨ ]
+    xmap è [
+    xmap ¨ ]
+"==============================================================================
+    " Plugin Goyo 
+    "==========================================================================
 
-nmap è [
-nmap ¨ ]
-omap è [
-omap ¨ ]
-xmap è [
-xmap ¨ ]
+    function! s:goyo_enter()
+      let b:quitting = 0
+      let b:quitting_bang = 0
+      set rnu
+      " :AirlineToggle
+      autocmd QuitPre <buffer> let b:quitting = 1
+      cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+    endfunction
 
-"=============================================================================
-" Plugin Goyo
-"=============================================================================
+    function! s:goyo_leave()
+      " Quit Vim if this is the only remaining buffer
+      if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+        if b:quitting_bang
+          qa!
+        else
+          qa
+        endif
+      endif
+    endfunction
 
-function! s:goyo_enter()
-  let b:quitting = 0
-  let b:quitting_bang = 0
-  set rnu
-  " :AirlineToggle
-  autocmd QuitPre <buffer> let b:quitting = 1
-  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
-endfunction
+    autocmd! User GoyoEnter call <SID>goyo_enter()
+    autocmd! User GoyoLeave call <SID>goyo_leave()
+"==============================================================================
+    " Plugin vim-airline 
+    "==========================================================================
 
-function! s:goyo_leave()
-  " Quit Vim if this is the only remaining buffer
-  if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
-    if b:quitting_bang
-      qa!
-    else
-      qa
-    endif
-  endif
-endfunction
+    " Enable the list of buffers
+    let g:airline#extensions#tabline#enabled = 1
+    " Show just the filename
+    let g:airline#extensions#tabline#fnamemod = ':t'
+    " display git branch
+    let g:airline#extensions#fugitiveline#enabled = 1
+"==============================================================================
+    " Plugin markdown-preview.nvim 
+    "==========================================================================
 
-autocmd! User GoyoEnter call <SID>goyo_enter()
-autocmd! User GoyoLeave call <SID>goyo_leave()
+    let g:vimwiki_table_mappings=0
+    " set to 1, nvim will open the preview window after entering the markdown buffer
+    " default: 0
+    let g:mkdp_auto_start = 0
 
-"=============================================================================
-" Plugin vim-airline
-"=============================================================================
+    " set to 1, the nvim will auto close current preview window when change
+    " from markdown buffer to another buffer
+    " default: 1
+    let g:mkdp_auto_close = 1
 
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
-" display git branch
-let g:airline#extensions#fugitiveline#enabled = 1
+    " set to 1, the vim will refresh markdown when save the buffer or
+    " leave from insert mode, default 0 is auto refresh markdown as you edit or
+    " move the cursor
+    " default: 0
+    let g:mkdp_refresh_slow = 0
 
+    " set to 1, the MarkdownPreview command can be use for all files,
+    " by default it can be use in markdown file
+    " default: 0
+    let g:mkdp_command_for_global = 0
 
-"=============================================================================
-" Plugin markdown-preview.nvim
-"=============================================================================
+    " set to 1, preview server available to others in your network
+    " by default, the server listens on localhost (127.0.0.1)
+    " default: 0
+    let g:mkdp_open_to_the_world = 0
 
-let g:vimwiki_table_mappings=0
-" set to 1, nvim will open the preview window after entering the markdown buffer
-" default: 0
-let g:mkdp_auto_start = 0
+    " use custom IP to open preview page
+    " useful when you work in remote vim and preview on local browser
+    " more detail see: https://github.com/iamcco/markdown-preview.nvim/pull/9
+    " default empty
+    let g:mkdp_open_ip = ''
 
-" set to 1, the nvim will auto close current preview window when change
-" from markdown buffer to another buffer
-" default: 1
-let g:mkdp_auto_close = 1
+    " specify browser to open preview page
+    " default: ''
+    let g:mkdp_browser = ''
 
-" set to 1, the vim will refresh markdown when save the buffer or
-" leave from insert mode, default 0 is auto refresh markdown as you edit or
-" move the cursor
-" default: 0
-let g:mkdp_refresh_slow = 0
+    " set to 1, echo preview page url in command line when open preview page
+    " default is 0
+    let g:mkdp_echo_preview_url = 0
 
-" set to 1, the MarkdownPreview command can be use for all files,
-" by default it can be use in markdown file
-" default: 0
-let g:mkdp_command_for_global = 0
+    " a custom vim function name to open preview page
+    " this function will receive url as param
+    " default is empty
+    let g:mkdp_browserfunc = ''
 
-" set to 1, preview server available to others in your network
-" by default, the server listens on localhost (127.0.0.1)
-" default: 0
-let g:mkdp_open_to_the_world = 0
+    " options for markdown render
+    " mkit: markdown-it options for render
+    " katex: katex options for math
+    " uml: markdown-it-plantuml options
+    " maid: mermaid options
+    " disable_sync_scroll: if disable sync scroll, default 0
+    " sync_scroll_type: 'middle', 'top' or 'relative', default value is 'middle'
+    "   middle: mean the cursor position alway show at the middle of the preview page
+    "   top: mean the vim top viewport alway show at the top of the preview page
+    "   relative: mean the cursor position alway show at the relative positon of the preview page
+    " hide_yaml_meta: if hide yaml metadata, default is 1
+    " sequence_diagrams: js-sequence-diagrams options
+    " content_editable: if enable content editable for preview page, default: v:false
+    " disable_filename: if disable filename header for preview page, default: 0
+    let g:mkdp_preview_options = {
+        \ 'mkit': {},
+        \ 'katex': {},
+        \ 'uml': {},
+        \ 'maid': {},
+        \ 'disable_sync_scroll': 0,
+        \ 'sync_scroll_type': 'middle',
+        \ 'hide_yaml_meta': 1,
+        \ 'sequence_diagrams': {},
+        \ 'flowchart_diagrams': {},
+        \ 'content_editable': v:false,
+        \ 'disable_filename': 0
+        \ }
 
-" use custom IP to open preview page
-" useful when you work in remote vim and preview on local browser
-" more detail see: https://github.com/iamcco/markdown-preview.nvim/pull/9
-" default empty
-let g:mkdp_open_ip = ''
+    " use a custom markdown style must be absolute path
+    " like '/Users/username/markdown.css' or expand('~/markdown.css')
+    let g:mkdp_markdown_css = '~/dotfiles/vim/.vim/styles/github.css'
 
-" specify browser to open preview page
-" default: ''
-let g:mkdp_browser = ''
+    " use a custom highlight style must absolute path
+    " like '/Users/username/highlight.css' or expand('~/highlight.css')
+    let g:mkdp_highlight_css = ''
 
-" set to 1, echo preview page url in command line when open preview page
-" default is 0
-let g:mkdp_echo_preview_url = 0
+    " use a custom port to start server or random for empty
+    let g:mkdp_port = ''
 
-" a custom vim function name to open preview page
-" this function will receive url as param
-" default is empty
-let g:mkdp_browserfunc = ''
+    " preview page title
+    " ${name} will be replace with the file name
+    let g:mkdp_page_title = '「${name}」'
 
-" options for markdown render
-" mkit: markdown-it options for render
-" katex: katex options for math
-" uml: markdown-it-plantuml options
-" maid: mermaid options
-" disable_sync_scroll: if disable sync scroll, default 0
-" sync_scroll_type: 'middle', 'top' or 'relative', default value is 'middle'
-"   middle: mean the cursor position alway show at the middle of the preview page
-"   top: mean the vim top viewport alway show at the top of the preview page
-"   relative: mean the cursor position alway show at the relative positon of the preview page
-" hide_yaml_meta: if hide yaml metadata, default is 1
-" sequence_diagrams: js-sequence-diagrams options
-" content_editable: if enable content editable for preview page, default: v:false
-" disable_filename: if disable filename header for preview page, default: 0
-let g:mkdp_preview_options = {
-    \ 'mkit': {},
-    \ 'katex': {},
-    \ 'uml': {},
-    \ 'maid': {},
-    \ 'disable_sync_scroll': 0,
-    \ 'sync_scroll_type': 'middle',
-    \ 'hide_yaml_meta': 1,
-    \ 'sequence_diagrams': {},
-    \ 'flowchart_diagrams': {},
-    \ 'content_editable': v:false,
-    \ 'disable_filename': 0
-    \ }
-
-" use a custom markdown style must be absolute path
-" like '/Users/username/markdown.css' or expand('~/markdown.css')
-let g:mkdp_markdown_css = '~/dotfiles/vim/.vim/styles/github.css'
-
-" use a custom highlight style must absolute path
-" like '/Users/username/highlight.css' or expand('~/highlight.css')
-let g:mkdp_highlight_css = ''
-
-" use a custom port to start server or random for empty
-let g:mkdp_port = ''
-
-" preview page title
-" ${name} will be replace with the file name
-let g:mkdp_page_title = '「${name}」'
-
-" recognized filetypes
-" these filetypes will have MarkdownPreview... commands
-let g:mkdp_filetypes = ['markdown']
+    " recognized filetypes
+    " these filetypes will have MarkdownPreview... commands
+    let g:mkdp_filetypes = ['markdown']
 
