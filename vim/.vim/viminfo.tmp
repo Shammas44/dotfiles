@@ -1,0 +1,869 @@
+# Ce fichier viminfo a été généré par Vim 8.2.
+# Vous pouvez l'éditer, mais soyez prudent.
+
+# Viminfo version
+|1,4
+
+# 'encoding' dans lequel ce fichier a été écrit
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Dernier motif de recherche  :
+~Msle0~/\<__Sort\>
+
+# Dernier motif de recherche Substitue  :
+~MSle0&programmes
+
+# Dernières chaînes de substitution :
+$    
+
+# Historique ligne de commande (chronologie décroissante) :
+:exe "norm :.!echo \<C-R>*\<cr>"
+|2,0,1647157048,,"exe \"norm :.!echo \\<C-R>*\\<cr>\""
+:exe "norm :.!echo \<C-R>*"
+|2,0,1647156995,,"exe \"norm :.!echo \\<C-R>*\""
+:exe "norm I\<C-R>*"
+|2,0,1647156948,,"exe \"norm I\\<C-R>*\""
+:exe "norm I\<C-V>"
+|2,0,1647156842,,"exe \"norm I\\<C-V>\""
+:exe "norm :.!echo \<cr>*\<cr>"
+|2,0,1647156283,,"exe \"norm :.!echo \\<cr>*\\<cr>\""
+:w
+|2,0,1647156148,,"w"
+:réaliser
+|2,0,1647155903,,"réaliser"
+:bd
+|2,0,1647205163,,"bd"
+:x
+|2,0,1647172213,,"x"
+:MarkdownPreview
+|2,0,1647166569,,"MarkdownPreview"
+:q
+|2,0,1647167975,,"q"
+:h <expr>
+|2,0,1647162890,,"h <expr>"
+:h expr
+|2,0,1647162831,,"h expr"
+:reg
+|2,0,1647161674,,"reg"
+:'<,'>v/switzerland/d
+|2,0,1647160346,,"'<,'>v/switzerland/d"
+:%v/switzerland/d
+|2,0,1647160314,,"%v/switzerland/d"
+:'<,'>norm 10@q
+|2,0,1647159941,,"'<,'>norm 10@q"
+:'<,'>
+|2,0,1647159841,,"'<,'>"
+::exe 'norm"wyiwcc\<C-R>='
+|2,0,1647159477,,":exe 'norm\"wyiwcc\\<C-R>='"
+:exe 'norm"wyiwcc'
+|2,0,1647159447,,"exe 'norm\"wyiwcc'"
+:exe 'norm"wyiwcc\<C-R>=\<C-R>w + \<C-R>e\<CR>"eyiwj@q'
+|2,0,1647159412,,"exe 'norm\"wyiwcc\\<C-R>=\\<C-R>w + \\<C-R>e\\<CR>\"eyiwj@q'"
+:exe "norm I\<C-R>=\<C-R>e + \<C-R>w\<CR>"
+|2,0,1647158119,,"exe \"norm I\\<C-R>=\\<C-R>e + \\<C-R>w\\<CR>\""
+:exe norm "I\<C-R>=\<C-R>e + \<C-R>w\<CR>"
+|2,0,1647158103,,"exe norm \"I\\<C-R>=\\<C-R>e + \\<C-R>w\\<CR>\""
+:exe "norm :.!echo \<c-r>*\<cr>"
+|2,0,1647156745,,"exe \"norm :.!echo \\<c-r>*\\<cr>\""
+:exe "norm :.!echo \<ctrl-r>*\<cr>"
+|2,0,1647156600,,"exe \"norm :.!echo \\<ctrl-r>*\\<cr>\""
+:h exe
+|2,0,1647156321,,"h exe"
+:v/programmes/d
+|2,0,1647155449,,"v/programmes/d"
+:h :v
+|2,0,1647155276,,"h :v"
+:vs
+|2,0,1647093407,,"vs"
+:dadff
+|2,0,1647089487,,"dadff"
+:!
+|2,0,1647027156,,"!"
+:let b:quitting_bang = 1 | q!
+|2,0,1646659125,,"let b:quitting_bang = 1 | q!"
+:q!
+|2,0,1646659116,,"q!"
+:set foldignore=
+|2,0,1646513174,,"set foldignore="
+:%s/\t/    /
+|2,0,1646513020,,"%s/\\t/    /"
+:'<,'>%s/^\t//
+|2,0,1646513000,,"'<,'>%s/^\\t//"
+:'<,'>%s/^\t/    /g
+|2,0,1646512995,,"'<,'>%s/^\\t/    /g"
+:'<,'>%s/^\t/\ \ \ \/
+|2,0,1646512974,,"'<,'>%s/^\\t/\\ \\ \\ \\/"
+:'<,'>%s/^\t/    /
+|2,0,1646512939,,"'<,'>%s/^\\t/    /"
+:set foldnestmax=1
+|2,0,1646512853,,"set foldnestmax=1"
+:set foldmethod=indent
+|2,0,1646512835,,"set foldmethod=indent"
+:verbose set foldnestmax?
+|2,0,1646512583,,"verbose set foldnestmax?"
+:verbose set foldlevelstart?
+|2,0,1646512559,,"verbose set foldlevelstart?"
+:set foldlevel=0
+|2,0,1646512539,,"set foldlevel=0"
+:verbose set foldlevel?
+|2,0,1646512524,,"verbose set foldlevel?"
+:verbose set foldmethod?
+|2,0,1646512472,,"verbose set foldmethod?"
+:verbose set foldcolumn?
+|2,0,1646512427,,"verbose set foldcolumn?"
+:%s/^\t/    /
+|2,0,1646512094,,"%s/^\\t/    /"
+:set shiftwidth=4
+|2,0,1646512026,,"set shiftwidth=4"
+:set tabstop=4
+|2,0,1646512015,,"set tabstop=4"
+:set foldlevelstart
+|2,0,1646511954,,"set foldlevelstart"
+:set foldlevel=1
+|2,0,1646511927,,"set foldlevel=1"
+:set foldenable
+|2,0,1646511917,,"set foldenable"
+:set foldlevelstart=2
+|2,0,1646511859,,"set foldlevelstart=2"
+:set foldlevelstart=1
+|2,0,1646511853,,"set foldlevelstart=1"
+:set foldlevelstart=0
+|2,0,1646511817,,"set foldlevelstart=0"
+:%s/#=============================================================================/#==========================================================================/g
+|2,0,1646511526,,"%s/#=============================================================================/#==========================================================================/g"
+:%s/}}}//g
+|2,0,1646511343,,"%s/}}}//g"
+:%s/{{{//g
+|2,0,1646511335,,"%s/{{{//g"
+:%s/"=============================================================================/"==============================================================================/g
+|2,0,1646510841,,"%s/\"=============================================================================/\"==============================================================================/g"
+:%s/    "=============================================================================/    "==========================================================================/g
+|2,0,1646510812,,"%s/    \"=============================================================================/    \"==========================================================================/g"
+:set foldnestmax=2
+|2,0,1646510224,,"set foldnestmax=2"
+:set maxfoldlevel=0
+|2,0,1646510095,,"set maxfoldlevel=0"
+:set foldmethod=marker
+|2,0,1646508495,,"set foldmethod=marker"
+:%s/"=========================================================================={{{/"==========================================================================}}}/g
+|2,0,1646508294,,"%s/\"=========================================================================={{{/\"==========================================================================}}}/g"
+:'<,'>%s/"=========================================================================={{{/"==========================================================================}}}/g
+|2,0,1646508274,,"'<,'>%s/\"=========================================================================={{{/\"==========================================================================}}}/g"
+:noh
+|2,0,1646508226,,"noh"
+:%s/"=============================================================================/"=========================================================================={{{/g
+|2,0,1646508212,,"%s/\"=============================================================================/\"=========================================================================={{{/g"
+:s%/"=============================================================================/"=========================================================================={{{/
+|2,0,1646508165,,"s%/\"=============================================================================/\"=========================================================================={{{/"
+:s/"=============================================================================/"=========================================================================={{{/
+|2,0,1646508135,,"s/\"=============================================================================/\"=========================================================================={{{/"
+:s/"=============================================================================/"=========================================================================={{{/
+|2,0,1646508119,,"s/\"=============================================================================/\"=========================================================================={{{/"
+:s/"=========================================================================={{{
+|2,0,1646508080,,"s/\"=========================================================================={{{"
+:h fold
+|2,0,1646507022,,"h fold"
+:h mkdx
+|2,0,1646506943,,"h mkdx"
+:'<,'>s/ //g
+|2,0,1646502861,,"'<,'>s/ //g"
+:'<,'>s/"//g
+|2,0,1646502841,,"'<,'>s/\"//g"
+:'<,'>s/export PATH="\$PATH//g
+|2,0,1646502794,,"'<,'>s/export PATH=\"\\$PATH//g"
+:'<,'>sort
+|2,0,1646502636,,"'<,'>sort"
+:'<,'>s/:/:\r/g
+|2,0,1646502616,,"'<,'>s/:/:\\r/g"
+:.!echo $PATH
+|2,0,1646502601,,".!echo $PATH"
+:'<,'>s/:/:$path:
+|2,0,1646500923,,"'<,'>s/:/:$path:"
+:'<,'>s/$path//
+|2,0,1646500754,,"'<,'>s/$path//"
+:'<,'>s/path/path/g
+|2,0,1646500709,,"'<,'>s/path/path/g"
+:'<,'>s/:/\r/g
+|2,0,1646500516,,"'<,'>s/:/\\r/g"
+:'<,'>s/:/\n/g
+|2,0,1646500490,,"'<,'>s/:/\\n/g"
+:'<,'>norm A"
+|2,0,1646500236,,"'<,'>norm A\""
+:'<,'>normA"
+|2,0,1646500213,,"'<,'>normA\""
+:'<,'>norm Iexport PATH="
+|2,0,1646500200,,"'<,'>norm Iexport PATH=\""
+:set nu
+|2,0,1646473834,,"set nu"
+:e shortcut-vscode.md
+|2,0,1646430860,,"e shortcut-vscode.md"
+:mkdx help
+|2,0,1646430564,,"mkdx help"
+:Vifm
+|2,0,1646430413,,"Vifm"
+:UltiSnipsEdit
+|2,0,1646430190,,"UltiSnipsEdit"
+:Snippets
+|2,0,1646430145,,"Snippets"
+:'<,'>norm I- 
+|2,0,1646383281,,"'<,'>norm I- "
+:FZF
+|2,0,1646252850,,"FZF"
+:w | bd
+|2,0,1646050055,,"w | bd"
+:%s/__$//
+|2,0,1646039034,,"%s/__$//"
+:%s/^__/## /
+|2,0,1646039010,,"%s/^__/## /"
+:e ~/Desktop/questionnaire01.md
+|2,0,1646038615,,"e ~/Desktop/questionnaire01.md"
+
+# Historique chaîne de recherche (chronologie décroissante) :
+? \<__Sort\>
+|2,1,1647156905,,"\\<__Sort\\>"
+?/exe
+|2,1,1647156159,47,"exe"
+?/expression
+|2,1,1647155523,47,"expression"
+?/eval
+|2,1,1647155518,47,"eval"
+?/git
+|2,1,1647206610,47,"git"
+?/docker
+|2,1,1647205081,47,"docker"
+?/map()
+|2,1,1647170789,47,"map()"
+?/méthode
+|2,1,1647169660,47,"méthode"
+?/méthodes
+|2,1,1647169657,47,"méthodes"
+?/js
+|2,1,1647164617,47,"js"
+?/expr
+|2,1,1647162848,47,"expr"
+? switzerland
+|2,1,1647160346,,"switzerland"
+?/ctrl
+|2,1,1647156479,47,"ctrl"
+? programmes
+|2,1,1647155449,,"programmes"
+?/match
+|2,1,1647155172,47,"match"
+?/search
+|2,1,1647155167,47,"search"
+?/vim
+|2,1,1647155157,47,"vim"
+?/nginx
+|2,1,1647118354,47,"nginx"
+?/vagr
+|2,1,1647118127,47,"vagr"
+?/d3
+|2,1,1646984638,47,"d3"
+?/laravel
+|2,1,1646912870,47,"laravel"
+?/fetch
+|2,1,1646659207,47,"fetch"
+?/json
+|2,1,1646658913,47,"json"
+?/lara
+|2,1,1646649244,47,"lara"
+?/-p
+|2,1,1646603012,47,"-p"
+?/\.com
+|2,1,1646564475,47,"\\.com"
+?/.com
+|2,1,1646564467,47,".com"
+?/supprimer
+|2,1,1646518560,47,"supprimer"
+?/vagrant
+|2,1,1646518535,47,"vagrant"
+? \t
+|2,1,1646513020,,"\\t"
+? ^\t
+|2,1,1646512094,,"^\\t"
+? #=============================================================================
+|2,1,1646511526,,"#============================================================================="
+? }}}
+|2,1,1646511343,,"}}}"
+? {{{
+|2,1,1646511335,,"{{{"
+? "=============================================================================
+|2,1,1646510841,,"\"============================================================================="
+?     "=============================================================================
+|2,1,1646510812,,"    \"============================================================================="
+? "=========================================================================={{{
+|2,1,1646508294,,"\"=========================================================================={{{"
+? /"=============================================================================/"=========================================================================={{{/
+|2,1,1646508165,,"/\"=============================================================================/\"=========================================================================={{{/"
+?/fold
+|2,1,1646507225,47,"fold"
+?/foldmethod
+|2,1,1646507194,47,"foldmethod"
+?  
+|2,1,1646502861,," "
+? "
+|2,1,1646502841,,"\""
+? export PATH="\$PATH
+|2,1,1646502794,,"export PATH=\"\\$PATH"
+? :
+|2,1,1646502616,,":"
+? $path
+|2,1,1646500754,,"$path"
+? path
+|2,1,1646500709,,"path"
+?/cheats
+|2,1,1646484412,47,"cheats"
+? \<cheatsheet_dir\>
+|2,1,1646484404,,"\\<cheatsheet_dir\\>"
+?/stop
+|2,1,1646471210,47,"stop"
+?/build
+|2,1,1646470720,47,"build"
+?/doc
+|2,1,1646469165,47,"doc"
+?/google
+|2,1,1646436136,47,"google"
+?/backtick
+|2,1,1646430608,47,"backtick"
+?/docker rm
+|2,1,1646424896,47,"docker rm"
+?/dock
+|2,1,1646420333,47,"dock"
+?/fzf
+|2,1,1646343272,47,"fzf"
+?/name
+|2,1,1646323197,47,"name"
+?/va
+|2,1,1646170590,47,"va"
+?/contro
+|2,1,1646151024,47,"contro"
+?/xdebug
+|2,1,1646140879,47,"xdebug"
+?/xde
+|2,1,1646139110,47,"xde"
+?/prov
+|2,1,1646079449,47,"prov"
+?/ubunt
+|2,1,1646078399,47,"ubunt"
+?/vag
+|2,1,1646076759,47,"vag"
+?/with
+|2,1,1646042530,47,"with"
+? __$
+|2,1,1646039034,,"__$"
+? ^__
+|2,1,1646039010,,"^__"
+?/provision
+|2,1,1646080209,47,"provision"
+?/noti
+|2,1,1646067506,47,"noti"
+? )
+|2,1,1646038108,,")"
+?/lar
+|2,1,1646033527,47,"lar"
+?/cheat
+|2,1,1645997185,47,"cheat"
+?/mkdx
+|2,1,1645953086,47,"mkdx"
+?/dictionary
+|2,1,1645952676,47,"dictionary"
+? mkdx#settings.tokens.italic = '_'
+|2,1,1645952561,,"mkdx#settings.tokens.italic = '_'"
+?/bold
+|2,1,1645952454,47,"bold"
+?/gui
+|2,1,1645883589,47,"gui"
+?/label
+|2,1,1645871035,47,"label"
+?/list
+|2,1,1645869001,47,"list"
+?/puce
+|2,1,1645868998,47,"puce"
+?/hostname
+|2,1,1645878808,47,"hostname"
+?/vm.pro
+|2,1,1645878663,47,"vm.pro"
+?/vb.n
+|2,1,1645878576,47,"vb.n"
+?/fl
+|2,1,1645825225,47,"fl"
+?/lflush
+|2,1,1645825151,47,"lflush"
+?/late
+|2,1,1645825132,47,"late"
+?/cleanup
+|2,1,1645822636,47,"cleanup"
+?/flush
+|2,1,1645731059,47,"flush"
+?/latex
+|2,1,1645730262,47,"latex"
+?/syn
+|2,1,1645729798,47,"syn"
+?/syntaxe
+|2,1,1645729794,47,"syntaxe"
+?/tmux
+|2,1,1645654137,47,"tmux"
+?/connec
+|2,1,1645653157,47,"connec"
+?/tm
+|2,1,1645653151,47,"tm"
+?/break
+|2,1,1645650088,47,"break"
+?/rule
+|2,1,1645649524,47,"rule"
+? param
+|2,1,1645622742,,"param"
+?/emoji
+|2,1,1645569041,47,"emoji"
+?/bem
+|2,1,1645470917,47,"bem"
+?/css
+|2,1,1645470910,47,"css"
+
+# Historique expression (chronologie décroissante) :
+=1+2
+|2,2,1647155580,,"1+2"
+=0+1+0
+|2,2,1647161959,,"0+1+0"
+=1+0
+|2,2,1647161572,,"1+0"
+=0
+|2,2,1647161249,,"0"
+=0+0
+|2,2,1647161107,,"0+0"
+=2+2
+|2,2,1647159913,,"2+2"
+=7+7
+|2,2,1647159684,,"7+7"
+=6+8
+|2,2,1647159615,,"6+8"
+=5 + 7
+|2,2,1647157888,,"5 + 7"
+=10%2
+|2,2,1635529077,,"10%2"
+= 0f1diw
+|2,2,1635527785,," 0f1diw"
+= 4*4
+|2,2,1635527397,," 4*4"
+= 123 / 2
+|2,2,1635527025,," 123 / 2"
+=2*3
+|2,2,1635527008,,"2*3"
+=9*16
+|2,2,1635526970,,"9*16"
+
+# Historique ligne de saisie (chronologie décroissante) :
+@touch latex-arrays-figures.md
+|2,3,1645873140,,"touch latex-arrays-figures.md"
+@vifm
+|2,3,1645822302,,"vifm"
+@echo salut
+|2,3,1645822278,,"echo salut"
+@[{y(es)},n(o),a(ll),q(uit)] y
+|2,3,1645269084,,"[{y(es)},n(o),a(ll),q(uit)] y"
+@y
+|2,3,1645266692,,"y"
+@test.md
+|2,3,1645226411,,"test.md"
+@basics-template.tex
+|2,3,1645195154,,"basics-template.tex"
+@/Users/sebastientraber/Google Drive/vimwiki/shell/bash/bash-regexp.md
+|2,3,1645133559,,"/Users/sebastientraber/Google Drive/vimwiki/shell/bash/bash-regexp.md"
+@/Users/sebastientraber/Google Drive/vimwiki/shell/latex/latex-basics.md
+|2,3,1645128566,,"/Users/sebastientraber/Google Drive/vimwiki/shell/latex/latex-basics.md"
+@/Users/sebastientraber/Google Drive/vimwiki/db/09-Webdon.md
+|2,3,1645117506,,"/Users/sebastientraber/Google Drive/vimwiki/db/09-Webdon.md"
+@/Users/sebastientraber/Google Drive/vimwiki/db/08-No-SQL.md
+|2,3,1645117474,,"/Users/sebastientraber/Google Drive/vimwiki/db/08-No-SQL.md"
+@template.tex
+|2,3,1645107145,,"template.tex"
+@n
+|2,3,1645091273,,"n"
+@Y
+|2,3,1643972346,,"Y"
+@lol
+|2,3,1642146545,,"lol"
+@print
+|2,3,1642146527,,"print"
+@iw"n
+|2,3,1635542764,,"iw\"n"
+@8.10.2021 cool
+|2,3,1633184653,,"8.10.2021 cool"
+@9.10.2021 hello
+|2,3,1633184606,,"9.10.2021 hello"
+@TE
+|2,3,1633184577,,"TE"
+@- [x] xo
+|2,3,1633184266,,"- [x] xo"
+@[ ] truc
+|2,3,1633184244,,"[ ] truc"
+@truc
+|2,3,1633184199,,"truc"
+@N
+|2,3,1633184148,,"N"
+@Préparer le jdr
+|2,3,1633183924,,"Préparer le jdr"
+@10:00-11:00 jdr avec Loïs
+|2,3,1633183792,,"10:00-11:00 jdr avec Loïs"
+@hello
+|2,3,1633183729,,"hello"
+@calendrier 2021
+|2,3,1633183711,,"calendrier 2021"
+@jdr
+|2,3,1633183685,,"jdr"
+@TRUC: lol
+|2,3,1633183243,,"TRUC: lol"
+@Truc: jdr
+|2,3,1633183095,,"Truc: jdr"
+@yo
+|2,3,1633124887,,"yo"
+@xxx 08/ hello
+|2,3,1633124788,,"xxx 08/ hello"
+@yop
+|2,3,1633124694,,"yop"
+@08/ hello
+|2,3,1633124555,,"08/ hello"
+@9:00-10:00 jdr
+|2,3,1633123714,,"9:00-10:00 jdr"
+@y$
+|2,3,1633123201,,"y$"
+@echPrint rendu photo
+|2,3,1633123090,,"echPrint rendu photo"
+@JDR 09:00
+|2,3,1633123026,,"JDR 09:00"
+@truc: ml
+|2,3,1633122599,,"truc: ml"
+@looooo
+|2,3,1633122562,,"looooo"
+@ciw yo
+|2,3,1633122505,,"ciw yo"
+@event
+|2,3,1633122454,,"event"
+@yollo
+|2,3,1633122433,,"yollo"
+@k
+|2,3,1633122142,,"k"
+@ ecoPrint
+|2,3,1633122120,," ecoPrint"
+@ecoPrint
+|2,3,1633122068,,"ecoPrint"
+@ecoPrint:  rendre description + photo
+|2,3,1633121967,,"ecoPrint:  rendre description + photo"
+@ecoPrint:  rendre description + photos kjdaflj lafjdlakj lafj ladjfla jljafdl jasl jladfj kadfk jakls kadf j
+|2,3,1633121933,,"ecoPrint:  rendre description + photos kjdaflj lafjdlakj lafj ladjfla jljafdl jasl jladfj kadfk jakls kadf j"
+@ecoPrint: \n  rendre description + photos
+|2,3,1633121909,,"ecoPrint: \\n  rendre description + photos"
+@ecoPrint: rendre description + photos
+|2,3,1633121861,,"ecoPrint: rendre description + photos"
+@jdr 09:00
+|2,3,1633121215,,"jdr 09:00"
+@JDR
+|2,3,1633121174,,"JDR"
+@dkf
+|2,3,1633121140,,"dkf"
+@d
+|2,3,1633121115,,"d"
+@dkfa
+|2,3,1633121114,,"dkfa"
+@jdr 
+|2,3,1633121108,,"jdr "
+@input()
+|2,3,1626200849,,"input()"
+@print('yo)
+|2,3,1626200832,,"print('yo)"
+@print(yo)
+|2,3,1626200812,,"print(yo)"
+
+# Historique Ligne de débogage (chronologie décroissante) :
+
+# Registres :
+"0	LINE	0
+	- `console.log()` todo
+|3,0,0,1,1,0,1647170143,"- `console.log()` todo"
+"1	LINE	0
+	⚠️  git reset supprime l'historique
+|3,0,1,1,1,0,1647207010,"⚠️  git reset supprime l'historique"
+"2	LINE	0
+	la console
+|3,0,2,1,1,0,1647170598,"la console"
+"3	LINE	0
+	
+|3,0,3,1,1,0,1647170427,""
+"4	LINE	0
+	__fonctions fléchées__
+|3,0,4,1,1,0,1647170426,"__fonctions fléchées__"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1647169941,""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1647169941,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1647169940,""
+"8	LINE	0
+	## Modules
+|3,0,8,1,1,0,1647169931,"## Modules"
+"9	LINE	0
+	les boucles 
+|3,0,9,1,1,0,1647169799,"les boucles "
+"a	LINE	0
+	:exe 'norm "wyiw "wp'
+|3,0,10,1,1,0,1647159096,":exe 'norm \"wyiw \"wp'"
+"e	CHAR	0
+	0
+|3,0,14,0,1,0,1647163397,"0"
+"h	CHAR	0
+	h
+|3,0,17,0,1,0,1635451434,"h"
+"j	CHAR	0
+	�k1j
+|3,0,19,0,1,0,1643467285,"�k1j"
+"k	CHAR	0
+	511
+<jhhhhhvlwwwwwwhhdlwpgqqkjjllllllllllllllvlllllllllllllldwpkkjjggjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkgqqkgqqkjgqqkjkgqqjjkgqqkjjgqqkjllllllllxkjgqqkgqqkjllllllllllll$a|jjkkgqqkjjjjjukjjjjjklllllllllllllllllllllllllllllllllllllllllllll$xhhhhhhhhhhhhhhhhhhhhhhhhhhvwwwwwllldhhhhhhhhhhhpkjgqqkjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhvlllllllllllllldlpkjgqqkjhhhhhhhhhhhhhhhkkaownerjigroupjhhhhiotherkkbbbbciwulllllllllllllciwUserhhhrujhhhhhhhhhhhxxxxjkgqqjyxxxxxgqqkkjjkj
+|3,0,20,0,1,0,1636052393,>510
+|<"jhhhhhvlwwwwwwhhdlwpgqqkjjllllllllllllllvlllllllllllllldwpkkjjggjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkgqqkgqqkjgqqkjkgqqjjkgqqkjjgqqkjllllllllxkjgqqkgqqkjllllllllllll$a|jjkkgqqkjjjjjukjjjjjklllllllllllllllllllllllllllllllllllllllllllll$xhhhhhhhhhhhhhhhhhhhhhhhhhhvwwwwwllldhhhhhhhhhhhpkjgqqkjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhvlllllllllllllldlpkjgqqkjhhhhhhhhhhhhhhhkkaownerjigroupjhhhhiotherkkbbbbciwulllllllllllllciwUserhhhrujhhhhhhhhhhhxxxxjkgqq
+|<jyxxxxxgqqkkjjkj"
+"l	CHAR	0
+	x
+|3,0,21,0,1,0,1645344143,"x"
+"q	LINE	0
+	03f,l"wyiwf,l"eyiw$a,=r+w+e��a"ryiwj@q
+|3,0,26,1,1,0,1647162118,"03f,l\"wyiwf,l\"eyiw$a,=r+w+e��a\"ryiwj@q"
+"r	CHAR	0
+	2904
+|3,0,27,0,1,0,1647163397,"2904"
+"w	CHAR	0
+	4
+|3,0,32,0,1,0,1647163397,"4"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1647205537," "
+
+# Marques dans le fichier :
+'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
+|4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
+'0  138  0  ~/Google Drive/vimwiki/shell/vim/vim-basics.md
+|4,48,138,0,1647207618,"~/Google Drive/vimwiki/shell/vim/vim-basics.md"
+'1  270  0  ~/Google Drive/vimwiki/shell/git/git-manual.md
+|4,49,270,0,1647207618,"~/Google Drive/vimwiki/shell/git/git-manual.md"
+'2  1  0  ~/Documents/karen_js/js-cheatsheet.md
+|4,50,1,0,1647172213,"~/Documents/karen_js/js-cheatsheet.md"
+'3  20  6  ~/Desktop/index.html
+|4,51,20,6,1647169246,"~/Desktop/index.html"
+'4  27  22  ~/Google Drive/vimwiki/prog/js/webDevMobile.md
+|4,52,27,22,1647167975,"~/Google Drive/vimwiki/prog/js/webDevMobile.md"
+'5  1  0  ~/Google Drive/vimwiki/prog/js/js-cheatsheet.md
+|4,53,1,0,1647164627,"~/Google Drive/vimwiki/prog/js/js-cheatsheet.md"
+'6  15  0  ~/Desktop/results_test.csv
+|4,54,15,0,1647164586,"~/Desktop/results_test.csv"
+'7  22  4  ~/Google Drive/vimwiki/common/note.md
+|4,55,22,4,1647160250,"~/Google Drive/vimwiki/common/note.md"
+'8  123  0  ~/Google Drive/vimwiki/shell/vim/vim-basics.md
+|4,56,123,0,1647157372,"~/Google Drive/vimwiki/shell/vim/vim-basics.md"
+'9  6  0  ~/Google Drive/vimwiki/common/note.md
+|4,57,6,0,1647155456,"~/Google Drive/vimwiki/common/note.md"
+
+# Liste de sauts (le plus récent en premier) :
+-'  138  0  ~/Google Drive/vimwiki/shell/vim/vim-basics.md
+|4,39,138,0,1647207618,"~/Google Drive/vimwiki/shell/vim/vim-basics.md"
+-'  270  0  ~/Google Drive/vimwiki/shell/git/git-manual.md
+|4,39,270,0,1647207618,"~/Google Drive/vimwiki/shell/git/git-manual.md"
+-'  23  7  ~/Google Drive/vimwiki/shell/git/git-manual.md
+|4,39,23,7,1647206619,"~/Google Drive/vimwiki/shell/git/git-manual.md"
+-'  222  2  ~/Google Drive/vimwiki/shell/git/git-manual.md
+|4,39,222,2,1647206615,"~/Google Drive/vimwiki/shell/git/git-manual.md"
+-'  75  2  ~/Google Drive/vimwiki/index.md
+|4,39,75,2,1647206612,"~/Google Drive/vimwiki/index.md"
+-'  67  0  ~/Google Drive/vimwiki/index.md
+|4,39,67,0,1647206610,"~/Google Drive/vimwiki/index.md"
+-'  534  0  ~/Google Drive/vimwiki/shell/cli/docker.md
+|4,39,534,0,1647206607,"~/Google Drive/vimwiki/shell/cli/docker.md"
+-'  533  0  ~/Google Drive/vimwiki/shell/cli/docker.md
+|4,39,533,0,1647206604,"~/Google Drive/vimwiki/shell/cli/docker.md"
+-'  255  9  ~/dotfiles/vim/.vim/vimrc
+|4,39,255,9,1647205163,"~/dotfiles/vim/.vim/vimrc"
+-'  100  0  ~/Google Drive/vimwiki/shell/cli/docker.md
+|4,39,100,0,1647205131,"~/Google Drive/vimwiki/shell/cli/docker.md"
+-'  69  1  ~/Google Drive/vimwiki/index.md
+|4,39,69,1,1647205115,"~/Google Drive/vimwiki/index.md"
+-'  41  2  ~/Google Drive/vimwiki/index.md
+|4,39,41,2,1647205081,"~/Google Drive/vimwiki/index.md"
+-'  1  0  ~/Documents/karen_js/js-cheatsheet.md
+|4,39,1,0,1647172213,"~/Documents/karen_js/js-cheatsheet.md"
+-'  93  99  ~/Documents/karen_js/js-cheatsheet.md
+|4,39,93,99,1647172213,"~/Documents/karen_js/js-cheatsheet.md"
+-'  1  0  ~/Documents/karen_js/js-cheatsheet.md
+|4,39,1,0,1647172213,"~/Documents/karen_js/js-cheatsheet.md"
+-'  93  99  ~/Documents/karen_js/js-cheatsheet.md
+|4,39,93,99,1647172213,"~/Documents/karen_js/js-cheatsheet.md"
+-'  20  6  ~/Desktop/index.html
+|4,39,20,6,1647169246,"~/Desktop/index.html"
+-'  20  6  ~/Desktop/index.html
+|4,39,20,6,1647169246,"~/Desktop/index.html"
+-'  1  0  ~/Desktop/index.html
+|4,39,1,0,1647168941,"~/Desktop/index.html"
+-'  1  0  ~/Desktop/index.html
+|4,39,1,0,1647168941,"~/Desktop/index.html"
+-'  27  22  ~/Google Drive/vimwiki/prog/js/webDevMobile.md
+|4,39,27,22,1647167975,"~/Google Drive/vimwiki/prog/js/webDevMobile.md"
+-'  27  22  ~/Google Drive/vimwiki/prog/js/webDevMobile.md
+|4,39,27,22,1647167975,"~/Google Drive/vimwiki/prog/js/webDevMobile.md"
+-'  27  22  ~/Google Drive/vimwiki/prog/js/webDevMobile.md
+|4,39,27,22,1647167975,"~/Google Drive/vimwiki/prog/js/webDevMobile.md"
+-'  27  22  ~/Google Drive/vimwiki/prog/js/webDevMobile.md
+|4,39,27,22,1647167975,"~/Google Drive/vimwiki/prog/js/webDevMobile.md"
+-'  41  2  ~/Google Drive/vimwiki/index.md
+|4,39,41,2,1647167966,"~/Google Drive/vimwiki/index.md"
+-'  41  2  ~/Google Drive/vimwiki/index.md
+|4,39,41,2,1647167966,"~/Google Drive/vimwiki/index.md"
+-'  197  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,197,0,1647167956,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  197  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,197,0,1647167956,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  197  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,197,0,1647167956,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  197  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,197,0,1647167956,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  190  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,190,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  188  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,188,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  186  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,186,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  175  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,175,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  190  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,190,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  188  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,188,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  186  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,186,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  175  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,175,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  190  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,190,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  188  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,188,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  186  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,186,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  175  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,175,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  190  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,190,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  188  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,188,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  186  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,186,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  175  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,175,0,1647167952,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  173  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,173,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  169  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,169,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  166  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,166,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  164  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,164,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  160  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,160,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  158  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,158,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  156  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,156,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  154  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,154,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  148  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,148,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  146  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,146,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  144  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,144,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  173  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,173,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  169  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,169,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  166  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,166,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  164  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,164,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  160  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,160,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  158  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,158,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  156  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,156,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  154  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,154,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  148  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,148,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  146  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,146,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  144  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,144,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  173  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,173,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  169  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,169,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  166  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,166,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  164  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,164,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  160  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,160,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  158  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,158,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  156  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,156,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  154  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,154,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  148  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,148,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  146  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,146,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  144  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,144,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  173  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,173,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  169  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,169,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  166  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,166,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  164  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,164,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  160  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,160,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  158  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,158,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  156  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,156,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  154  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,154,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  148  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,148,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  146  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,146,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  144  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,144,0,1647167951,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  138  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,138,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  136  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,136,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  134  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,134,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  138  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,138,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  136  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,136,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  134  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,134,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  138  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,138,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  136  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,136,0,1647167950,"~/Google Drive/vimwiki/prog/js/js-animation.md"
+-'  134  0  ~/Google Drive/vimwiki/prog/js/js-animation.md
+|4,39,134,0,16471
