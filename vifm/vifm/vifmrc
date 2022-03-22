@@ -183,6 +183,12 @@ fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 " PostScript
 filetype {*.ps,*.eps,*.ps.gz},<application/postscript> open -a Preview.app
 
+" markdown
+filetype *.md,*.markdown vim
+
+" tex
+filetype *.tex,*.latex vim
+
 " Djvu
 filetype {*.djvu},<image/vnd.djvu> open -a MacDjView.app
 
@@ -217,14 +223,14 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
 
 " Web
 filetype {*.html,*.htm},<text/html>
+       \ {Open in vim}
+       \ vim,
        \ {Open in Safari}
        \ open -a Safari.app,
        \ {Open in Firefox}
        \ open -a Firefox.app,
        \ {Open in Chrome}
        \ open -a Google\ Chrome.app,
-       \ {Open in vim}
-       \ vim,
 fileviewer {*.html,*.htm},<text/html> w3m -dump -T text/html
 
 " Object
