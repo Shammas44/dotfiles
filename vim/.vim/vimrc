@@ -118,6 +118,7 @@
     " open/close NERDTree
     nnoremap <leader>n :NERDTreeToggle<cr>
     nnoremap <leader><leader> /
+    nnoremap <leader>m :MarkdownPreview<cr>
     " Open fzf
     nnoremap <leader>ff :FZF<cr>
     " allow to idenify colorHighlight group of current cursor position
