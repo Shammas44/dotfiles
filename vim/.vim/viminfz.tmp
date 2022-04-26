@@ -1,0 +1,360 @@
+# Ce fichier viminfo a été généré par Vim 8.2.
+# Vous pouvez l'éditer, mais soyez prudent.
+
+# Viminfo version
+|1,4
+
+# 'encoding' dans lequel ce fichier a été écrit
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Dernier motif de recherche  :
+~MSle0~/vue
+
+# Dernier motif de recherche Substitue  :
+~MSle0&extensionName
+
+# Dernières chaînes de substitution :
+$bash
+
+# Historique ligne de commande (chronologie décroissante) :
+:!panrun %
+|2,0,1650906247,,"!panrun %"
+:w
+|2,0,1650906245,,"w"
+:q
+|2,0,1650905688,,"q"
+:set spell
+|2,0,1650902338,,"set spell"
+:x
+|2,0,1650895916,,"x"
+:!cheats laravel @foreach | mdless
+|2,0,1650721231,,"!cheats laravel @foreach | mdless"
+:!cheats laravel @foreach
+|2,0,1650721219,,"!cheats laravel @foreach"
+:!cheats vim window | mdless
+|2,0,1650721184,,"!cheats vim window | mdless"
+:!cheats vim window
+|2,0,1650721168,,"!cheats vim window"
+:vs
+|2,0,1650624785,,"vs"
+:%s/extensionName/bash/
+|2,0,1650624499,,"%s/extensionName/bash/"
+:bd
+|2,0,1650560709,,"bd"
+:split
+|2,0,1650554118,,"split"
+:mar
+|2,0,1650443445,,"mar"
+:MarkdownPreview
+|2,0,1650198991,,"MarkdownPreview"
+:bd!
+|2,0,1650115397,,"bd!"
+:e form.md
+|2,0,1650114656,,"e form.md"
+:e authentification.md
+|2,0,1650114523,,"e authentification.md"
+:MarkdownPreviewToggle
+|2,0,1650101703,,"MarkdownPreviewToggle"
+:set nu
+|2,0,1649957788,,"set nu"
+:s/ language-js/javascript/
+|2,0,1649957259,,"s/ language-js/javascript/"
+:%s/ language-js/javascript/
+|2,0,1649957242,,"%s/ language-js/javascript/"
+:%s/ language-bash/bash/
+|2,0,1649957083,,"%s/ language-bash/bash/"
+:%s/ language-ts/typescript/
+|2,0,1649957067,,"%s/ language-ts/typescript/"
+:%s/language-ts/typescript/g
+|2,0,1649956999,,"%s/language-ts/typescript/g"
+:e truc.html
+|2,0,1649956816,,"e truc.html"
+:'<,'>norm I- 
+|2,0,1649934905,,"'<,'>norm I- "
+:'<,'>norm $a`
+|2,0,1649584258,,"'<,'>norm $a`"
+:let b:quitting_bang = 1 | q!
+|2,0,1649518699,,"let b:quitting_bang = 1 | q!"
+:h rnu
+|2,0,1649518408,,"h rnu"
+:set rnu
+|2,0,1649518395,,"set rnu"
+:h nu
+|2,0,1649518360,,"h nu"
+:set number
+|2,0,1649518350,,"set number"
+:set relativenumber
+|2,0,1649518188,,"set relativenumber"
+:q!
+|2,0,1649518082,,"q!"
+:Vifm
+|2,0,1649451375,,"Vifm"
+:'<,'>g/__/norm $a:
+|2,0,1649365871,,"'<,'>g/__/norm $a:"
+:'<,'>norm $a,
+|2,0,1649365392,,"'<,'>norm $a,"
+:'<,'>norm $i,
+|2,0,1649365376,,"'<,'>norm $i,"
+:'<,'>norm 0x
+|2,0,1649365350,,"'<,'>norm 0x"
+:vifm
+|2,0,1649144200,,"vifm"
+:e docker-dockerfile.md
+|2,0,1649143815,,"e docker-dockerfile.md"
+:!qa
+|2,0,1649023772,,"!qa"
+:'<,'>s/^- /\* /
+|2,0,1649012727,,"'<,'>s/^- /\\* /"
+:'<,'>s/^- /\*- /
+|2,0,1649012711,,"'<,'>s/^- /\\*- /"
+:'<,'>s/^- /\*-/
+|2,0,1649012687,,"'<,'>s/^- /\\*-/"
+:.!pwd
+|2,0,1648919667,,".!pwd"
+:BufOnly
+|2,0,1648921210,,"BufOnly"
+:Buffers
+|2,0,1648920688,,"Buffers"
+:'<,'>g/^__/norm 0laWorksop 
+|2,0,1648920479,,"'<,'>g/^__/norm 0laWorksop "
+:'<,'>norm i	
+|2,0,1648913442,,"'<,'>norm i	"
+:e ~/Google\ Drive/vimwiki/index.md
+|2,0,1648891824,,"e ~/Google\\ Drive/vimwiki/index.md"
+:'<,'>s/utilisateur/entrée/g
+|2,0,1648894530,,"'<,'>s/utilisateur/entrée/g"
+:w<F1
+|2,0,1648828337,,"w<F1"
+:'<,'>q
+|2,0,1648468125,,"'<,'>q"
+:set fileencoding=utf8
+|2,0,1648461058,,"set fileencoding=utf8"
+:set filetype=tex
+|2,0,1647726760,,"set filetype=tex"
+:set fileformat=latex
+|2,0,1647726749,,"set fileformat=latex"
+:'<,'>norm I%
+|2,0,1647726687,,"'<,'>norm I%"
+:'<,'>I%
+|2,0,1647726674,,"'<,'>I%"
+:20
+|2,0,1647726512,,"20"
+:.! echo salut
+|2,0,1647681392,,".! echo salut"
+:.!tree
+|2,0,1647681360,,".!tree"
+:%s/student/match/g
+|2,0,1647550502,,"%s/student/match/g"
+:%s/students/matchs/g
+|2,0,1647550240,,"%s/students/matchs/g"
+:'<,'>v/switzerland/d
+|2,0,1647549955,,"'<,'>v/switzerland/d"
+:reg
+|2,0,1647549718,,"reg"
+:e ~/Documents/HEIG/HEIG2/15-devProdMed/ProgrammeJour04_20220314/02_Programme/ProgrammeJour4.md
+|2,0,1647537962,,"e ~/Documents/HEIG/HEIG2/15-devProdMed/ProgrammeJour04_20220314/02_Programme/ProgrammeJour4.md"
+:%s/^#//
+|2,0,1647537861,,"%s/^#//"
+:g/^#//
+|2,0,1647537843,,"g/^#//"
+:'<,'>norm I- `jkeEa`jklxi 
+|2,0,1647512661,,"'<,'>norm I- `jkeEa`jklxi "
+:'<,'>norm I- `jkeEa`
+|2,0,1647511768,,"'<,'>norm I- `jkeEa`"
+:'<,'>norm I- `
+|2,0,1647511623,,"'<,'>norm I- `"
+:reg q
+|2,0,1647245375,,"reg q"
+:reg r
+|2,0,1647245365,,"reg r"
+:h <expr>
+|2,0,1647162890,,"h <expr>"
+:h expr
+|2,0,1647162831,,"h expr"
+:%v/switzerland/d
+|2,0,1647160314,,"%v/switzerland/d"
+:'<,'>norm 10@q
+|2,0,1647159941,,"'<,'>norm 10@q"
+:'<,'>
+|2,0,1647159841,,"'<,'>"
+::exe 'norm"wyiwcc\<C-R>='
+|2,0,1647159477,,":exe 'norm\"wyiwcc\\<C-R>='"
+:exe 'norm"wyiwcc'
+|2,0,1647159447,,"exe 'norm\"wyiwcc'"
+:exe 'norm"wyiwcc\<C-R>=\<C-R>w + \<C-R>e\<CR>"eyiwj@q'
+|2,0,1647159412,,"exe 'norm\"wyiwcc\\<C-R>=\\<C-R>w + \\<C-R>e\\<CR>\"eyiwj@q'"
+:exe "norm I\<C-R>=\<C-R>e + \<C-R>w\<CR>"
+|2,0,1647158119,,"exe \"norm I\\<C-R>=\\<C-R>e + \\<C-R>w\\<CR>\""
+:exe norm "I\<C-R>=\<C-R>e + \<C-R>w\<CR>"
+|2,0,1647158103,,"exe norm \"I\\<C-R>=\\<C-R>e + \\<C-R>w\\<CR>\""
+:exe "norm :.!echo \<c-r>*\<cr>"
+|2,0,1647156745,,"exe \"norm :.!echo \\<c-r>*\\<cr>\""
+:exe "norm :.!echo \<ctrl-r>*\<cr>"
+|2,0,1647156600,,"exe \"norm :.!echo \\<ctrl-r>*\\<cr>\""
+:h exe
+|2,0,1647156321,,"h exe"
+:v/programmes/d
+|2,0,1647155449,,"v/programmes/d"
+:h :v
+|2,0,1647155276,,"h :v"
+:dadff
+|2,0,1647089487,,"dadff"
+:!
+|2,0,1647027156,,"!"
+:set foldignore=
+|2,0,1646513174,,"set foldignore="
+:%s/\t/    /
+|2,0,1646513020,,"%s/\\t/    /"
+:'<,'>%s/^\t//
+|2,0,1646513000,,"'<,'>%s/^\\t//"
+:'<,'>%s/^\t/    /g
+|2,0,1646512995,,"'<,'>%s/^\\t/    /g"
+:'<,'>%s/^\t/\ \ \ \/
+|2,0,1646512974,,"'<,'>%s/^\\t/\\ \\ \\ \\/"
+:'<,'>%s/^\t/    /
+|2,0,1646512939,,"'<,'>%s/^\\t/    /"
+:set foldnestmax=1
+|2,0,1646512853,,"set foldnestmax=1"
+:set foldmethod=indent
+|2,0,1646512835,,"set foldmethod=indent"
+
+# Historique chaîne de recherche (chronologie décroissante) :
+?/vue
+|2,1,1650895923,47,"vue"
+?/class
+|2,1,1650750128,47,"class"
+?/type
+|2,1,1650750124,47,"type"
+?/lara
+|2,1,1650725814,47,"lara"
+? extensionName
+|2,1,1650624499,,"extensionName"
+?/bash
+|2,1,1650624237,47,"bash"
+?/itera
+|2,1,1650576155,47,"itera"
+?/typesc
+|2,1,1650576149,47,"typesc"
+?/destruc
+|2,1,1650544690,47,"destruc"
+?/js
+|2,1,1650544678,47,"js"
+?/javascr
+|2,1,1650544676,47,"javascr"
+?/templ
+|2,1,1650460915,47,"templ"
+?/only
+|2,1,1650460829,47,"only"
+?/middle
+|2,1,1650460534,47,"middle"
+?/larav
+|2,1,1650443428,47,"larav"
+?/dynami
+|2,1,1650364630,47,"dynami"
+?/java
+|2,1,1650364617,47,"java"
+?/enum
+|2,1,1650297811,47,"enum"
+?/tm
+|2,1,1650210801,47,"tm"
+?/computed
+|2,1,1650238047,47,"computed"
+?/push
+|2,1,1650238039,47,"push"
+?/route
+|2,1,1650199811,47,"route"
+?/la
+|2,1,1650197587,47,"la"
+?/rename
+|2,1,1650197256,47,"rename"
+?/list
+|2,1,1650137335,47,"list"
+?/dump
+|2,1,1650122360,47,"dump"
+?/migrate
+|2,1,1650119539,47,"migrate"
+?/tinker
+|2,1,1650118726,47,"tinker"
+?/seed
+|2,1,1650116240,47,"seed"
+?/git
+|2,1,1650114929,47,"git"
+?/cli
+|2,1,1650114923,47,"cli"
+?/inner
+|2,1,1650120535,47,"inner"
+?/sq
+|2,1,1650120462,47,"sq"
+?/PRA
+|2,1,1650113401,47,"PRA"
+?/PRAGMA
+|2,1,1650113385,47,"PRAGMA"
+?/relation
+|2,1,1650113099,47,"relation"
+?/seeder
+|2,1,1650112883,47,"seeder"
+?/mdp
+|2,1,1650102527,47,"mdp"
+?//
+|2,1,1650102408,47,"/"
+?/array
+|2,1,1650031205,47,"array"
+?/arrow
+|2,1,1650013801,47,"arrow"
+?/optiona
+|2,1,1649968399,47,"optiona"
+?/obj
+|2,1,1649965635,47,"obj"
+?  language-js
+|2,1,1649957259,," language-js"
+?  language-bash
+|2,1,1649957083,," language-bash"
+?  language-ts
+|2,1,1649957067,," language-ts"
+? language-ts
+|2,1,1649956999,,"language-ts"
+?/check
+|2,1,1649922785,47,"check"
+?/dumpautoload
+|2,1,1649670139,47,"dumpautoload"
+?/rolback
+|2,1,1649604464,47,"rolback"
+?/authen
+|2,1,1649584761,47,"authen"
+?/power
+|2,1,1649521678,47,"power"
+?/react
+|2,1,1649518640,47,"react"
+?/rnu
+|2,1,1649518309,47,"rnu"
+?/powe
+|2,1,1649451615,47,"powe"
+? __
+|2,1,1649365871,,"__"
+??01
+|2,1,1649357537,63,"01"
+?/kjjjjj
+|2,1,1649357531,47,"kjjjjj"
+?/sni
+|2,1,1649357528,47,"sni"
+?/debug
+|2,1,1649357524,47,"debug"
+?/variables
+|2,1,1649357521,47,"variables"
+?/06
+|2,1,1649357515,47,"06"
+?/10
+|2,1,1649357509,47,"10"
+?/11
+|2,1,1649357495,47,"11"
+?/kkj
+|2,1,1649357483,47,"kkj"
+?/basics
+|2,1,1649357476,47,"basics"
+?/basicà
+|2,1,1649357472,47,"basicà"
+?/transaction
+|2,1,16493132
