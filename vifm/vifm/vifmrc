@@ -186,6 +186,9 @@ filetype {*.ps,*.eps,*.ps.gz},<application/postscript> open -a Preview.app
 " markdown
 filetype *.md,*.markdown vim
 
+" javascript
+filetype *.js,*.ts,*.vue,*.jsx vim
+
 " tex
 filetype *.tex,*.latex vim
 
