@@ -1,0 +1,15 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "sh",
+    "sql",
+    "typescript",
+    "yaml",
+    "vue"
+  ],
+  "codeLens.enable": true,
+  "yaml.format.enable": true
+}

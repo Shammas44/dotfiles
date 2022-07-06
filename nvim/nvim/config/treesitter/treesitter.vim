@@ -18,7 +18,10 @@ lua << EOF
       "html",
       "javascript",
       "json",
-      "yaml"
+      "yaml",
+      "php",
+      "typescript",
+      "vue"
     },
   }
 EOF

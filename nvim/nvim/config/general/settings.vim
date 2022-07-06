@@ -107,8 +107,146 @@ set formatoptions-=cro
 set clipboard=unnamedplus
 
 " Spell check
-set spell spelllang=en_us,pl
+set spell spelllang=fr,en_us
+set nospell
 
 " Auto source while writing to init.vim
-au! BufWritePost $MYVIMRC source %      
+au! BufWritePost ~/dotfiles/nvim/nvim/init-ts.vim source %      
 cmap w!! w !sudo tee %
+
+" enable fold saving
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
+
+" vim doesn't lose selection anymore when using indentation 
+vnoremap < <gv
+vnoremap > >gv
+
+" PWD always follows the file I'm editing.
+set autochdir
+
+"==============================================================================
+    " Search 
+    "==========================================================================
+
+    " Ignore la casse lors d'une recherche
+    set ignorecase
+    " Si une recherche contient une majuscule, re-active la sensibilite a la casse
+    set smartcase
+    " Surligne les resultats de recherche pendant la saisie 
+    set incsearch
+    " Surligne les resultats de recherche
+    set hlsearch
+    " Permet à vim de rechercher des fichiers dans les sous répertoires du projet
+    set path+=**
+
+"==============================================================================
+    " Templates 
+    "==========================================================================
+
+    :autocmd BufNewFile *.md 0r ~/.vim/templates/template.md
+
+"==============================================================================
+    " Sign 
+    "==========================================================================
+
+    sign define piet text= texthl=Folded linehl=
+    " :exe ":sign place 2 line=23 name=piet file=" . expand("%:p")
+
+"==============================================================================
+    " Emoji shortcuts 
+    "==========================================================================
+
+    ab :check: ✅
+    ab :warning: ⚠️
+    ab :bulb: 💡
+    ab :pushpin: 📌
+    ab :bomb: 💣
+    ab :pill: 💊
+    ab :construction: 🚧
+    ab :pencil: 📝
+    ab :point_right: 👉
+    ab :book: 📖
+    ab :link: 🔗
+    ab :wrench: 🔧
+    ab :telephone: 📞
+    ab :email: 📧
+    ab :computer: 💻
+    ab :book: 📚
+    ab :gem: 💎
+    ab :boom: 💥
+    ab :!: ❗
+    ab :?: ❓
+    ab :cross: 𐄂
+    ab :tick: ✓
+
+"==============================================================================
+    " BufOnly command - Delete all the buffers except the current/named buffer. 
+    "==========================================================================
+
+    " Usage:
+
+    " :Bonly / :BOnly / :Bufonly / :BufOnly [buffer]
+
+    " Without any arguments the current buffer is kept.  With an argument the
+    " buffer name/number supplied is kept.
+
+    command! -nargs=? -complete=buffer -bang Bonly
+                \ :call BufOnly('<args>', '<bang>')
+    command! -nargs=? -complete=buffer -bang BOnly
+                \ :call BufOnly('<args>', '<bang>')
+    command! -nargs=? -complete=buffer -bang Bufonly
+                \ :call BufOnly('<args>', '<bang>')
+    command! -nargs=? -complete=buffer -bang BufOnly
+                \ :call BufOnly('<args>', '<bang>')
+
+    function! BufOnly(buffer, bang)
+        if a:buffer == ''
+            " No buffer provided, use the current buffer.
+            let buffer = bufnr('%')
+        elseif (a:buffer + 0) > 0
+            " A buffer number was provided.
+            let buffer = bufnr(a:buffer + 0)
+        else
+            " A buffer name was provided.
+            let buffer = bufnr(a:buffer)
+        endif
+
+        if buffer == -1
+            echohl ErrorMsg
+            echomsg "No matching buffer for" a:buffer
+            echohl None
+            return
+        endif
+
+        let last_buffer = bufnr('$')
+
+        let delete_count = 0
+        let n = 1
+        while n <= last_buffer
+            if n != buffer && buflisted(n)
+                if a:bang == '' && getbufvar(n, '&modified')
+                    echohl ErrorMsg
+                    echomsg 'No write since last change for buffer'
+                                \ n '(add ! to override)'
+                    echohl None
+                else
+                    silent exe 'bdel' . a:bang . ' ' . n
+                    if ! buflisted(n)
+                        let delete_count = delete_count+1
+                    endif
+                endif
+            endif
+            let n = n+1
+        endwhile
+
+        if delete_count == 1
+            echomsg delete_count "buffer deleted"
+        elseif delete_count > 2
+            echomsg delete_count "buffers deleted"
+        endif
+
+    endfunction
