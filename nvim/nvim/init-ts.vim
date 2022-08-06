@@ -16,7 +16,7 @@ call plug#begin()
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'mhinz/vim-startify'
   Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
   Plug 'tpope/vim-fugitive'

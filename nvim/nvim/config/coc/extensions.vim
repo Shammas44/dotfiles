@@ -15,6 +15,7 @@ let g:coc_global_extensions = [
       \ 'coc-vetur',
       \ 'coc-phpls',
       \ 'coc-python',
+      \ 'coc-pyright',
       \ 'coc-snippets',
       \ 'coc-dot-complete',
       \ 'coc-docker',
@@ -22,3 +23,5 @@ let g:coc_global_extensions = [
       \ 'coc-floaterm',
       \ 'coc-powershell',
       \ ]
+
+
