@@ -45,6 +45,9 @@ vnoremap ∆ :m '<-2<cr>gv=gv
 :command Tex w | !pdflatex --shell-escape %
 nnoremap <leader>x :Tex<cr>
 
+" Execute current file with python3
+nnoremap <leader>p :!python3 %<cr>
+
 " Open vifm
 nnoremap <leader>v :Vifm<cr>
 
