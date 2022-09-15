@@ -121,6 +121,8 @@
     nnoremap <leader>m :MarkdownPreview<cr>
     " Open fzf
     nnoremap <leader>ff :FZF<cr>
+    " paste without clearing register
+    xnoremap<leader>p \"_dp
     " allow to idenify colorHighlight group of current cursor position
     map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
                 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
