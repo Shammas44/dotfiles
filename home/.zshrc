@@ -96,7 +96,7 @@
 #==============================================================================
     # Oh-my-zsh plugins 
     #==========================================================================
-    plugins=(zsh-vi-mode git history fzf)
+    plugins=(vi-mode git history fzf)
     source $ZSH/oh-my-zsh.sh
     # required to make both fzf and zsh-vi-mode works
     zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
