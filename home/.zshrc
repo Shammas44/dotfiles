@@ -96,7 +96,7 @@
 #==============================================================================
     # Oh-my-zsh plugins 
     #==========================================================================
-    plugins=(vi-mode git history fzf)
+    plugins=(zsh-vi-mode git history fzf)
     source $ZSH/oh-my-zsh.sh
     # required to make both fzf and zsh-vi-mode works
     zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
@@ -153,8 +153,7 @@
     #==========================================================================
     alias zshrc="${editor} ~/.zshrc"
     alias ohmyzsh="${editor} ~/.oh-my-zsh"
-    alias srczsh='source ~/.zshrc'
-    alias src='source ~/.zshrc'
+    alias srczsh="source ~/.zshrc"
 #==============================================================================
     # Alias posgresql 
     #==========================================================================
