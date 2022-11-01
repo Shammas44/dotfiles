@@ -1,5 +1,8 @@
 " Key binding for Neovim out of the box.
 
+" exit terminal mode
+tnoremap <C-j> <C-\><C-n>
+
 " More handy insert mode exit
 inoremap jk <Esc>
 inoremap kj <Esc>

@@ -1,7 +1,7 @@
 " Configuration for Neovim Gruvbox theme.
 
 " toogle Goyo
-nnoremap <Leader>g :Goyo<CR>
+nnoremap <Leader>gg :Goyo<CR>
 
 function! s:goyo_enter()
   let b:quitting = 0

@@ -2,11 +2,10 @@
 "
 " @author Maciej Bedra
 
-" Key binding used to launch fuzzy finder (file search)
-nmap <C-_> <cmd>Telescope find_files<CR>
-
-" Key binding used to launch fuzzy finder (text occurrence)
-nmap <C-_><C-_> <cmd>Telescope live_grep<CR>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Telescope defaults.
 lua << EOF

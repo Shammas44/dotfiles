@@ -192,6 +192,7 @@
     alias svim='vim -u ~/.SpaceVim/vimrc'
     alias f="vifm"
 	alias nvim-js='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-ts.vim'
+	alias nvim-py='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-py.vim'
     alias note="vim ~/Google\ Drive/vimwiki/common/note.md"
 
     # @descritpion open chosen vim wiki
