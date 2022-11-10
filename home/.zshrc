@@ -7,24 +7,23 @@
 #==============================================================================
 	# .zshrc - configuration file for zsh shell 
 	#==========================================================================
-
 	# call to neofetch command allowing to display system info at zsh launch
 	# neofetch
 	# Path to your oh-my-zsh installation.
 	export ZSH="/Users/sebastientraber/.oh-my-zsh"
 	export DIR="$(pwd)"
 	export PATH=$PATH:~/bin:/Applications/Postgres.app/Contents/Versions/12/bin:/usr/local/bin:/usr/local/opt/icu4c/bin:/Users/sebastientraber/Library/Python/3.9/bin:/usr/texbin:/usr/local/sbin/:~/.gem/ruby/2.3.0/bin:$HOME/.composer/vendor/bin
+
 #==============================================================================
 	# Set default text editor 
 	#==========================================================================
-
 	export EDITOR="vim"
 	export VISUAL="vim"
 	editor="vim"
+
 #==============================================================================
     # Zsh theme 
     #==========================================================================
-
     # Set name of the theme to load --- if set to "random", it will
     # load a random theme each time oh-my-zsh is loaded, in which case,
     # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -36,6 +35,7 @@
     # If set to an empty array, this variable will have no effect.
     # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
     ZSH_THEME="robbyrussell"
+
 #==============================================================================
     # Zsh options 
     #==========================================================================
@@ -99,13 +99,16 @@
     plugins=(zsh-vi-mode git history fzf)
     source $ZSH/oh-my-zsh.sh
     # required to make both fzf and zsh-vi-mode works
-    zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+    zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh && bindkey "©" fzf-file-widget')
+	export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude .git"
+	export FZF_CTRL_T_OPTS="--height=100% --layout=reverse --preview 'bat --color=always --line-range :50 {}'"
+	export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
     # fzf: CTRL-T allow file search
     # fzf: CTRL-R allow history research
+
 #==============================================================================
     # User configuration 
     #==========================================================================
-
     # export MANPATH="/usr/local/man:$MANPATH"
 
     # You may need to manually set your language environment
@@ -120,10 +123,12 @@
 
     # Compilation flags
     # export ARCHFLAGS="-arch x86_64"
+
 #==============================================================================
     # At Startup
     #==========================================================================
 	#node --no-warnings ~/bin/vimtipsdaily.js
+
 #        _ _
 #   __ _| (_) __ _ ___
 #  / _` | | |/ _` / __|
@@ -133,7 +138,6 @@
 #==============================================================================
     # Alias general 
     #==========================================================================
-
     # Permet de charger le contenu du/des fichier(s) suivant(s)
     if [ -e $HOME/.zsh_criticalAliases ]; then
     	source $HOME/.zsh_criticalAliases
@@ -148,12 +152,14 @@
     alias tmux="TERM=screen-256color-bce tmux"
     alias cheatv="cheat -p vimwiki"
 	alias ip="ipconfig getifaddr en0"
+
 #==============================================================================
     # Alias zsh 
     #==========================================================================
     alias zshrc="${editor} ~/.zshrc"
     alias ohmyzsh="${editor} ~/.oh-my-zsh"
     alias srczsh="source ~/.zshrc"
+
 #==============================================================================
     # Alias posgresql 
     #==========================================================================
@@ -164,6 +170,7 @@
     	pg_ctl -D ~/Library/Application\ Support/Postgres/var-12 start
     	psql $dbName
     }
+
 #==============================================================================
     # Alias mamp 
     #==========================================================================
@@ -171,6 +178,7 @@
     alias mstop="/Applications/MAMP/bin/stop.sh && terminal-notifier -title 'Terminal' -message 'MAMP Servers Stopped'"
     alias openmamp='open -j /Applications/MAMP/MAMP.app/ && terminal-notifier -title "Terminal" -message "MAMP Opened"'
     alias localhost='chrome http://localhost:8888/'
+
 #==============================================================================
     # Alias directory quick acces 
     #==========================================================================
@@ -179,6 +187,9 @@
     alias ind='cd ~/Library/Preferences/Adobe\ InDesign/Version\ 16.0/fr_FR/Scripts/Scripts\ Panel'
     alias gdrive='cd ~/Google\ Drive'
     alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I ncurses'
+	function fcd () { [ -f "$1" ] && { cd "$(dirname "$1")"; } || { cd "$1"; } ; pwd; }
+	alias cd=fcd
+
 #==============================================================================
     # Alias vim 
     #==========================================================================
@@ -232,10 +243,10 @@
     }
 
     alias json="python -m json.tool"
+
 #==============================================================================
     # Tmux 
     #==========================================================================
-
     function tmuxnew() {
     	tmux new -s $1
     }
@@ -247,20 +258,20 @@
     	tmux kill-session -t $1
     }
     alias tmuxkillall="tmux ls |cut -d:-f1 | xargs -I {} tmux kill-session -t {}"
+
 #==============================================================================
     # Functions 
     #==========================================================================
-
     if type brew &>/dev/null; then
     	FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
     	autoload -Uz compinit
     	compinit
     fi
+
 #==============================================================================
     # Spaceship const 
     #==========================================================================
-
     SPACESHIP_PROMPT_ADD_NEWLINE="true"
     SPACESHIP_CHAR_SYMBOL="\uf0e7"
     SPACESHIP_CHAR_PREFIX="\uf296"
@@ -272,10 +283,10 @@
 
     eval "$(navi widget zsh)"
     eval "$(rbenv init -)"
+
 #==============================================================================
     # VIFM 
     #==========================================================================
-
     vifm() {
     	if [ -f ~/dotfiles/vifm/vifm/lastdir ]; then
     		rm ~/dotfiles/vifm/vifm/lastdir
@@ -286,10 +297,10 @@
     		cd "$(cat ~/dotfiles/vifm/vifm/lastdir)"
     	fi
     }
+
 #==============================================================================
     # Cheat 
     #==========================================================================
-
     # $1 = tag
     # $2 = search query
     cheats() {
@@ -298,18 +309,21 @@
     	echo "$result"
     }
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/sebastientraber/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/sebastientraber/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+#==============================================================================
+    # Conda  
+    #==========================================================================
+	# >>> conda initialize >>>
+	# !! Contents within this block are managed by 'conda init' !!
+	__conda_setup="$('/Users/sebastientraber/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+	if [ $? -eq 0 ]; then
+		eval "$__conda_setup"
+	else
+		if [ -f "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+			. "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh"
+		else
+			export PATH="/Users/sebastientraber/opt/anaconda3/bin:$PATH"
+		fi
+	fi
+	unset __conda_setup
+	# <<< conda initialize <<<
 
