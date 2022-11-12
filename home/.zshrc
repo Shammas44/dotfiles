@@ -105,6 +105,8 @@
 	export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
     # fzf: CTRL-T allow file search
     # fzf: CTRL-R allow history research
+    # 'fzf-tmux -r 30%': open fzf in a tmux pane on the right side occuping 30% of available space 
+    # 'fzf-tmux -l 30%': open fzf in a tmux pane on the left side occuping 30% of available space 
 
 #==============================================================================
     # User configuration 
