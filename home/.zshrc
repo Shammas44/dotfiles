@@ -13,6 +13,7 @@
 	export ZSH="/Users/sebastientraber/.oh-my-zsh"
 	export DIR="$(pwd)"
 	export PATH=$PATH:~/bin:/Applications/Postgres.app/Contents/Versions/12/bin:/usr/local/bin:/usr/local/opt/icu4c/bin:/Users/sebastientraber/Library/Python/3.9/bin:/usr/texbin:/usr/local/sbin/:~/.gem/ruby/2.3.0/bin:$HOME/.composer/vendor/bin
+	export PATH=/Users/sebastientraber/.local/bin:$PATH
 
 #==============================================================================
 	# Set default text editor 
@@ -196,6 +197,7 @@
     # Alias vim 
     #==========================================================================
     alias v="vim"
+    alias lvim="/Users/sebastientraber/.local/bin/lvim"
     alias vimrc="${editor} ~/.vim/vimrc"
     alias nvimrc="${editor} ~/.config/nvim/init.vim"
     alias vimplug="cd ~/.vim/pack/plugins/start"
