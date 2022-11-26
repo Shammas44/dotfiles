@@ -1,0 +1,23 @@
+{
+  "name": "nvim-snippets",
+  "author": "Sébastien Traber",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./markdown.json"
+      },
+      {
+        "language": "python",
+        "path": "./python.json"
+      },
+      {
+        "language": "vimwiki",
+        "path": "./vimwiki.json"
+      }
+    ]
+  }
+}
