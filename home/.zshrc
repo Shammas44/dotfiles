@@ -18,9 +18,9 @@
 #==============================================================================
 	# Set default text editor 
 	#==========================================================================
-	export EDITOR="vim"
-	export VISUAL="vim"
-	editor="vim"
+	export EDITOR="lvim"
+	export VISUAL="lvim"
+	editor="lvim"
 
 #==============================================================================
     # Zsh theme 
@@ -196,7 +196,7 @@
 #==============================================================================
     # Alias vim 
     #==========================================================================
-    alias v="vim"
+    alias v="${editor}"
     alias lvim="/Users/sebastientraber/.local/bin/lvim"
     alias vimrc="${editor} ~/.vim/vimrc"
     alias nvimrc="${editor} ~/.config/nvim/init.vim"
@@ -208,20 +208,20 @@
     alias f="vifm"
 	alias nvim-js='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-ts.vim'
 	alias nvim-py='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-py.vim'
-    alias note="vim ~/Google\ Drive/vimwiki/common/note.md"
+    alias note="${editor} ~/Google\ Drive/vimwiki/common/note.md"
 
     # @descritpion open chosen vim wiki
     # @param $1 vimwiki number, default value is 1
     function wiki() {
     	if [[ "$1" -eq "1" ]]; then
     		cd ~/Google\ Drive/vimwiki
-    		vim ~/Google\ Drive/vimwiki/index.md
+    		"${editor}" ~/Google\ Drive/vimwiki/index.md
     	elif [[ "$1" -eq "2" ]]; then
     		cd ~/Documents/HEIG
-    		vim ~/Documents/HEIG/index.md
+    		"${editor}" ~/Documents/HEIG/index.md
     	else
     		cd ~/Google\ Drive/vimwiki
-    		vim ~/Google\ Drive/vimwiki/index.md
+    		"${editor}" ~/Google\ Drive/vimwiki/index.md
     	fi
     }
     alias w="~/dotfiles/vim/.vim/getIndex.ps1 && wiki"
@@ -262,6 +262,22 @@
     	tmux kill-session -t $1
     }
     alias tmuxkillall="tmux ls |cut -d:-f1 | xargs -I {} tmux kill-session -t {}"
+
+    # $1?: socket name
+    # $2?: config name
+    function tmuxnewsocket() {
+      local socket="$1"
+      local config="$2"
+      if [ -z "$socket" ] 
+      then
+        socket=$(date '+%s')
+      fi
+      if [ -z "$config" ] 
+      then
+        config=~/dotfiles/home/.tmux2.conf
+      fi
+      tmux -L "$socket" -f "$config"
+    }
 
 #==============================================================================
     # Functions 
@@ -307,10 +323,21 @@
     #==========================================================================
     # $1 = tag
     # $2 = search query
-    cheats() {
-    	local output=$(cheat -t "personal,$1" -s "$2")
-    	local result=$(echo "$output" | sed '/2m(personal)/d')
-    	echo "$result"
+    # cheats() {
+    # 	local output=$(cheat -t "personal,$1" -s "$2")
+    # 	local result=$(echo "$output" | sed '/2m(personal)/d')
+    # 	echo "$result"
+    # }
+
+	# TODO: convert case sensitive regexp in vim to \C
+    cheatsheet() {
+    	local output=$(cheats --topic "$1" --search "$2")
+		if [ -z "$output" ] 
+		then
+			echo "No cheatsheet available !"
+		else
+			"${editor}" -c "set filetype=markdown|set nospell|vimgrep ${2} %|copen" -R <(echo "$output")
+		fi
     }
 
 #==============================================================================

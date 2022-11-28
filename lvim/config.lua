@@ -1,55 +1,33 @@
---[[
-lvim is the global options object
+--                   __ _         _
+--   ___ ___  _ __  / _(_) __ _  | |_   _  __ _
+--  / __/ _ \| '_ \| |_| |/ _` | | | | | |/ _` |
+-- | (_| (_) | | | |  _| | (_| |_| | |_| | (_| |
+--  \___\___/|_| |_|_| |_|\__, (_)_|\__,_|\__,_|
+--                        |___/
 
-Linters should be
-filled in as strings with either
-a global executable or a path to
-an executable
-]]
--- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
--- general
+--===========================================================================
+-- Lvim options
+--=======================================================================
 
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = false
 lvim.colorscheme = "gruvbox"
--- to disable icons and use a minimalist setup, uncomment the following
--- lvim.use_icons = false
-
--- keymappings [view all the defaults by pressing <leader>Lk]
+lvim.use_icons = true
 lvim.leader = "space"
--- add your own keymapping
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<Leader>j"] = ":ToggleTerm<cr>"
-lvim.keys.normal_mode["<Leader>z"] = ":ZenMode<cr>"
-lvim.keys.normal_mode["<Leader><Leader>"] = "/"
 
--- local function map(mode, lhs, rhs, opts)
---     local options = { noremap = true, silent = true }
---     if opts then
---         if opts.desc then
---             opts.desc = "keymaps.lua: " .. opts.desc
---         end
---         options = vim.tbl_extend('force', options, opts)
---     end
---     vim.keymap.set(mode, lhs, rhs, options)
--- end
+-- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
+lvim.builtin.alpha.active = true
+lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.terminal.active = true
+lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+-- Change theme settings
+-- lvim.builtin.theme.options.dim_inactive = true
+-- lvim.builtin.theme.options.style = "storm"
 
-
-vim.cmd("nmap è [")
-vim.cmd("nmap ¨ ]")
-vim.cmd("omap è [")
-vim.cmd("omap ¨ ]")
-vim.cmd("xmap è [")
-vim.cmd("xmap ¨ ]")
-
-
--- lvim.plugins
--- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
--- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
--- unmap a default keymapping
--- vim.keymap.del("n", "<C-Up>")
--- override a default keymapping
--- lvim.keys.normal_mode["<C-q>"] = ":q<cr>" -- or vim.keymap.set("n", "<C-q>", ":q<cr>" )
+--===========================================================================
+-- Telescope Settings
+--=======================================================================
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
@@ -69,9 +47,9 @@ vim.cmd("xmap ¨ ]")
 --   },
 -- }
 
--- Change theme settings
--- lvim.builtin.theme.options.dim_inactive = true
--- lvim.builtin.theme.options.style = "storm"
+--===========================================================================
+-- Which-key
+--=======================================================================
 
 -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
@@ -85,13 +63,9 @@ vim.cmd("xmap ¨ ]")
 --   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
 -- }
 
--- TODO: User Config for predefined plugins
--- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.alpha.active = true
-lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+--===========================================================================
+-- TreeSitter
+--=======================================================================
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -155,7 +129,10 @@ lvim.builtin.treesitter.highlight.enable = true
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
 
--- -- set a formatter, this will override the language server formatting capabilities (if it exists)
+--===========================================================================
+-- Formatter
+--=======================================================================
+
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { command = "black", filetypes = { "python" } },
@@ -171,7 +148,10 @@ formatters.setup {
   },
 }
 
--- -- set additional linters
+--===========================================================================
+-- Linters
+--=======================================================================
+
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
   { command = "flake8", filetypes = { "python" } },
@@ -193,8 +173,12 @@ linters.setup {
   },
 }
 
--- Additional Plugins
+--===========================================================================
+-- Additionals Plugins
+--=======================================================================
+
 lvim.plugins = {
+  { "vifm/vifm.vim" },
   { "tpope/vim-unimpaired" },
   { "tpope/vim-surround" },
   { "ellisonleao/gruvbox.nvim" },
@@ -260,6 +244,18 @@ lvim.plugins = {
   }
 }
 
+--===========================================================================
+-- Usercommands
+--=======================================================================
+
+vim.api.nvim_create_user_command('SayHello', function()
+  vim.cmd(':!echo hello')
+end, { nargs = '*' })
+
+--===========================================================================
+-- Autocommands
+--=======================================================================
+
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*" },
   command = "set nospell",
@@ -278,10 +274,13 @@ vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
   command = "silent! lua vim.keymap.set('n', '<leader>J', ':call mkdx#JumpToHeader()<CR>')",
 })
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--   pattern = { "*.lua" },
+--   command = "set foldmethod=indent |" ..
+--       "set foldcolumn=2 |" ..
+--       "set foldnestmax=1"
+-- })
 
-vim.api.nvim_create_user_command('SayHello', function()
-  vim.cmd(':!echo hello')
-end, { nargs = '*' })
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.json", "*.jsonc" },
@@ -297,25 +296,68 @@ end, { nargs = '*' })
 -- })
 --
 
-------------------------
+--===========================================================================
+-- Remapings
+--=======================================================================
+
+-- unmap a default keymapping
+-- vim.keymap.del("n", "<C-Up>")
+
+-- override a default keymapping
+-- lvim.keys.normal_mode["<C-q>"] = ":q<cr>" -- or vim.keymap.set("n", "<C-q>", ":q<cr>" )
+
+-- local function map(mode, lhs, rhs, opts)
+--     local options = { noremap = true, silent = true }
+--     if opts then
+--         if opts.desc then
+--             opts.desc = "keymaps.lua: " .. opts.desc
+--         end
+--         options = vim.tbl_extend('force', options, opts)
+--     end
+--     vim.keymap.set(mode, lhs, rhs, options)
+-- end
+
+lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["<Leader>z"] = ":ZenMode<cr>"
+lvim.keys.normal_mode["<Leader><Leader>"] = "/"
+lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm<cr>"
+
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>')
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('c', 'jk', '<Esc>')
+
+vim.cmd("nmap è [")
+vim.cmd("nmap ¨ ]")
+vim.cmd("omap è [")
+vim.cmd("omap ¨ ]")
+vim.cmd("xmap è [")
+vim.cmd("xmap ¨ ]")
+
+--===========================================================================
 -- My own config options
-------------------------
+--=======================================================================
 
 vim.opt.rnu = true
 vim.opt.clipboard = ""
-vim.keymap.set('t', '<Esc><Esc><Esc>', '<C-\\><C-n>:ToggleTerm<cr>')
-vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>')
+vim.opt.wrap = true -- Display long lines on multiples lines
+vim.opt.linebreak = true -- Avoid word beaing cut on wrap
+-- vim.opt.smartcase = true
+-- vim.opt.ignorecase = false
+-- vim.opt.shiftwidth = 4 -- Indentation insert x spaces
+-- vim.opt.tabstop = 4 -- default width of a tab
 
-
-
-------------------------
--- Usefully stuff to know
-------------------------
+--===========================================================================
+-- Usefull stuff to know
+--=======================================================================
 
 -- launch live-server with autoreload
 -- npx live-server --quiet &
 
 lvim.builtin.dap.active = true
+
+--===========================================================================
+-- Abreviations
+--=======================================================================
 
 vim.cmd('ab :check: ✅')
 vim.cmd('ab :warning: ⚠️')

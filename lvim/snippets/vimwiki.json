@@ -9,6 +9,23 @@
     ],
     "description": "Crée un block de code"
   },
+  "img": {
+    "prefix": "img",
+    "body": [
+      "![${1:alt}](${2:path/to/file})",
+      "$0"
+    ],
+    "description": "Insérer une image"
+  },
+  "imgref": {
+    "prefix": "imgref",
+    "body": [
+      "![${1:alt}][${2:path/to/file}]",
+      "[$2]:<${3:link}>",
+      "$0"
+    ],
+    "description": "Insérer une référence d'image"
+  },
   "array 1 col": {
     "prefix": "arr1",
     "body": [
@@ -18,11 +35,85 @@
     ],
     "description": "Crée un tableau de 1 colonne"
   },
-  "hello": {
-    "prefix": "hello",
+  "array 2 col": {
+    "prefix": "arr2",
     "body": [
-      "Hello, World!"
+      "|     |     |",
+      "|:---:|:---:|",
+      "|     |     |"
     ],
-    "description": "print Hello, World!"
+    "description": "Crée un tableau de 2 colonne"
+  },
+  "array 3 col": {
+    "prefix": "arr3",
+    "body": [
+      "|     |     |     |",
+      "|:---:|:---:|:---:|",
+      "|     |     |     |"
+    ],
+    "description": "Crée un tableau de 3 colonne"
+  },
+  "array 4 col": {
+    "prefix": "arr4",
+    "body": [
+      "|     |     |     |     |",
+      "|:---:|:---:|:---:|:---:|",
+      "|     |     |     |     |"
+    ],
+    "description": "Crée un tableau de 4 colonne"
+  },
+  "array 5 col": {
+    "prefix": "arr5",
+    "body": [
+      "|     |     |     |     |     |",
+      "|:---:|:---:|:---:|:---:|:---:|",
+      "|     |     |     |     |     |"
+    ],
+    "description": "Crée un tableau de 5 colonne"
+  },
+  "array 6 col": {
+    "prefix": "arr6",
+    "body": [
+      "|     |     |     |     |     |     |",
+      "|:---:|:---:|:---:|:---:|:---:|:---:|",
+      "|     |     |     |     |     |     |"
+    ],
+    "description": "Crée un tableau de 6 colonne"
+  },
+  "array 7 col": {
+    "prefix": "arr7",
+    "body": [
+      "|     |     |     |     |     |     |     |",
+      "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|",
+      "|     |     |     |     |     |     |     |"
+    ],
+    "description": "Crée un tableau de 7 colonne"
+  },
+  "array 8 col": {
+    "prefix": "arr8",
+    "body": [
+      "|     |     |     |     |     |     |     |     |",
+      "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|",
+      "|     |     |     |     |     |     |     |     |"
+    ],
+    "description": "Crée un tableau de 8 colonne"
+  },
+  "array 9 col": {
+    "prefix": "arr9",
+    "body": [
+      "|     |     |     |     |     |     |     |     |     |",
+      "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|",
+      "|     |     |     |     |     |     |     |     |     |"
+    ],
+    "description": "Crée un tableau de 9 colonne"
+  },
+  "array 10 col": {
+    "prefix": "arr10",
+    "body": [
+      "|     |     |     |     |     |     |     |     |     |     |",
+      "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|",
+      "|     |     |     |     |     |     |     |     |     |     |"
+    ],
+    "description": "Crée un tableau de 10 colonne"
   }
 }
