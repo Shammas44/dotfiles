@@ -83,12 +83,18 @@ lvim.builtin.treesitter.ensure_installed = {
   "yaml",
   "markdown",
   "markdown_inline",
+  "astro"
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
--- generic LSP settings
+--===========================================================================
+-- Generic LSP settings
+--=======================================================================
+
+-- require'lspconfig'.astro.setup{}
+require("lvim.lsp.manager").setup("astro")
 
 -- -- make sure server will always be installed even if the server is in skipped_servers list
 -- lvim.lsp.installer.setup.ensure_installed = {
@@ -135,7 +141,7 @@ lvim.builtin.treesitter.highlight.enable = true
 
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
-  { command = "black", filetypes = { "python" } },
+  -- { command = "black", filetypes = { "python" } },
   { command = "isort", filetypes = { "python" } },
   {
     -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
@@ -154,14 +160,14 @@ formatters.setup {
 
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
-  { command = "flake8", filetypes = { "python" } },
-  {
-    -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
-    command = "shellcheck",
-    ---@usage arguments to pass to the formatter
-    -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
-    extra_args = { "--severity", "warning" },
-  },
+  -- { command = "flake8", filetypes = { "python" } },
+  -- {
+  --   -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+  --   command = "shellcheck",
+  --   ---@usage arguments to pass to the formatter
+  --   -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+  --   extra_args = { "--severity", "warning" },
+  -- },
   -- {
   --   command = "codespell",
   --   ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
@@ -178,10 +184,22 @@ linters.setup {
 --=======================================================================
 
 lvim.plugins = {
+  -- { "wuelnerdotexe/vim-astro",
+  --   config = function()
+  --   vim.go['astro_typescript'] = 'enable'
+  --   end
+  -- },
+  { "mattn/emmet-vim" },
+  { "tpope/vim-repeat" },
   { "vifm/vifm.vim" },
   { "tpope/vim-unimpaired" },
   { "tpope/vim-surround" },
   { "ellisonleao/gruvbox.nvim" },
+  { "nvim-treesitter/nvim-treesitter-angular",
+    config = function()
+      require("lvim.lsp.manager").setup("angularls")
+    end
+  },
   { "folke/zen-mode.nvim",
     config = function()
       require("zen-mode").setup {
@@ -273,6 +291,10 @@ vim.api.nvim_create_autocmd("BufEnter", {
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
   command = "silent! lua vim.keymap.set('n', '<leader>J', ':call mkdx#JumpToHeader()<CR>')",
+})
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = { "*.astro" },
+  command = "silent! luas vim.filetype.add({ extension = { astro = 'astro' } })",
 })
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.lua" },
@@ -385,3 +407,6 @@ vim.cmd('ab :tick: ✓')
 vim.cmd('ab :key: 🔑')
 vim.cmd('ab :lock: 🔒')
 vim.cmd('ab :lock+key: 🔐')
+
+vim.g['loaded_perl_provider'] = 0
+vim.g['loaded_ruby_provider'] = 0
