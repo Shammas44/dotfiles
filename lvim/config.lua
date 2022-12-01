@@ -75,7 +75,6 @@ lvim.builtin.treesitter.ensure_installed = {
   "json",
   "lua",
   "python",
-  "typescript",
   "tsx",
   "css",
   "rust",
@@ -94,7 +93,7 @@ lvim.builtin.treesitter.highlight.enable = true
 --=======================================================================
 
 -- require'lspconfig'.astro.setup{}
-require("lvim.lsp.manager").setup("astro")
+-- require("lvim.lsp.manager").setup("astro")
 
 -- -- make sure server will always be installed even if the server is in skipped_servers list
 -- lvim.lsp.installer.setup.ensure_installed = {
@@ -291,10 +290,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
   command = "silent! lua vim.keymap.set('n', '<leader>J', ':call mkdx#JumpToHeader()<CR>')",
-})
-vim.api.nvim_create_autocmd("BufEnter", {
-  pattern = { "*.astro" },
-  command = "silent! luas vim.filetype.add({ extension = { astro = 'astro' } })",
 })
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.lua" },
