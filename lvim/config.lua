@@ -21,9 +21,9 @@ lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
--- Change theme settings
--- lvim.builtin.theme.options.dim_inactive = true
--- lvim.builtin.theme.options.style = "storm"
+
+-- to disable icons and use a minimalist setup, uncomment the following
+-- lvim.use_icons = false
 
 --===========================================================================
 -- Telescope Settings
@@ -75,6 +75,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "json",
   "lua",
   "python",
+  "typescript",
   "tsx",
   "css",
   "rust",
@@ -82,7 +83,6 @@ lvim.builtin.treesitter.ensure_installed = {
   "yaml",
   "markdown",
   "markdown_inline",
-  "astro"
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -91,9 +91,6 @@ lvim.builtin.treesitter.highlight.enable = true
 --===========================================================================
 -- Generic LSP settings
 --=======================================================================
-
--- require'lspconfig'.astro.setup{}
--- require("lvim.lsp.manager").setup("astro")
 
 -- -- make sure server will always be installed even if the server is in skipped_servers list
 -- lvim.lsp.installer.setup.ensure_installed = {
@@ -141,16 +138,8 @@ lvim.builtin.treesitter.highlight.enable = true
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   -- { command = "black", filetypes = { "python" } },
-  { command = "isort", filetypes = { "python" } },
-  {
-    -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
-    command = "prettier",
-    ---@usage arguments to pass to the formatter
-    -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
-    extra_args = { "--print-with", "100" },
-    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "typescript", "typescriptreact" },
-  },
+  -- { command = "isort", filetypes = { "python" } },
+  { command = "prettier", extra_args = { "--print-with", "100" }, filetypes = { "typescript", "typescriptreact" } },
 }
 
 --===========================================================================
@@ -163,13 +152,10 @@ linters.setup {
   -- {
   --   -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
   --   command = "shellcheck",
-  --   ---@usage arguments to pass to the formatter
-  --   -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
   --   extra_args = { "--severity", "warning" },
   -- },
   -- {
   --   command = "codespell",
-  --   ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
   --   filetypes = { "javascript", "python" },
   -- },
   {
@@ -194,11 +180,11 @@ lvim.plugins = {
   { "tpope/vim-unimpaired" },
   { "tpope/vim-surround" },
   { "ellisonleao/gruvbox.nvim" },
-  { "nvim-treesitter/nvim-treesitter-angular",
-    config = function()
-      require("lvim.lsp.manager").setup("angularls")
-    end
-  },
+  -- { "nvim-treesitter/nvim-treesitter-angular",
+  --   config = function()
+  --     require("lvim.lsp.manager").setup("angularls")
+  --   end
+  -- },
   { "folke/zen-mode.nvim",
     config = function()
       require("zen-mode").setup {
@@ -250,8 +236,7 @@ lvim.plugins = {
   },
   { 'vimwiki/vimwiki',
     config = function()
-      -- set to 0 to prevent vimwiki consider every md files as vimwiki files
-      vim.g['vimwiki_global_ext'] = 0
+      vim.g['vimwiki_global_ext'] = 0 -- 0 prevent vimwiki consider every md files as vimwiki files
       vim.g['vimwiki_folding'] = 'custom'
       vim.g['vimwiki_list'] = {
         { path = '~/Google\\ Drive/vimwiki/', syntax = 'markdown', index = 'index', ext = '.md' },
@@ -311,7 +296,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
---
 
 --===========================================================================
 -- Remapings
