@@ -114,6 +114,7 @@ lvim.builtin.treesitter.highlight.enable = true
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pyright", opts)
+require("lvim.lsp.manager").setup("angularls")
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. !!Requires `:LvimCacheReset` to take effect!!
 -- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
@@ -158,10 +159,10 @@ linters.setup {
   --   command = "codespell",
   --   filetypes = { "javascript", "python" },
   -- },
-  {
-    command = "eslint",
-    filetypes = { "javascript", "typescript" },
-  },
+  -- {
+  --   command = "eslint",
+  --   filetypes = { "javascript", "typescript" },
+  -- },
 }
 
 --===========================================================================
@@ -169,22 +170,13 @@ linters.setup {
 --=======================================================================
 
 lvim.plugins = {
-  -- { "wuelnerdotexe/vim-astro",
-  --   config = function()
-  --   vim.go['astro_typescript'] = 'enable'
-  --   end
-  -- },
   { "mattn/emmet-vim" },
   { "tpope/vim-repeat" },
   { "vifm/vifm.vim" },
   { "tpope/vim-unimpaired" },
   { "tpope/vim-surround" },
   { "ellisonleao/gruvbox.nvim" },
-  -- { "nvim-treesitter/nvim-treesitter-angular",
-  --   config = function()
-  --     require("lvim.lsp.manager").setup("angularls")
-  --   end
-  -- },
+  { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
   { "folke/zen-mode.nvim",
     config = function()
       require("zen-mode").setup {
