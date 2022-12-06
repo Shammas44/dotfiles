@@ -154,7 +154,7 @@
     alias words='cat /usr/share/dict/words'
     alias tmux="TERM=screen-256color-bce tmux"
     alias cheatv="cheat -p vimwiki"
-	alias ip="ipconfig getifaddr en0"
+	  alias ip="ipconfig getifaddr en0"
 
 #==============================================================================
     # Alias zsh 
@@ -206,8 +206,8 @@
     alias srcvimrc='source ~/.vim/.vimrc'
     alias svim='vim -u ~/.SpaceVim/vimrc'
     alias f="vifm"
-	alias nvim-js='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-ts.vim'
-	alias nvim-py='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-py.vim'
+	  alias nvim-js='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-ts.vim'
+	  alias nvim-py='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-py.vim'
     alias note="${editor} ~/Google\ Drive/vimwiki/common/note.md"
 
     # @descritpion open chosen vim wiki
@@ -336,7 +336,7 @@
 		then
 			echo "No cheatsheet available !"
 		else
-			"${editor}" -c "set filetype=markdown|set nospell|vimgrep ${2} %|copen" -R <(echo "$output")
+			"${editor}" -c "set filetype=vimwiki|set nospell|vimgrep ${2} %|copen" -R <(echo "$output")
 		fi
     }
 

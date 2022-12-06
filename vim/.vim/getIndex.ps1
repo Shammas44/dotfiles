@@ -1,6 +1,6 @@
 #!/usr/local/microsoft/powershell/7/pwsh
 $indexFilePath = '~/Google Drive/vimwiki/index.md' 
-$cwd = pwd
+$cwd = Get-location
 Set-Location '~/Google Drive/vimwiki/'
 $items = Get-ChildItem -path "~/Google Drive/vimwiki/*.md" -Recurse -Exclude "index.md" | Sort-Object
 $lastDirectory = ''
