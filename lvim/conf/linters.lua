@@ -10,8 +10,8 @@ linters.setup {
   --   command = "codespell",
   --   filetypes = { "javascript", "python" },
   -- },
-  -- {
-  --   command = "eslint",
-  --   filetypes = { "javascript", "typescript" },
-  -- },
+  {
+    command = "eslint",
+    filetypes = { "javascript", "typescript" },
+  },
 }

@@ -16,6 +16,7 @@ vim.opt.rnu = true
 vim.opt.clipboard = ""
 vim.opt.wrap = true -- Display long lines on multiples lines
 vim.opt.linebreak = true -- Avoid word beaing cut on wrap
+-- vim.opt.colorcolumn = 80 -- Display a vertical line at X column
 -- vim.opt.smartcase = true
 -- vim.opt.ignorecase = false
 -- vim.opt.shiftwidth = 4 -- Indentation insert x spaces
