@@ -190,8 +190,8 @@
     alias ind='cd ~/Library/Preferences/Adobe\ InDesign/Version\ 16.0/fr_FR/Scripts/Scripts\ Panel'
     alias gdrive='cd ~/Google\ Drive'
     alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I ncurses'
-	function fcd () { [ -f "$1" ] && { cd "$(dirname "$1")"; } || { cd "$1"; } ; pwd; }
-	alias cd=fcd
+   	function fcd () { [ -f "$1" ] && { cd "$(dirname "$1")"; } || { cd "$1"; } ; pwd; }
+  	alias cd=fcd
 
 #==============================================================================
     # Alias vim 
@@ -343,18 +343,18 @@
 #==============================================================================
     # Conda  
     #==========================================================================
-	# >>> conda initialize >>>
-	# !! Contents within this block are managed by 'conda init' !!
-	__conda_setup="$('/Users/sebastientraber/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-	if [ $? -eq 0 ]; then
-		eval "$__conda_setup"
-	else
-		if [ -f "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-			. "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh"
-		else
-			export PATH="/Users/sebastientraber/opt/anaconda3/bin:$PATH"
-		fi
-	fi
-	unset __conda_setup
-	# <<< conda initialize <<<
-
+	  # >>> conda initialize >>>
+	  # !! Contents within this block are managed by 'conda init' !!
+	  __conda_setup="$('/Users/sebastientraber/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+	  if [ $? -eq 0 ]; then
+		  eval "$__conda_setup"
+	  else
+		  if [ -f "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+			  . "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh"
+		  else
+			  export PATH="/Users/sebastientraber/opt/anaconda3/bin:$PATH"
+		  fi
+	  fi
+	  unset __conda_setup
+	  # <<< conda initialize <<<
+    export HOMEBREW_NO_AUTO_UPDATE=1
