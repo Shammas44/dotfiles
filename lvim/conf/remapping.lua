@@ -19,10 +19,12 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<Leader>z"] = ":ZenMode<cr>"
 lvim.keys.normal_mode["<Leader><Leader>"] = "/"
 lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm<cr>"
+lvim.keys.normal_mode["<Leader>ww"] = ":!~/dotfiles/vim/.vim/getIndex.ps1<cr> | <Plug>VimwikiIndex"
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>')
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('c', 'jk', '<Esc>')
+vim.keymap.set('v', '<Leader>C', ':ChatGPDEditWithInstructions')
 
 vim.cmd("nmap è [")
 vim.cmd("nmap ¨ ]")

@@ -40,3 +40,5 @@ vim.cmd("source ~/.config/lvim/conf/remapping.lua")
 vim.cmd("source ~/.config/lvim/conf/abbreviations.lua")
 -- Debbuger
 vim.cmd("source ~/.config/lvim/conf/debbugers.lua")
+
+vim.opt.tags.append = { "~/Google\\ Drive/vimwiki/tags.global" }

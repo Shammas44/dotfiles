@@ -577,4 +577,3 @@
     " recognized filetypes
     " these filetypes will have MarkdownPreview... commands
     let g:mkdp_filetypes = ['markdown']
-

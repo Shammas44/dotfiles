@@ -16,6 +16,10 @@ vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
   command = "silent! lua vim.keymap.set('n', '<leader>J', ':call mkdx#JumpToHeader()<CR>')",
 })
+vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost", "BufEnter" }, {
+  pattern = { "*" },
+  command = ":normal zR",
+})
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.lua" },
 --   command = "set foldmethod=indent |" ..
@@ -36,4 +40,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
-

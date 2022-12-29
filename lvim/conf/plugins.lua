@@ -2,6 +2,7 @@
 -- Run :PackerInstall :PackerCompile
 
 lvim.plugins = {
+  {"tpope/vim-obsession"},
   { "mattn/emmet-vim" },
   { "tpope/vim-repeat" },
   { "vifm/vifm.vim" },
@@ -51,6 +52,19 @@ lvim.plugins = {
     end,
   },
   {
+    "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup({
+        -- optional configuration
+      })
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+  },
+  {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
     ft = "markdown",
@@ -69,4 +83,3 @@ lvim.plugins = {
     end,
   }
 }
-

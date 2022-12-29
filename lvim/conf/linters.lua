@@ -14,4 +14,8 @@ linters.setup {
     command = "eslint",
     filetypes = { "javascript", "typescript" },
   },
+  -- {
+  --   command = "markdownlint",
+  --   filetypes = { "markdown" },
+  -- },
 }

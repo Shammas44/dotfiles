@@ -209,6 +209,7 @@
 	  alias nvim-js='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-ts.vim'
 	  alias nvim-py='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-py.vim'
     alias note="${editor} ~/Google\ Drive/vimwiki/common/note.md"
+    export WIKI='/Users/sebastientraber/Google Drive/vimwiki'
 
     # @descritpion open chosen vim wiki
     # @param $1 vimwiki number, default value is 1
@@ -358,3 +359,4 @@
 	  unset __conda_setup
 	  # <<< conda initialize <<<
     export HOMEBREW_NO_AUTO_UPDATE=1
+    export OPENAI_API_KEY=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
