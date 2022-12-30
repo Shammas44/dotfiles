@@ -359,4 +359,3 @@
 	  unset __conda_setup
 	  # <<< conda initialize <<<
     export HOMEBREW_NO_AUTO_UPDATE=1
-    export OPENAI_API_KEY=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
