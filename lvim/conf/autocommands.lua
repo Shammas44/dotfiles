@@ -9,8 +9,8 @@ vim.api.nvim_create_autocmd("BufEnter", {
       ":hi VimwikiItalic cterm=bold ctermfg=175 guifg=#d3869b"
 })
 vim.api.nvim_create_autocmd("BufEnter", {
-  pattern = { "*" },
-  command = "silent! lua vim.keymap.set('n', '<leader>J', ':SayHello<CR>')",
+  pattern = { "*.js" },
+  command = "silent! lua vim.keymap.set('n', '<leader>x', ':!node %<CR>')",
 })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
