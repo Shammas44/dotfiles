@@ -6,11 +6,16 @@ vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
   -- set bold and italics color highlight
   command = ":hi VimwikiBold  cterm=bold ctermfg=208 gui=bold guifg=#fe8019 | " ..
-      ":hi VimwikiItalic cterm=bold ctermfg=175 guifg=#d3869b"
+      ":hi VimwikiItalic cterm=bold ctermfg=175 guifg=#d3869b | " ..
+      "set filetype=vimwiki"
 })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.js" },
   command = "silent! lua vim.keymap.set('n', '<leader>x', ':!node %<CR>')",
+})
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = { "*.c" },
+  command = "silent! lua vim.keymap.set('n', '<leader>x', ':!gcc % && ./a.out<CR>')",
 })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },

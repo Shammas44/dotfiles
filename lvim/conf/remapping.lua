@@ -16,7 +16,7 @@
 -- end
 
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<Leader>z"] = ":ZenMode<cr>"
+lvim.keys.normal_mode["<Leader>Z"] = ":ZenMode<cr>"
 lvim.keys.normal_mode["<Leader><Leader>"] = "/"
 lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm<cr>"
 lvim.keys.normal_mode["<Leader>ww"] = ":!~/dotfiles/vim/.vim/getIndex.ps1<cr> | <Plug>VimwikiIndex"
