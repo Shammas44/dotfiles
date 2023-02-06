@@ -19,7 +19,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
-  command = "silent! lua vim.keymap.set('n', '<leader>J', ':call mkdx#JumpToHeader()<CR>')",
+  command = "silent! lua vim.keymap.set('n', '<leader>J', ':call mkdx#JumpToHeader()<CR>') | " ..
+      "silent! lua vim.keymap.set('v','<Leader>i' , ':<C-U>call mkdx#WrapText('n', g:mkdx#settings.tokens.italic," ..
+      " g:mkdx#settings.tokens.italic, 'mkdx-text-italic-v')<cr>"
 })
 vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost", "BufEnter" }, {
   pattern = { "*" },

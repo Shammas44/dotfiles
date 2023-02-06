@@ -1,15 +1,20 @@
 lvim.builtin.dap.active = true
-
+require('dap').set_log_level('TRACE')
 local dap = require('dap')
 dap.adapters.chrome = {
-  type = "executable",
-  command = "node",
-  args = { os.getenv("HOME") .. "/.local/share/nvim/mason/packages/chrome-debug-adapter/out/src/chromeDebug.js" }
+  type = 'executable',
+  command = 'node',
+  args = { os.getenv('HOME') .. "/.local/share/nvim/mason/packages/chrome-debug-adapter/out/src/chromeDebug.js" }
 }
 dap.adapters.node2 = {
   type = 'executable',
   command = 'node',
   args = { os.getenv('HOME') .. '/.local/share/nvim/mason/packages/node-debug2-adapter/out/src/nodeDebug.js' },
+}
+dap.adapters.firefox = {
+  type = 'executable',
+  command = 'node',
+  args = { os.getenv('HOME') .. '/.local/share/nvim/mason/packages/vscode-firefox-debug/dist/adapter.bundle.js' },
 }
 
 dap.configurations.javascript = {
@@ -40,5 +45,14 @@ dap.configurations.javascript = {
     protocol = "inspector",
     port = 9222,
     webRoot = "${workspaceFolder}"
+  },
+  {
+    name = 'Debug with Firefox',
+    type = 'firefox',
+    request = 'launch',
+    reAttach = true,
+    url = 'http://localhost:8080',
+    webRoot = '${workspaceFolder}',
+    firefoxExecutable = '/usr/bin/firefox'
   }
 }

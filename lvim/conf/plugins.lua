@@ -1,6 +1,5 @@
 -- After changing plugin config exit and reopen LunarVim,
 -- Run :PackerInstall :PackerCompile
-HOME = vim.fn.expand("~/Google Drive/zettelkasten")
 lvim.plugins = {
   { "tpope/vim-obsession" },
   { "mattn/emmet-vim" },
