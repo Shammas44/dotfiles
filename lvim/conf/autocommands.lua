@@ -15,7 +15,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.c" },
-  command = "silent! lua vim.keymap.set('n', '<leader>x', ':!gcc % && ./a.out<CR>')",
+  command = "silent! lua vim.keymap.set('n', '<leader>x', ':!gcc % -o %<.out && %<.out<CR>')",
 })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
