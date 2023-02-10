@@ -13,9 +13,17 @@ vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.js" },
   command = "silent! lua vim.keymap.set('n', '<leader>x', ':!node %<CR>')",
 })
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--   pattern = { "*.c" },
+--   command = "silent! lua vim.keymap.set('n', '<leader>X', '!:grep -o '^.*:' Makefile | grep -o '.*[^:]' | fzf | xargs -I % sh -c 'make %')"
+-- })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.c" },
-  command = "silent! lua vim.keymap.set('n', '<leader>x', ':!gcc % -o %<.out && %<.out<CR>')",
+  callback = function()
+    vim.keymap.set('n','<leader>xd', ':make<CR>')
+    vim.keymap.set('n','<leader>xe', ':make exec<CR>')
+    vim.keymap.set('n','<leader>xx', ':make | make exec<CR>')
+  end
 })
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md" },
