@@ -70,7 +70,10 @@ dap.configurations.cpp = {
     end,
     cwd = '${workspaceFolder}',
     miDebuggerPath = '/usr/local/bin/gdb',
+    targetArchitecture = 'x86_64',
     stopAtEntry = true,
+    filterStdout = true;
+    externalConsole = true,
   },
   {
     name = 'Attach to gdbserver :1234',
@@ -79,7 +82,10 @@ dap.configurations.cpp = {
     MIMode = 'gdb',
     miDebuggerServerAddress = 'localhost:1234',
     miDebuggerPath = '/usr/local/bin/gdb',
+    externalConsole = true,
+    filterStdout = true;
     cwd = '${workspaceFolder}',
+    targetArchitecture = 'x86_64',
     program = function()
       return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
     end,

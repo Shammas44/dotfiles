@@ -42,3 +42,4 @@ vim.cmd("source ~/.config/lvim/conf/abbreviations.lua")
 vim.cmd("source ~/.config/lvim/conf/debbugers.lua")
 
 vim.opt.tags.append = { "~/Google\\ Drive/vimwiki/tags.global" }
+

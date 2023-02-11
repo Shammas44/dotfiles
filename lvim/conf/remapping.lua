@@ -26,7 +26,6 @@ vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('c', 'jk', '<Esc>')
 vim.keymap.set('v', '<Leader>C', ':ChatGPDEditWithInstructions')
 
-
 vim.cmd("nmap è [")
 vim.cmd("nmap ¨ ]")
 vim.cmd("omap è [")
