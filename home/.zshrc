@@ -359,3 +359,4 @@
 	  unset __conda_setup
 	  # <<< conda initialize <<<
     export HOMEBREW_NO_AUTO_UPDATE=1
+
