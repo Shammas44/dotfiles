@@ -22,7 +22,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
     vim.keymap.set('n','<leader>xd', ':make<CR>')
     vim.keymap.set('n','<leader>xe', ':make exec<CR>')
-    vim.keymap.set('n','<leader>xx', ':make | make exec<CR>')
+    vim.keymap.set('n','<leader>xx', ':!make ; make exec<CR>')
   end
 })
 vim.api.nvim_create_autocmd("BufEnter", {
