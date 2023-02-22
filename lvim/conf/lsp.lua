@@ -37,3 +37,16 @@ require("lvim.lsp.manager").setup("angularls")
 --   --Enable completion triggered by <c-x><c-o>
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
+local MY_FQBN = "arduino:avr:nano"
+require("lvim.lsp.manager").setup("arduino_language_server", {
+    cmd = {
+        "arduino-language-server",
+        "-cli-config", "/Users/sebastientraber/Library/Arduino15/arduino-cli.yaml",
+        "-fqbn",
+        MY_FQBN
+    }
+})
+-- require("lvim.lsp.manager").setup("clangd", {
+--     cmd = { "clangd", "--background-index" },
+--     filetypes = { "c", "cpp", "objc", "objcpp", "ino" },
+-- })
