@@ -15,3 +15,5 @@ lvim.builtin.which_key.mappings["m"] = {
   r = { "<cmd>source Session.vim<cr>", "Reload" },
 }
 
+lvim.builtin.which_key.mappings["<Leader>"] = { "/", "search" }
+lvim.builtin.which_key.mappings["H"] = { ":let @@=<C-R><C-W><CR>", "copy Hex" }

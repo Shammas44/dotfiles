@@ -28,15 +28,17 @@ vim.api.nvim_create_autocmd("BufEnter", {
 vim.api.nvim_create_autocmd("BufEnter", {
     pattern = { "*.ino" },
     callback = function()
+      local bash_cmd = "arduino-cli board list | grep arduino | cut -d ' ' -f1"
+      local PORT = vim.fn.systemlist(bash_cmd)[1]
+      PORT = "-p " .. PORT
       local DIR = vim.fn.expand('%:p:h')
-      local PORT = "-p /dev/cu.usbmodem1442201"
       local FQBN = "--fqbn arduino:avr:uno"
       -- compile
       vim.keymap.set('n', '<leader>xc', ':!arduino-cli compile ' .. FQBN .. ' ' .. DIR .. ' <CR>')
       -- upload
       vim.keymap.set('n', '<leader>xu', ':!arduino-cli upload ' .. PORT .. ' ' .. FQBN .. ' ' .. DIR .. ' <CR>')
       -- board list
-      vim.keymap.set('n', '<leader>xb', ':!arduino-cli boars list <CR>')
+      vim.keymap.set('n', '<leader>xb', ':!arduino-cli board list <CR>')
     end
 })
 vim.api.nvim_create_autocmd("BufEnter", {
