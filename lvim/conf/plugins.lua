@@ -2,14 +2,23 @@
 -- Run :PackerInstall :PackerCompile
 lvim.plugins = {
   { "tpope/vim-obsession" },
+
   { "mattn/emmet-vim" },
+
   { "tpope/vim-repeat" },
+
   { "vifm/vifm.vim" },
+
   { "tpope/vim-unimpaired" },
+
   { "tpope/vim-surround" },
+
   { "ellisonleao/gruvbox.nvim" },
+
   { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
-  { "folke/zen-mode.nvim",
+
+  {
+    "folke/zen-mode.nvim",
     config = function()
       require("zen-mode").setup {
         window = {
@@ -18,6 +27,7 @@ lvim.plugins = {
       }
     end
   },
+
   {
     "tpope/vim-fugitive",
     cmd = {
@@ -37,6 +47,7 @@ lvim.plugins = {
     },
     ft = { "fugitive" }
   },
+
   {
     "SidOfc/mkdx",
     config = function()
@@ -50,6 +61,7 @@ lvim.plugins = {
       }
     end,
   },
+
   {
     "jackMort/ChatGPT.nvim",
     config = function()
@@ -63,6 +75,7 @@ lvim.plugins = {
       "nvim-telescope/telescope.nvim"
     }
   },
+
   {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
@@ -71,14 +84,30 @@ lvim.plugins = {
       vim.g.mkdp_auto_start = 0
     end,
   },
-  { 'vimwiki/vimwiki',
+
+  {
+    'vimwiki/vimwiki',
     config = function()
       vim.g['vimwiki_global_ext'] = 0 -- 0 prevent vimwiki consider every md files as vimwiki files
       vim.g['vimwiki_folding'] = 'custom'
       vim.g['vimwiki_list'] = {
         { path = '~/Google\\ Drive/vimwiki/', syntax = 'markdown', index = 'index', ext = '.md' },
-        { path = '~/Document/HEIG/', syntax = 'markdown', index = 'index', ext = '.md' },
+        { path = '~/Document/HEIG/',          syntax = 'markdown', index = 'index', ext = '.md' },
       }
     end,
   },
+
+  {
+    "tiagovla/scope.nvim",
+    config = function()
+      require("scope").setup()
+    end
+  },
+
+}
+
+require('bufferline').setup {
+  options = {
+    mode = "tabs"
+  }
 }
