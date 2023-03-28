@@ -17,29 +17,26 @@
 --=======================================================================
 
 -- Lvim options
-vim.cmd("source ~/.config/lvim/conf/options.lua")
+require("user.options")
 -- Which-key
-vim.cmd("source ~/.config/lvim/conf/which-key.lua")
+require("user.which-key")
 -- TreeSitter
-vim.cmd("source ~/.config/lvim/conf/treesitter.lua")
+require("user.treesitter")
 -- Generic LSP settings
-vim.cmd("source ~/.config/lvim/conf/lsp.lua")
+require("user.lsp")
 -- Formatter
-vim.cmd("source ~/.config/lvim/conf/formatter.lua")
+require("user.formatter")
 -- Linters
-vim.cmd("source ~/.config/lvim/conf/linters.lua")
+require("user.linters")
 -- Additionals Plugins
-vim.cmd("source ~/.config/lvim/conf/plugins.lua")
+require("user.plugins")
 -- Usercommands
-vim.cmd("source ~/.config/lvim/conf/usercommands.lua")
+require("user.usercommands")
 -- Autocommands
-vim.cmd("source ~/.config/lvim/conf/autocommands.lua")
+require("user.autocommands")
 -- Remapings
-vim.cmd("source ~/.config/lvim/conf/remapping.lua")
+require("user.remapping")
 -- Abreviations
-vim.cmd("source ~/.config/lvim/conf/abbreviations.lua")
+require("user.abbreviations")
 -- Debbuger
-vim.cmd("source ~/.config/lvim/conf/debbugers.lua")
-
-vim.opt.tags.append = { "~/Google\\ Drive/vimwiki/tags.global" }
-
+require("user.debbugers")

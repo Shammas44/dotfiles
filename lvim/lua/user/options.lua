@@ -29,3 +29,5 @@ vim.opt.linebreak = true -- Avoid word beaing cut on wrap
 vim.g['loaded_perl_provider'] = 0
 vim.g['loaded_ruby_provider'] = 0
 vim.opt.tags = { "./tags;", "tags", "tags.global", "/Users/sebastientraber/Google Drive/vimwiki/tags.global" }
+vim.opt.tags.append = { "~/Google\\ Drive/vimwiki/tags.global" }
+
