@@ -3,6 +3,8 @@
 lvim.plugins = {
   { "tpope/vim-obsession" },
 
+  { "github/copilot.vim" },
+
   { "mattn/emmet-vim" },
 
   { "tpope/vim-repeat" },
@@ -28,7 +30,8 @@ lvim.plugins = {
     end
   },
 
-  { "tpope/vim-fugitive",
+  {
+    "tpope/vim-fugitive",
     cmd = {
       "G",
       "Git",
@@ -65,7 +68,6 @@ lvim.plugins = {
     "jackMort/ChatGPT.nvim",
     config = function()
       require("chatgpt").setup({
-        -- optional configuration
       })
     end,
     requires = {
