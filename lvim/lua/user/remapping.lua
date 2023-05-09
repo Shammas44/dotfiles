@@ -15,15 +15,18 @@
 --     vim.keymap.set(mode, lhs, rhs, options)
 -- end
 
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm<cr>"
 lvim.keys.normal_mode["<Leader>Z"] = ":ZenMode<cr>"
 lvim.keys.normal_mode["<Leader>ww"] = ":!~/dotfiles/vim/.vim/getIndex.ps1<cr> | <Plug>VimwikiIndex"
 
+vim.keymap.set('n', '<C-n>', '<C-6>')
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>')
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('c', 'jk', '<Esc>')
 vim.keymap.set('v', '<Leader>C', ':ChatGPDEditWithInstructions')
+
+local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap("n", "<c-s>", "<cmd>lua require('copilot.suggestion').toggle_auto_trigger()<CR>", opts)
 
 vim.cmd("nmap è [")
 vim.cmd("nmap ¨ ]")

@@ -1,3 +1,6 @@
+-- lvim.builtin.dap.active = true
+-- require("user.dap.javascript")
+-- require("user.dap.cpp")
 lvim.builtin.dap.active = true
 require('dap').set_log_level('TRACE')
 local dap = require('dap')
@@ -6,15 +9,15 @@ dap.adapters.chrome = {
   command = 'node',
   args = { os.getenv('HOME') .. "/.local/share/nvim/mason/packages/chrome-debug-adapter/out/src/chromeDebug.js" }
 }
+dap.adapters.javascript = {
+  type = 'executable',
+  command = 'node',
+  args = { os.getenv('HOME') .. "/.local/share/nvim/mason/packages/chrome-debug-adapter/out/src/chromeDebug.js" }
+}
 dap.adapters.node2 = {
   type = 'executable',
   command = 'node',
   args = { os.getenv('HOME') .. '/.local/share/nvim/mason/packages/node-debug2-adapter/out/src/nodeDebug.js' },
-}
-dap.adapters.firefox = {
-  type = 'executable',
-  command = 'node',
-  args = { os.getenv('HOME') .. '/.local/share/nvim/mason/packages/vscode-firefox-debug/dist/adapter.bundle.js' },
 }
 dap.adapters.cppdbg = {
   id = 'cppdbg',
@@ -48,18 +51,16 @@ dap.configurations.javascript = {
     sourceMaps = true,
     protocol = "inspector",
     port = 9222,
-    webRoot = "${workspaceFolder}"
+    webRoot = "${workspaceFolder}/dist",
   },
   {
-    name = 'Debug with Firefox',
-    type = 'firefox',
-    request = 'launch',
-    reAttach = true,
-    url = 'http://localhost:8080',
-    webRoot = '${workspaceFolder}',
-    firefoxExecutable = '/usr/bin/firefox'
-  }
+    type = "pwa-chrome",
+    name = "Launch Chrome",
+    request = "launch",
+    url = "http://localhost:3000",
+  },
 }
+
 dap.configurations.cpp = {
   {
     name = "Launch file",
@@ -72,7 +73,7 @@ dap.configurations.cpp = {
     miDebuggerPath = '/usr/local/bin/gdb',
     targetArchitecture = 'x86_64',
     stopAtEntry = true,
-    filterStdout = true;
+    filterStdout = true,
     externalConsole = true,
   },
   {
@@ -83,7 +84,7 @@ dap.configurations.cpp = {
     miDebuggerServerAddress = 'localhost:1234',
     miDebuggerPath = '/usr/local/bin/gdb',
     externalConsole = true,
-    filterStdout = true;
+    filterStdout = true,
     cwd = '${workspaceFolder}',
     targetArchitecture = 'x86_64',
     program = function()
@@ -92,3 +93,5 @@ dap.configurations.cpp = {
   },
 }
 dap.configurations.c = dap.configurations.cpp
+
+-- require("user.dap.javascript").setup()

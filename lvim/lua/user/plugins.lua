@@ -1,9 +1,49 @@
 -- After changing plugin config exit and reopen LunarVim,
 -- Run :PackerInstall :PackerCompile
 lvim.plugins = {
-  { "tpope/vim-obsession" },
+  { "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } },
+  {
+    "microsoft/vscode-js-debug",
+    opt = true,
+    run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
+  },
+  {
+    "ThePrimeagen/harpoon",
+    config = function()
+      require("harpoon").setup({
+      })
+    end
+  },
 
-  { "github/copilot.vim" },
+  { "folke/todo-comments.nvim", },
+
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        suggestion = {
+          keymap = {
+            accept = "<c-l>",
+            next = "<c-j>",
+            prev = "<c-k>",
+            dismiss = "<c-h>",
+          },
+        },
+      })
+    end,
+  },
+
+  {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function()
+      require("copilot_cmp").setup()
+    end,
+  },
+
+  { "tpope/vim-obsession" },
 
   { "mattn/emmet-vim" },
 

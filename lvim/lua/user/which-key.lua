@@ -14,6 +14,19 @@ lvim.builtin.which_key.mappings["m"] = {
   w = { "<cmd>mks! <cr>", "Save" },
   r = { "<cmd>source Session.vim<cr>", "Reload" },
 }
+lvim.builtin.which_key.mappings["a"] = {
+  name = "harpoon",
+  a = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "add file" },
+  m = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", "menu" },
+  n = { "<cmd>lua require('harpoon.ui').nav_next()<cr>", "next" },
+  p = { "<cmd>lua require('harpoon.ui').nav_prev()<cr>", "prev" },
+  ['1'] = { "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "1" },
+  ['2'] = { "<cmd>lua require('harpoon.ui').nav_file(2)<cr>", "2" },
+  ['3'] = { "<cmd>lua require('harpoon.ui').nav_file(3)<cr>", "3" },
+  ['4'] = { "<cmd>lua require('harpoon.ui').nav_file(4)<cr>", "4" },
+  ['5'] = { "<cmd>lua require('harpoon.ui').nav_file(4)<cr>", "5" },
+  ['6'] = { "<cmd>lua require('harpoon.ui').nav_file(6)<cr>", "6" },
+}
 
 lvim.builtin.which_key.mappings["<Leader>"] = { "/", "search" }
 lvim.builtin.which_key.mappings["H"] = { ":let @@=<C-R><C-W><CR>", "copy Hex" }

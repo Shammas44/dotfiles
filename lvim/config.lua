@@ -40,6 +40,3 @@ require("user.remapping")
 require("user.abbreviations")
 -- Debbuger
 require("user.debbugers")
-
-vim.cmd("imap <silent><script><expr> <C-H> copilot#Accept('<CR>')")
-vim.cmd("let g:copilot_no_tab_map = v:true")
