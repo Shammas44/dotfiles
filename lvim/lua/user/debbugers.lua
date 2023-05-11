@@ -1,4 +1,3 @@
--- lvim.builtin.dap.active = true
 -- require("user.dap.javascript")
 -- require("user.dap.cpp")
 lvim.builtin.dap.active = true
@@ -49,6 +48,7 @@ dap.configurations.javascript = {
     program = "${file}",
     cwd = vim.fn.getcwd(),
     sourceMaps = true,
+    resolveSourceMapLocations = { "${workspaceFolder}/dist/**/*.js", "${workspaceFolder}/**", "!**/node_modules/**" },
     protocol = "inspector",
     port = 9222,
     webRoot = "${workspaceFolder}/dist",
