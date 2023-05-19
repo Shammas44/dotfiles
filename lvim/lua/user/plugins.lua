@@ -1,12 +1,15 @@
 -- After changing plugin config exit and reopen LunarVim,
 -- Run :PackerInstall :PackerCompile
+
 lvim.plugins = {
   { "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } },
+
   {
     "microsoft/vscode-js-debug",
     opt = true,
     run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
   },
+
   {
     "ThePrimeagen/harpoon",
     config = function()
