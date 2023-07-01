@@ -21,6 +21,14 @@
       {
         "language": "c",
         "path": "./c.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./typescript.json"
       }
     ]
   }
