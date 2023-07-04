@@ -2,12 +2,12 @@
 -- Run :PackerInstall :PackerCompile
 
 lvim.plugins = {
-  { "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } },
+  { "mxsdev/nvim-dap-vscode-js", dependencies = { "mfussenegger/nvim-dap" } },
 
   {
     "microsoft/vscode-js-debug",
-    opt = true,
-    run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
+    lazy = true,
+    build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
   },
 
   {
@@ -60,7 +60,13 @@ lvim.plugins = {
 
   { "ellisonleao/gruvbox.nvim" },
 
-  { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
+  {
+    "elgiano/nvim-treesitter-angular",
+    branch = "topic/jsx-fix",
+    config = function()
+      require("lvim.lsp.manager").setup("angularls")
+    end,
+  },
 
   {
     "folke/zen-mode.nvim",
@@ -108,21 +114,8 @@ lvim.plugins = {
   },
 
   {
-    "jackMort/ChatGPT.nvim",
-    config = function()
-      require("chatgpt").setup({
-      })
-    end,
-    requires = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim"
-    }
-  },
-
-  {
     "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
+    build = "cd app && npm install",
     ft = "markdown",
     config = function()
       vim.g.mkdp_auto_start = 0
@@ -147,5 +140,52 @@ lvim.plugins = {
       require("scope").setup()
     end
   },
+  {
+  "folke/flash.nvim",
+  event = "VeryLazy",
+  opts = {},
+  keys = {
+    {
+      "s",
+      mode = { "n", "x", "o" },
+      function()
+        require("flash").jump()
+      end,
+      desc = "Flash",
+    },
+    {
+      "S",
+      mode = { "n", "o", "x" },
+      function()
+        require("flash").treesitter()
+      end,
+      desc = "Flash Treesitter",
+    },
+    {
+      "r",
+      mode = "o",
+      function()
+        require("flash").remote()
+      end,
+      desc = "Remote Flash",
+    },
+    {
+      "R",
+      mode = { "o", "x" },
+      function()
+        require("flash").treesitter_search()
+      end,
+      desc = "Flash Treesitter Search",
+    },
+    {
+      "<c-s>",
+      mode = { "c" },
+      function()
+        require("flash").toggle()
+      end,
+      desc = "Toggle Flash Search",
+    },
+  },
+}
 
 }

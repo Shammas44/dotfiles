@@ -20,7 +20,6 @@
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pyright", opts)
-require("lvim.lsp.manager").setup("angularls")
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. !!Requires `:LvimCacheReset` to take effect!!
 -- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
@@ -37,15 +36,15 @@ require("lvim.lsp.manager").setup("angularls")
 --   --Enable completion triggered by <c-x><c-o>
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
-local MY_FQBN = "arduino:avr:nano"
-require("lvim.lsp.manager").setup("arduino_language_server", {
-    cmd = {
-        "arduino-language-server",
-        "-cli-config", "/Users/sebastientraber/Library/Arduino15/arduino-cli.yaml",
-        "-fqbn",
-        MY_FQBN
-    }
-})
+-- local MY_FQBN = "arduino:avr:nano"
+-- require("lvim.lsp.manager").setup("arduino_language_server", {
+--     cmd = {
+--         "arduino-language-server",
+--         "-cli-config", "/Users/sebastientraber/Library/Arduino15/arduino-cli.yaml",
+--         "-fqbn",
+--         MY_FQBN
+--     }
+-- })
 -- require("lvim.lsp.manager").setup("clangd", {
 --     cmd = { "clangd", "--background-index" },
 --     filetypes = { "c", "cpp", "objc", "objcpp", "ino" },
