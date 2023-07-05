@@ -17,7 +17,7 @@
 
 lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm<cr>"
 lvim.keys.normal_mode["<Leader>Z"] = ":ZenMode<cr>"
-lvim.keys.normal_mode["<Leader>ww"] = ":!~/dotfiles/vim/.vim/getIndex.ps1<cr> | <Plug>VimwikiIndex"
+lvim.keys.normal_mode["<Leader>W"] = ":!~/dotfiles/vim/.vim/getIndex.ps1<cr> | <Plug>VimwikiIndex"
 
 vim.keymap.set('n', '<C-n>', '<C-6>')
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>')

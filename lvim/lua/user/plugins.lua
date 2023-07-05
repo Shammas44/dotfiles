@@ -124,7 +124,7 @@ lvim.plugins = {
 
   {
     'vimwiki/vimwiki',
-    config = function()
+    init = function() --replace 'config' with 'init'
       vim.g['vimwiki_global_ext'] = 0 -- 0 prevent vimwiki consider every md files as vimwiki files
       vim.g['vimwiki_folding'] = 'custom'
       vim.g['vimwiki_list'] = {
