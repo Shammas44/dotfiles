@@ -1,0 +1,65 @@
+{
+  "c-summary": {
+    "prefix": "c-summary",
+    "description": "",
+    "body": [
+      "/*",
+      "Description: Short description.",
+      "Version: 1.0.0",
+      "Last update: YYYY/MM/DD",
+      "Author: User Name <contact@sebastientraber.com>",
+      "",
+      "Summary:",
+      "",
+      "0. ELEMENT",
+      "    - 0.1. TYPE ELEMENT",
+      "    - 0.2. TYPE ELEMENT",
+      "        - 0.2.1. TYPE ELEMENT",
+      "        - 0.2.2. TYPE ELEMENT",
+      "1. ELEMENT",
+      "    - 1.1. TYPE ELEMENT",
+      "    - 1.2. TYPE ELEMENT",
+      "        - 1.2.1. TYPE ELEMENT",
+      "        - 1.2.2. TYPE ELEMENT",
+      "*/"
+    ]
+  },
+  "c-section": {
+    "prefix": "c-section",
+    "description": "",
+    "body": [
+      "/* ==========================================================================",
+      "   comment",
+      "========================================================================== */"
+    ]
+  },
+  "c-subsection": {
+    "prefix": "c-section2",
+    "description": "",
+    "body": [
+      "/* comment",
+      "   ========================================================================== */"
+    ]
+  },
+  "c-todo": {
+    "prefix": "c-todo",
+    "description": "",
+    "body": [
+      "/**",
+      "",
+      "  TODO:",
+      "  - First todo item",
+      "  - Second todo item",
+      "",
+      " */"
+    ]
+  },
+  "c-subsub": {
+    "prefix": "c-section3",
+    "description": "",
+    "body": [
+      "/* Visa",
+      "====================================== */"
+    ]
+  }
+}
