@@ -144,6 +144,13 @@ lvim.plugins = {
   "folke/flash.nvim",
   event = "VeryLazy",
   opts = {},
+    config = function()
+      local modes = {
+        search = {
+          enables = false
+        }
+      }
+    end,
   keys = {
     {
       "s",
