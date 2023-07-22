@@ -13,8 +13,8 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 -- lvim.use_icons = false
 
 -- allow to use treeSitter folding
-vim.cmd("set foldmethod=expr")
-vim.cmd("set foldexpr=nvim_treesitter#foldexpr()")
+-- vim.cmd("set foldmethod=expr")
+-- vim.cmd("set foldexpr=nvim_treesitter#foldexpr()")
 
 vim.opt.rnu = true
 vim.opt.autochdir = true -- PWD always follows the file I'm editing.
