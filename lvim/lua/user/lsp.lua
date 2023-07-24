@@ -46,6 +46,9 @@
 --     }
 -- })
 -- require("lvim.lsp.manager").setup("clangd", {
---     cmd = { "clangd", "--background-index" },
---     filetypes = { "c", "cpp", "objc", "objcpp", "ino" },
+--   cmd = { "clangd", "--background-index" },
+--   filetypes = { "c", "cpp", "objc", "objcpp", "ino" },
 -- })
+-- local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- capabilities.offsetEncoding = { "utf-16" }
+-- require("lspconfig").clangd.setup({ capabilities = capabilities })
