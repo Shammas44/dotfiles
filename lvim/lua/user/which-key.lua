@@ -30,3 +30,31 @@ lvim.builtin.which_key.mappings["a"] = {
 
 lvim.builtin.which_key.mappings["<Leader>"] = { "/", "search" }
 lvim.builtin.which_key.mappings["H"] = { ":let @@=<C-R><C-W><CR>", "copy Hex" }
+
+
+vim.g.maplocalleader = ','
+local wkl = require('which-key')
+
+vim.cmd('autocmd FileType * lua setKeybinds()')
+function setKeybinds()
+  local fileTy = vim.api.nvim_buf_get_option(0, "filetype")
+  local opts = { prefix = '<localleader>', buffer = 0 }
+
+  if fileTy == 'c' then
+    wkl.register({
+      ['m'] = { ":make exec<CR>", "make" },
+      -- ['M'] = { "!:grep -o '^.*:' Makefile | grep -o '.*[^:]' | fzf | xargs -I % sh -c 'make %')<CR>", "choose make option" },
+      ['e'] = { ":make exec<CR>", "make exec" },
+      ['x'] = { ":!make ; make exec<CR>", "compile % exec" },
+    }, opts)
+  elseif fileTy == 'sh' then
+    wkl.register({
+      ['W'] = { ':w<CR>', 'test write' },
+      ['Q'] = { ':q<CR>', 'test quit' },
+    }, opts)
+  elseif fileTy == 'js' then
+    wkl.register({
+      ['e'] = { ':!node %<CR>', 'node' },
+    }, opts)
+  end
+end
