@@ -40,3 +40,12 @@ require("user.remapping")
 require("user.abbreviations")
 -- Debbuger
 require("user.debbugers")
+
+local notify = vim.notify
+vim.notify = function(msg, ...)
+    if msg:match("warning: multiple different client offset_encodings") then
+        return
+    end
+
+    notify(msg, ...)
+end
