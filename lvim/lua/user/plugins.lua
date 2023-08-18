@@ -18,6 +18,12 @@ lvim.plugins = {
     end
   },
 
+
+  {
+    'goolord/alpha-nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+},
+
   { "folke/todo-comments.nvim", },
 
   {
@@ -113,14 +119,12 @@ lvim.plugins = {
     end,
   },
 
-  {
+   {
     "iamcco/markdown-preview.nvim",
-    build = "cd app && npm install",
-    ft = "markdown",
     config = function()
-      vim.g.mkdp_auto_start = 0
+      vim.fn["mkdp#util#install"]()
     end,
-  },
+},
 
   {
     'vimwiki/vimwiki',
