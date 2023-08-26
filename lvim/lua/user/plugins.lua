@@ -1,6 +1,8 @@
 -- After changing plugin config exit and reopen LunarVim,
 -- Run :PackerInstall :PackerCompile
 
+vim.g.nvim_tree_ignore = { '.git', 'node_modules', '.cache', '*.o' }
+
 lvim.plugins = {
   { "mxsdev/nvim-dap-vscode-js", dependencies = { "mfussenegger/nvim-dap" } },
 

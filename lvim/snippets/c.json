@@ -1,10 +1,1 @@
-{
-  "printf": {
-    "prefix": "print",
-    "body": [
-      "printf(\"%${2:format}\\n\", ${1:content});"
-    ],
-    "description": "printf"
-  }
-}
-
+javascript.json
