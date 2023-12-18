@@ -20,11 +20,30 @@ lvim.plugins = {
     end
   },
 
+  {
+    "David-Kunz/gen.nvim",
+    opts = {
+      model = "mistral",        -- The default model to use.
+      display_mode = "split",   -- The display mode. Can be "float" or "split".
+      show_prompt = false,      -- Shows the Prompt submitted to Ollama.
+      show_model = true,       -- Displays which model you are using at the beginning of your chat session.
+      no_auto_close = false,    -- Never closes the window automatically.
+      init = function(options) pcall(io.popen, "ollama serve > /dev/null 2>&1 &") end,
+      -- Function to initialize Ollama
+      command = "curl --silent --no-buffer -X POST http://localhost:11434/api/generate -d $body",
+      -- The command for the Ollama service. You can use placeholders $prompt, $model and $body (shellescaped).
+      -- This can also be a lua function returning a command string, with options as the input parameter.
+      -- The executed command must return a JSON object with { response, context }
+      -- (context property is optional).
+      list_models = '<omitted lua function>',   -- Retrieves a list of model names
+      debug = false                             -- Prints errors and the command which is run.
+    }
+  },
 
   {
     'goolord/alpha-nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-},
+  },
 
   { "folke/todo-comments.nvim", },
 
@@ -121,16 +140,16 @@ lvim.plugins = {
     end,
   },
 
-   {
+  {
     "iamcco/markdown-preview.nvim",
     config = function()
       vim.fn["mkdp#util#install"]()
     end,
-},
+  },
 
   {
     'vimwiki/vimwiki',
-    init = function() --replace 'config' with 'init'
+    init = function()                 --replace 'config' with 'init'
       vim.g['vimwiki_global_ext'] = 0 -- 0 prevent vimwiki consider every md files as vimwiki files
       vim.g['vimwiki_folding'] = 'custom'
       vim.g['vimwiki_list'] = {
@@ -147,9 +166,9 @@ lvim.plugins = {
     end
   },
   {
-  "folke/flash.nvim",
-  event = "VeryLazy",
-  opts = {},
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {},
     config = function()
       local modes = {
         search = {
@@ -157,48 +176,48 @@ lvim.plugins = {
         }
       }
     end,
-  keys = {
-    {
-      "s",
-      mode = { "n", "x", "o" },
-      function()
-        require("flash").jump()
-      end,
-      desc = "Flash",
+    keys = {
+      {
+        "s",
+        mode = { "n", "x", "o" },
+        function()
+          require("flash").jump()
+        end,
+        desc = "Flash",
+      },
+      {
+        "S",
+        mode = { "n", "o", "x" },
+        function()
+          require("flash").treesitter()
+        end,
+        desc = "Flash Treesitter",
+      },
+      {
+        "r",
+        mode = "o",
+        function()
+          require("flash").remote()
+        end,
+        desc = "Remote Flash",
+      },
+      {
+        "R",
+        mode = { "o", "x" },
+        function()
+          require("flash").treesitter_search()
+        end,
+        desc = "Flash Treesitter Search",
+      },
+      {
+        "<c-s>",
+        mode = { "c" },
+        function()
+          require("flash").toggle()
+        end,
+        desc = "Toggle Flash Search",
+      },
     },
-    {
-      "S",
-      mode = { "n", "o", "x" },
-      function()
-        require("flash").treesitter()
-      end,
-      desc = "Flash Treesitter",
-    },
-    {
-      "r",
-      mode = "o",
-      function()
-        require("flash").remote()
-      end,
-      desc = "Remote Flash",
-    },
-    {
-      "R",
-      mode = { "o", "x" },
-      function()
-        require("flash").treesitter_search()
-      end,
-      desc = "Flash Treesitter Search",
-    },
-    {
-      "<c-s>",
-      mode = { "c" },
-      function()
-        require("flash").toggle()
-      end,
-      desc = "Toggle Flash Search",
-    },
-  },
-}
+  }
 
 }

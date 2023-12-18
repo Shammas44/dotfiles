@@ -31,6 +31,9 @@ lvim.builtin.which_key.mappings["a"] = {
   ['6'] = { "<cmd>lua require('harpoon.ui').nav_file(6)<cr>", "6" },
 }
 
+vim.keymap.set({ 'n', 'v' }, '<leader>]', ':Gen<CR>')
+vim.keymap.set('v', '<leader>og', ':Gen Enhance_Grammar_Spelling<CR>')
+
 lvim.builtin.which_key.mappings["<Leader>"] = { "/", "search" }
 lvim.builtin.which_key.mappings["H"] = { ":let @@=<C-R><C-W><CR>", "copy Hex" }
 
