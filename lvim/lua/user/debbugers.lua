@@ -23,6 +23,13 @@ dap.adapters.cppdbg = {
   type = 'executable',
   command = os.getenv('HOME') .. '/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
 }
+
+dap.adapters.gdb = {
+  type = "executable",
+  command = "gdb",
+  args = { "-i", "dap" }
+}
+
 dap.configurations.javascript = {
   {
     name = 'Launch node',
@@ -61,37 +68,50 @@ dap.configurations.javascript = {
   },
 }
 
-dap.configurations.cpp = {
+-- dap.configurations.cpp = {
+--   {
+--     name = "Launch file",
+--     type = "cppdbg",
+--     request = "launch",
+--     program = function()
+--       return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+--     end,
+--     cwd = '${workspaceFolder}',
+--     miDebuggerPath = '/usr/local/bin/gdb',
+--     targetArchitecture = 'x86_64',
+--     stopAtEntry = true,
+--     filterStdout = true,
+--     externalConsole = true,
+--   },
+--   {
+--     name = 'Attach to gdbserver :1234',
+--     type = 'cppdbg',
+--     request = 'launch',
+--     MIMode = 'gdb',
+--     miDebuggerServerAddress = 'localhost:1234',
+--     miDebuggerPath = '/usr/local/bin/gdb',
+--     externalConsole = true,
+--     filterStdout = true,
+--     cwd = '${workspaceFolder}',
+--     targetArchitecture = 'x86_64',
+--     program = function()
+--       return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+--     end,
+--   },
+-- }
+-- dap.configurations.c = dap.configurations.cpp
+
+dap.configurations.c = {
   {
-    name = "Launch file",
-    type = "cppdbg",
+    name = "Launch",
+    type = "gdb",
     request = "launch",
     program = function()
       return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
     end,
-    cwd = '${workspaceFolder}',
-    miDebuggerPath = '/usr/local/bin/gdb',
-    targetArchitecture = 'x86_64',
-    stopAtEntry = true,
-    filterStdout = true,
-    externalConsole = true,
-  },
-  {
-    name = 'Attach to gdbserver :1234',
-    type = 'cppdbg',
-    request = 'launch',
-    MIMode = 'gdb',
-    miDebuggerServerAddress = 'localhost:1234',
-    miDebuggerPath = '/usr/local/bin/gdb',
-    externalConsole = true,
-    filterStdout = true,
-    cwd = '${workspaceFolder}',
-    targetArchitecture = 'x86_64',
-    program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-    end,
+    cwd = "${workspaceFolder}",
+    stopAtBeginningOfMainSubprogram = false,
   },
 }
-dap.configurations.c = dap.configurations.cpp
 
 -- require("user.dap.javascript").setup()
