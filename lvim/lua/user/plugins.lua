@@ -46,23 +46,23 @@ lvim.plugins = {
 
   { "folke/todo-comments.nvim", },
 
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup({
-        suggestion = {
-          keymap = {
-            accept = "<c-l>",
-            next = "<c-j>",
-            prev = "<c-k>",
-            dismiss = "<c-h>",
-          },
-        },
-      })
-    end,
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  --   config = function()
+  --     require("copilot").setup({
+  --       suggestion = {
+  --         keymap = {
+  --           accept = "<c-l>",
+  --           next = "<c-j>",
+  --           prev = "<c-k>",
+  --           dismiss = "<c-h>",
+  --         },
+  --       },
+  --     })
+  --   end,
+  -- },
 
   {
     "zbirenbaum/copilot-cmp",
