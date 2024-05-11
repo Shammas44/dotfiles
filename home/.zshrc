@@ -345,7 +345,9 @@
 		then
 			echo "No cheatsheet available !"
 		else
-			"${editor}" -c "set filetype=vimwiki|set nospell|vimgrep ${2} %|copen" -R <(echo "$output")
+     local tmp="/tmp/cheatsheet.md"
+     echo "${output}" > "${tmp}"
+     "${editor}" -R -c "set filetype=markdown|set nospell|vimgrep ${2} %" "${tmp}" 
 		fi
     }
 
