@@ -1,4 +1,13 @@
 {
+  "region": {
+    "prefix": "region",
+    "description": "",
+    "body": [
+      "/* #region ${1:name} */",
+      "${0}",
+      "/* #endregion */"
+    ]
+  },
   "c-section": {
     "prefix": "c-section",
     "description": "",

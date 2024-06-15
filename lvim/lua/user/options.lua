@@ -31,5 +31,7 @@ vim.g['loaded_ruby_provider'] = 0
 vim.opt.tags = { "./tags;", "tags", "tags.global", "/Users/sebastientraber/Google Drive/vimwiki/tags.global" }
 vim.opt.tags.append = { "~/Google\\ Drive/vimwiki/tags.global" }
 vim.cmd("nnoremap <C-Q> <cmd>lua require('telescope.actions').send_selected_to_qflist()<CR>")
-
+vim.cmd("set listchars=space:·,tab:>-,trail:~,extends:>,precedes:<|set list")
+vim.o.foldmethod = 'marker'
+vim.o.foldmarker = '#region,#endregion'
 
