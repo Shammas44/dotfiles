@@ -15,7 +15,7 @@
 --     vim.keymap.set(mode, lhs, rhs, options)
 -- end
 
-lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm<cr>"
+lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm size=15 direction=horizontal name=main<cr> "
 lvim.keys.normal_mode["<Leader>Z"] = ":ZenMode<cr>"
 lvim.keys.normal_mode["<Leader>W"] = ":!~/dotfiles/vim/.vim/getIndex.ps1<cr> | <Plug>VimwikiIndex"
 
