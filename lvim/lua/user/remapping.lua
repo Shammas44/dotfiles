@@ -19,6 +19,7 @@ lvim.keys.normal_mode["<C-j>"] = ":ToggleTerm size=15 direction=horizontal name=
 lvim.keys.normal_mode["<Leader>Z"] = ":ZenMode<cr>"
 lvim.keys.normal_mode["<Leader>W"] = ":!~/dotfiles/vim/.vim/getIndex.ps1<cr> | <Plug>VimwikiIndex"
 
+-- For switch to last edited buffer
 vim.keymap.set('n', '<C-n>', '<C-6>')
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>')
 vim.keymap.set('i', 'jk', '<Esc>')

@@ -23,6 +23,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
       " g:mkdx#settings.tokens.italic, 'mkdx-text-italic-v')<cr>"
 })
 
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = { "*.asm" },
+  command = ":set colorcolumn=29,37"
+})
+
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.lua" },
 --   command = "set foldmethod=indent |" ..
