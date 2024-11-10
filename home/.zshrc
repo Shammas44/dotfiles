@@ -317,13 +317,13 @@
     # VIFM 
     #==========================================================================
     vifm() {
-    	if [ -f ~/dotfiles/vifm/vifm/lastdir ]; then
-    		rm ~/dotfiles/vifm/vifm/lastdir
+    	if [ -f ~/.config/vifm/lastdir ]; then
+    		rm ~/.config/vifm/lastdir
     	fi
     	# "command" prevents recursive call
     	command vifm "$@"
-    	if [ -f ~/dotfiles/vifm/vifm/lastdir ]; then
-    		cd "$(cat ~/dotfiles/vifm/vifm/lastdir)"
+    	if [ -f ~/.config/vifm/lastdir ]; then
+    		cd "$(cat ~/.config/vifm/lastdir)"
     	fi
     }
 

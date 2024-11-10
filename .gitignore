@@ -1,0 +1,6 @@
+.config/*
+home/.zsh_criticalAliases
+!.config/karabiner/karabiner.json
+!.config/lvim/
+!.config/nvim/
+!.config/vifm/

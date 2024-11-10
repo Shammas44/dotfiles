@@ -1,0 +1,1952 @@
+# Ce fichier viminfo a été généré par Vim 9.1.
+# Vous pouvez l'éditer, mais soyez prudent.
+
+# Viminfo version
+|1,4
+
+# 'encoding' dans lequel ce fichier a été écrit
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Dernier motif de recherche  :
+~MSle0~/export
+
+# Dernier motif de recherche Substitue  :
+~MSle0&Cool
+
+# Dernières chaînes de substitution :
+$Done
+
+# Historique ligne de commande (chronologie décroissante) :
+:q
+|2,0,1731230297,,"q"
+:x
+|2,0,1727542855,,"x"
+:set list
+|2,0,1701601298,,"set list"
+:e
+|2,0,1700314962,,"e"
+:qa!
+|2,0,1690880634,,"qa!"
+:w
+|2,0,1688416077,,"w"
+:tabedit ~/Google\ Drive/vimwiki/common/note.md
+|2,0,1679927541,,"tabedit ~/Google\\ Drive/vimwiki/common/note.md"
+:q!
+|2,0,1676297846,,"q!"
+: [ example, note-taking, foo, bar ]
+|2,0,1675080469,," [ example, note-taking, foo, bar ]"
+: 2021-12-06
+|2,0,1675080468,," 2021-12-06"
+: My awesome note
+|2,0,1675080468,," My awesome note"
+:PluginClean
+|2,0,1671881001,,"PluginClean"
+:Pad
+|2,0,1671880994,,"Pad"
+:w NoName
+|2,0,1671879384,,"w NoName"
+:e ~/.ssh/
+|2,0,1671879350,,"e ~/.ssh/"
+:h Pad
+|2,0,1671840644,,"h Pad"
+:Pad ls
+|2,0,1671838860,,"Pad ls"
+:vs
+|2,0,1671838809,,"vs"
+:P
+|2,0,1671839889,,"P"
+:Pas ls
+|2,0,1671839887,,"Pas ls"
+:call pad#PadCmd()
+|2,0,1671839626,,"call pad#PadCmd()"
+:pad#PadCmd()
+|2,0,1671839615,,"pad#PadCmd()"
+:call *pad#PadCmd()
+|2,0,1671839578,,"call *pad#PadCmd()"
+:*pad#PadCmd()
+|2,0,1671839574,,"*pad#PadCmd()"
+:bd
+|2,0,1671839345,,"bd"
+:tabn
+|2,0,1671838201,,"tabn"
+:tab
+|2,0,1671838181,,"tab"
+:ls
+|2,0,1671838141,,"ls"
+:h tab
+|2,0,1671837962,,"h tab"
+:tn
+|2,0,1671837958,,"tn"
+:tab next
+|2,0,1671837934,,"tab next"
+:tab new
+|2,0,1671837912,,"tab new"
+:new tab
+|2,0,1671837876,,"new tab"
+:sp
+|2,0,1671837757,,"sp"
+:nt
+|2,0,1671837716,,"nt"
+:Pad search
+|2,0,1671837160,,"Pad search"
+:noh
+|2,0,1671836439,,"noh"
+:Pad new
+|2,0,1671833745,,"Pad new"
+:h pad
+|2,0,1671831356,,"h pad"
+:PluginInstall
+|2,0,1671831315,,"PluginInstall"
+:Tex
+|2,0,1671549593,,"Tex"
+:!pwd
+|2,0,1671549524,,"!pwd"
+:!panrun %
+|2,0,1671549621,,"!panrun %"
+:'<,'>norm A;
+|2,0,1670155032,,"'<,'>norm A;"
+:'<,'>norm I- 
+|2,0,1670155022,,"'<,'>norm I- "
+:s/Cool/Done
+|2,0,1670154428,,"s/Cool/Done"
+:s/Cool/Done/
+|2,0,1670154396,,"s/Cool/Done/"
+:reg
+|2,0,1670154247,,"reg"
+:'<,'>norm @a
+|2,0,1670153790,,"'<,'>norm @a"
+:set rnu
+|2,0,1670153722,,"set rnu"
+:'<,'>g/tags/ g/TODO/ s/TODO/DONE/
+|2,0,1670153576,,"'<,'>g/tags/ g/TODO/ s/TODO/DONE/"
+:'<,'>g/tags/ g/TODO/ norm s/TODO/DONE/
+|2,0,1670153496,,"'<,'>g/tags/ g/TODO/ norm s/TODO/DONE/"
+:'<,'>g/tags/ g/TODO/ norm ddhlll
+|2,0,1670153438,,"'<,'>g/tags/ g/TODO/ norm ddhlll"
+:'<,'>g/tags/ g/TODO/ norm dd
+|2,0,1670153426,,"'<,'>g/tags/ g/TODO/ norm dd"
+:'<,'>g/TODO/ norm fTciwDone
+|2,0,1670153392,,"'<,'>g/TODO/ norm fTciwDone"
+:'<,'>g/TODO/ fTciwDone
+|2,0,1670153368,,"'<,'>g/TODO/ fTciwDone"
+:'<,'>g/title/ norm $ahello
+|2,0,1670153321,,"'<,'>g/title/ norm $ahello"
+:norm 
+|2,0,1670153288,,"norm "
+:'<,'>g/"/ f"cs"'
+|2,0,1670153274,,"'<,'>g/\"/ f\"cs\"'"
+:219
+|2,0,1669907780,,"219"
+: Mon Apr  4 17:58:01 CEST 2022
+|2,0,1669510999,," Mon Apr  4 17:58:01 CEST 2022"
+: [ cli ]
+|2,0,1669510999,," [ cli ]"
+:set syntax=vimwiki
+|2,0,1669510934,,"set syntax=vimwiki"
+:set filetype=vimwiki
+|2,0,1669510889,,"set filetype=vimwiki"
+:filetype
+|2,0,1669510872,,"filetype"
+:Filetypes
+|2,0,1669510861,,"Filetypes"
+:visual
+|2,0,1669488594,,"visual"
+:tabNext
+|2,0,1669477863,,"tabNext"
+:tabedit getIndex.ps1
+|2,0,1669477841,,"tabedit getIndex.ps1"
+:tabonly
+|2,0,1669474575,,"tabonly"
+:e 03-netrw.md
+|2,0,1669474544,,"e 03-netrw.md"
+:TabVifm
+|2,0,1669474527,,"TabVifm"
+:tabedit 02-navigation.md
+|2,0,1669474360,,"tabedit 02-navigation.md"
+:MarkdownPreview
+|2,0,1669464424,,"MarkdownPreview"
+:Vifm
+|2,0,1669322142,,"Vifm"
+:vifm
+|2,0,1669321999,,"vifm"
+:'<,'>norm I- [x] 
+|2,0,1668155830,,"'<,'>norm I- [x] "
+:'<,'>norm 
+|2,0,1668114864,,"'<,'>norm "
+:set noro
+|2,0,1668106470,,"set noro"
+:set ro
+|2,0,1668106464,,"set ro"
+:qü
+|2,0,1667945756,,"qü"
+:source %
+|2,0,1667941428,,"source %"
+:!pandoc % -o exemple.pdf
+|2,0,1667815554,,"!pandoc % -o exemple.pdf"
+:!pandoc % -o example.pdf --from markdown --template eisvogel.tex --listings
+|2,0,1667815169,,"!pandoc % -o example.pdf --from markdown --template eisvogel.tex --listings"
+:!pandoc example.md -o example.pdf --from markdown --template eisvogel.tex --listings
+|2,0,1667815126,,"!pandoc example.md -o example.pdf --from markdown --template eisvogel.tex --listings"
+:!pandoc % -o truc.pdf
+|2,0,1667814813,,"!pandoc % -o truc.pdf"
+:'<,'>s/-/,/g
+|2,0,1667814449,,"'<,'>s/-/,/g"
+:qa
+|2,0,1667668263,,"qa"
+:help ,
+|2,0,1667667807,,"help ,"
+:'<,'>g/\./ norm na hello 
+|2,0,1666985452,,"'<,'>g/\\./ norm na hello "
+:'<,'>g/)/ norm nihello
+|2,0,1666985406,,"'<,'>g/)/ norm nihello"
+:'<,'>
+|2,0,1666985367,,"'<,'>"
+:'<,'>g/\[/ norm ihello
+|2,0,1666985356,,"'<,'>g/\\[/ norm ihello"
+:'<,'>g/[/ norm i hello
+|2,0,1666985337,,"'<,'>g/[/ norm i hello"
+:'<,'>g/
+|2,0,1666985326,,"'<,'>g/"
+:'<,'>g/r/ norm $ihellojkgUiw
+|2,0,1666985285,,"'<,'>g/r/ norm $ihellojkgUiw"
+:'<,'>g/r/ norm $i hello
+|2,0,1666985257,,"'<,'>g/r/ norm $i hello"
+:'<,'>g/users/ norm I-hello
+|2,0,1666985214,,"'<,'>g/users/ norm I-hello"
+:'<,'>norm g/users/ i-hello
+|2,0,1666985188,,"'<,'>norm g/users/ i-hello"
+:'<,'>norm i- hello els amis.
+|2,0,1666985157,,"'<,'>norm i- hello els amis."
+
+# Historique chaîne de recherche (chronologie décroissante) :
+?/export
+|2,1,1687442457,47,"export"
+?/ng
+|2,1,1676469427,47,"ng"
+?/wiki
+|2,1,1671880196,47,"wiki"
+?/buff
+|2,1,1671880187,47,"buff"
+?/utf
+|2,1,1671840720,47,"utf"
+?/regexp
+|2,1,1671840343,47,"regexp"
+?/re
+|2,1,1671840340,47,"re"
+?/grep
+|2,1,1671840200,47,"grep"
+?/norem
+|2,1,1671839245,47,"norem"
+?/tab
+|2,1,1671837981,47,"tab"
+?/css
+|2,1,1671837516,47,"css"
+?/bash
+|2,1,1671837426,47,"bash"
+?/\/css
+|2,1,1671837197,47,"\\/css"
+?/exclude
+|2,1,1671835162,47,"exclude"
+?/hello
+|2,1,1671834123,47,"hello"
+?/"session_token": "<SESSION-TOKEN>" # Your ChatGPT session token
+|2,1,1671661089,47,"\"session_token\": \"<SESSION-TOKEN>\" # Your ChatGPT session token"
+?/"authorization": "<API-KEY>",      # Optional API key
+|2,1,1671661089,47,"\"authorization\": \"<API-KEY>\",      # Optional API key"
+?/tex
+|2,1,1671548955,47,"tex"
+?/80
+|2,1,1670788389,47,"80"
+? Cool
+|2,1,1670154441,,"Cool"
+? TODO
+|2,1,1670153512,,"TODO"
+? title
+|2,1,1670153321,,"title"
+? "
+|2,1,1670153274,,"\""
+?/vifm
+|2,1,1669631046,47,"vifm"
+?/vim
+|2,1,1669628999,47,"vim"
+?/note
+|2,1,1669628839,47,"note"
+?/prefix
+|2,1,1669580845,47,"prefix"
+?/fold
+|2,1,1669562125,47,"fold"
+?/node
+|2,1,1669504329,47,"node"
+?/cheats
+|2,1,1669490769,47,"cheats"
+? \<getCodeBloc\>
+|2,1,1669491264,,"\\<getCodeBloc\\>"
+?/window
+|2,1,1669473343,47,"window"
+?/pyt
+|2,1,1669467478,47,"pyt"
+?/pyth
+|2,1,1669467460,47,"pyth"
+?/location
+|2,1,1669298633,47,"location"
+?/goyo
+|2,1,1669156953,47,"goyo"
+?/goy
+|2,1,1669156648,47,"goy"
+?/spell
+|2,1,1669155204,47,"spell"
+?/revert
+|2,1,1668873552,47,"revert"
+?/git
+|2,1,1668873547,47,"git"
+?/PAT
+|2,1,1668807947,47,"PAT"
+?/Users/sebastientraber/.local/bin/lvim
+|2,1,1668807818,47,"Users/sebastientraber/.local/bin/lvim"
+?/alias
+|2,1,1667945844,47,"alias"
+?/fzf
+|2,1,1667944969,47,"fzf"
+?/source
+|2,1,1667944246,47,"source"
+?/FZF
+|2,1,1667942502,47,"FZF"
+?/zf
+|2,1,1667940998,47,"zf"
+?/pandoc
+|2,1,1667815045,47,"pandoc"
+? -
+|2,1,1667814449,,"-"
+?/js
+|2,1,1667651351,47,"js"
+?/space
+|2,1,1667073740,47,"space"
+?/deop
+|2,1,1667072675,47,"deop"
+?/tel
+|2,1,1667070339,47,"tel"
+?/nvim
+|2,1,1667069681,47,"nvim"
+? \.
+|2,1,1666985452,,"\\."
+? )
+|2,1,1666985406,,")"
+? \[
+|2,1,1666985356,,"\\["
+? [/ norm i hello
+|2,1,1666985337,,"[/ norm i hello"
+? r
+|2,1,1666985285,,"r"
+? users
+|2,1,1666985214,,"users"
+?/docker
+|2,1,1666902335,47,"docker"
+?/python
+|2,1,1666898596,47,"python"
+? \<TradingStrategyDualMA\>
+|2,1,1666855502,,"\\<TradingStrategyDualMA\\>"
+?/ python
+|2,1,1666767673,47," python"
+?/les sets
+|2,1,1665650015,47,"les sets"
+?/structure
+|2,1,1665649636,47,"structure"
+?/retrouver
+|2,1,1665495446,47,"retrouver"
+? "body": 
+|2,1,1665494544,,"\"body\": "
+? /"body": //g
+|2,1,1665494529,,"/\"body\": //g"
+? "body":
+|2,1,1665494445,,"\"body\":"
+?/\:?
+|2,1,1665493863,47,"\\:?"
+? \:\?
+|2,1,1665493818,,"\\:\\?"
+?/?
+|2,1,1665493746,47,"?"
+?/'
+|2,1,1663591293,47,"'"
+?/destru
+|2,1,1663496823,47,"destru"
+?/remap
+|2,1,1662909704,47,"remap"
+? \<signal\>
+|2,1,1662554431,,"\\<signal\\>"
+?/computed
+|2,1,1662386337,47,"computed"
+?/emoji
+|2,1,1661899594,47,"emoji"
+?/emoju
+|2,1,1661816072,47,"emoju"
+?/java
+|2,1,1661774017,47,"java"
+?/n
+|2,1,1661089393,47,"n"
+?/pando
+|2,1,1661089375,47,"pando"
+?/norm
+|2,1,1660750147,47,"norm"
+?/vue
+|2,1,1660476180,47,"vue"
+?/outdir
+|2,1,1660472850,47,"outdir"
+? #
+|2,1,1660228611,,"#"
+?/vagra
+|2,1,1660151794,47,"vagra"
+?/vagrant
+|2,1,1660035132,47,"vagrant"
+? '
+|2,1,1659727736,,"'"
+?/twitter
+|2,1,1659433785,47,"twitter"
+? \\'
+|2,1,1659273422,,"\\\\'"
+?/étique
+|2,1,1659273367,47,"étique"
+?/input
+|2,1,1659272725,47,"input"
+?/la
+|2,1,1659272715,47,"la"
+?/start
+|2,1,1659096892,47,"start"
+?/start_with
+|2,1,1659096884,47,"start_with"
+?/lara
+|2,1,1658325166,47,"lara"
+?/props
+|2,1,1658084698,47,"props"
+?/latex
+|2,1,1657805956,47,"latex"
+
+# Historique expression (chronologie décroissante) :
+=0+0+0
+|2,2,1647549776,,"0+0+0"
+=à
+|2,2,1647245434,,"à"
+=0
+|2,2,1647245020,,"0"
+=1+0+0
+|2,2,1647244846,,"1+0+0"
+=0+1+0
+|2,2,1647243978,,"0+1+0"
+=1+0
+|2,2,1647161572,,"1+0"
+=0+0
+|2,2,1647161107,,"0+0"
+=2+2
+|2,2,1647159913,,"2+2"
+=7+7
+|2,2,1647159684,,"7+7"
+=6+8
+|2,2,1647159615,,"6+8"
+=5 + 7
+|2,2,1647157888,,"5 + 7"
+=10%2
+|2,2,1635529077,,"10%2"
+= 0f1diw
+|2,2,1635527785,," 0f1diw"
+= 4*4
+|2,2,1635527397,," 4*4"
+= 123 / 2
+|2,2,1635527025,," 123 / 2"
+=2*3
+|2,2,1635527008,,"2*3"
+=9*16
+|2,2,1635526970,,"9*16"
+
+# Historique ligne de saisie (chronologie décroissante) :
+@y
+|2,3,1671881005,,"y"
+@js
+|2,3,1671840589,,"js"
+@css
+|2,3,1671840519,,"css"
+@regexp
+|2,3,1671840346,,"regexp"
+@bash/ net
+|2,3,1671840294,,"bash/ net"
+@bash
+|2,3,1671840277,,"bash"
+@bash/ coucou
+|2,3,1671839862,,"bash/ coucou"
+@bash/
+|2,3,1671839849,,"bash/"
+@vim
+|2,3,1671839827,,"vim"
+@salut
+|2,3,1671839820,,"salut"
+@dafadf
+|2,3,1671839803,,"dafadf"
+@coufadfad
+|2,3,1671839789,,"coufadfad"
+@coucou
+|2,3,1671839779,,"coucou"
+@hello les amis
+|2,3,1671839772,,"hello les amis"
+@hello
+|2,3,1671839764,,"hello"
+@2
+|2,3,1671837413,,"2"
+@1
+|2,3,1671836916,,"1"
+@var
+|2,3,1671836373,,"var"
+@test
+|2,3,1671834067,,"test"
+@test/css
+|2,3,1671833836,,"test/css"
+@javascript
+|2,3,1671832152,,"javascript"
+@1F
+|2,3,1671832099,,"1F"
+@/Users/sebastientraber/Google Drive/vimwiki/index.md
+|2,3,1666898416,,"/Users/sebastientraber/Google Drive/vimwiki/index.md"
+@touch cheatsheet.md
+|2,3,1666898304,,"touch cheatsheet.md"
+@mv datetime.py datetime.md
+|2,3,1660228144,,"mv datetime.py datetime.md"
+@/Users/sebastientraber/Google Drive/vimwiki/prog/python/datetime.py
+|2,3,1660228088,,"/Users/sebastientraber/Google Drive/vimwiki/prog/python/datetime.py"
+@article>
+|2,3,1656799072,,"article>"
+@lol>
+|2,3,1656799065,,"lol>"
+@div>
+|2,3,1656799057,,"div>"
+@touch latex-arrays-figures.md
+|2,3,1645873140,,"touch latex-arrays-figures.md"
+@vifm
+|2,3,1645822302,,"vifm"
+@echo salut
+|2,3,1645822278,,"echo salut"
+@[{y(es)},n(o),a(ll),q(uit)] y
+|2,3,1645269084,,"[{y(es)},n(o),a(ll),q(uit)] y"
+@test.md
+|2,3,1645226411,,"test.md"
+@basics-template.tex
+|2,3,1645195154,,"basics-template.tex"
+@/Users/sebastientraber/Google Drive/vimwiki/shell/bash/bash-regexp.md
+|2,3,1645133559,,"/Users/sebastientraber/Google Drive/vimwiki/shell/bash/bash-regexp.md"
+@/Users/sebastientraber/Google Drive/vimwiki/shell/latex/latex-basics.md
+|2,3,1645128566,,"/Users/sebastientraber/Google Drive/vimwiki/shell/latex/latex-basics.md"
+@/Users/sebastientraber/Google Drive/vimwiki/db/09-Webdon.md
+|2,3,1645117506,,"/Users/sebastientraber/Google Drive/vimwiki/db/09-Webdon.md"
+@/Users/sebastientraber/Google Drive/vimwiki/db/08-No-SQL.md
+|2,3,1645117474,,"/Users/sebastientraber/Google Drive/vimwiki/db/08-No-SQL.md"
+@template.tex
+|2,3,1645107145,,"template.tex"
+@n
+|2,3,1645091273,,"n"
+@Y
+|2,3,1643972346,,"Y"
+@lol
+|2,3,1642146545,,"lol"
+@print
+|2,3,1642146527,,"print"
+@iw"n
+|2,3,1635542764,,"iw\"n"
+@8.10.2021 cool
+|2,3,1633184653,,"8.10.2021 cool"
+@9.10.2021 hello
+|2,3,1633184606,,"9.10.2021 hello"
+@TE
+|2,3,1633184577,,"TE"
+@- [x] xo
+|2,3,1633184266,,"- [x] xo"
+@[ ] truc
+|2,3,1633184244,,"[ ] truc"
+@truc
+|2,3,1633184199,,"truc"
+@N
+|2,3,1633184148,,"N"
+@Préparer le jdr
+|2,3,1633183924,,"Préparer le jdr"
+@10:00-11:00 jdr avec Loïs
+|2,3,1633183792,,"10:00-11:00 jdr avec Loïs"
+@calendrier 2021
+|2,3,1633183711,,"calendrier 2021"
+@jdr
+|2,3,1633183685,,"jdr"
+@TRUC: lol
+|2,3,1633183243,,"TRUC: lol"
+@Truc: jdr
+|2,3,1633183095,,"Truc: jdr"
+@yo
+|2,3,1633124887,,"yo"
+@xxx 08/ hello
+|2,3,1633124788,,"xxx 08/ hello"
+@yop
+|2,3,1633124694,,"yop"
+@08/ hello
+|2,3,1633124555,,"08/ hello"
+@9:00-10:00 jdr
+|2,3,1633123714,,"9:00-10:00 jdr"
+@y$
+|2,3,1633123201,,"y$"
+@echPrint rendu photo
+|2,3,1633123090,,"echPrint rendu photo"
+@JDR 09:00
+|2,3,1633123026,,"JDR 09:00"
+@truc: ml
+|2,3,1633122599,,"truc: ml"
+@looooo
+|2,3,1633122562,,"looooo"
+@ciw yo
+|2,3,1633122505,,"ciw yo"
+@event
+|2,3,1633122454,,"event"
+@yollo
+|2,3,1633122433,,"yollo"
+@k
+|2,3,1633122142,,"k"
+@ ecoPrint
+|2,3,1633122120,," ecoPrint"
+@ecoPrint
+|2,3,1633122068,,"ecoPrint"
+@ecoPrint:  rendre description + photo
+|2,3,1633121967,,"ecoPrint:  rendre description + photo"
+@ecoPrint:  rendre description + photos kjdaflj lafjdlakj lafj ladjfla jljafdl jasl jladfj kadfk jakls kadf j
+|2,3,1633121933,,"ecoPrint:  rendre description + photos kjdaflj lafjdlakj lafj ladjfla jljafdl jasl jladfj kadfk jakls kadf j"
+@ecoPrint: \n  rendre description + photos
+|2,3,1633121909,,"ecoPrint: \\n  rendre description + photos"
+@ecoPrint: rendre description + photos
+|2,3,1633121861,,"ecoPrint: rendre description + photos"
+@jdr 09:00
+|2,3,1633121215,,"jdr 09:00"
+@JDR
+|2,3,1633121174,,"JDR"
+@dkf
+|2,3,1633121140,,"dkf"
+@d
+|2,3,1633121115,,"d"
+@dkfa
+|2,3,1633121114,,"dkfa"
+@jdr 
+|2,3,1633121108,,"jdr "
+@input()
+|2,3,1626200849,,"input()"
+@print('yo)
+|2,3,1626200832,,"print('yo)"
+@print(yo)
+|2,3,1626200812,,"print(yo)"
+
+# Historique Ligne de débogage (chronologie décroissante) :
+
+# Registres :
+"0	LINE	0
+	Copy code
+|3,0,0,1,1,0,1674499416,"Copy code"
+""1	LINE	0
+	.DS_Store
+|3,1,1,1,1,0,1727542693,".DS_Store"
+"2	LINE	0
+	    - include: tasks/slack-setup.yml
+	    - include: tasks/personal-projects.yml
+	    - include: tasks/nvim-setup.yml
+	    - include: tasks/brave.yml
+	    - include: tasks/debugger.yml
+	    - include: tasks/dotfiles.yml
+	    - include: tasks/productivity-tools.yml
+	    - include: tasks/lsp.yml
+|3,0,2,1,8,0,1681498419,"    - include: tasks/slack-setup.yml","    - include: tasks/personal-projects.yml","    - include: tasks/nvim-setup.yml","    - include: tasks/brave.yml","    - include: tasks/debugger.yml","    - include: tasks/dotfiles.yml","    - include: tasks/productivity-tools.yml","    - include: tasks/lsp.yml"
+"3	LINE	0
+	    - include: tasks/ssh.yml
+	    - include: tasks/git-setup.yml
+	    - include: tasks/core-setup.yml
+	    - include: tasks/node-setup.yml
+	    - include: tasks/npm-packages.yml
+|3,0,3,1,5,0,1681498415,"    - include: tasks/ssh.yml","    - include: tasks/git-setup.yml","    - include: tasks/core-setup.yml","    - include: tasks/node-setup.yml","    - include: tasks/npm-packages.yml"
+"4	LINE	0
+	  vars:
+	    source_key: "./.ssh/id_rsa"
+	    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
+	    personal: "{{ lookup('env', 'HOME') }}/personal"
+|3,0,4,1,4,0,1681498401,"  vars:","    source_key: \"./.ssh/id_rsa\"","    dest_key: \"{{ lookup('env', 'HOME') }}/.ssh/id_rsa\"","    personal: \"{{ lookup('env', 'HOME') }}/personal\""
+"5	LINE	0
+	- hosts: localhost
+	  become: true
+	  tasks:
+	    - name: Install Oh My Zsh
+	      apt:
+	        name: "{{ item }}"
+	        state: present
+	      loop:
+	        - zsh
+	        - git
+	        - curl
+	      environment:
+	        DEBIAN_FRONTEND: noninteractive
+	      tags:
+	        - oh-my-zsh
+	
+	    - name: Install Oh My Zsh
+	      shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	      environment:
+	        HOME: "{{ ansible_env.HOME }}"
+	      args:
+	        executable: /bin/zsh
+	      tags:
+	        - oh-my-zsh
+	    # - name: Install zsh
+	    #   apt: name=zsh
+	    # - name: Change shell
+	    #   shell: chsh -s `which zsh`
+	    # - name: Install ohmyzsh
+	    #   shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+	
+	#   sh install.sh
+	# - name: Install zsh plugins
+	#   shell: sed -i 's(git/git zsh-autosuggetions)' ~/.zshrc
+	# - name: Source zsh config
+	#   shell: source ~/.zshrc
+|3,0,5,1,36,0,1681498385,"- hosts: localhost","  become: true","  tasks:","    - name: Install Oh My Zsh","      apt:","        name: \"{{ item }}\"","        state: present","      loop:","        - zsh","        - git","        - curl","      environment:","        DEBIAN_FRONTEND: noninteractive","      tags:","        - oh-my-zsh","","    - name: Install Oh My Zsh",>108
+|<"      shell: sh -c \"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"","      environment:","        HOME: \"{{ ansible_env.HOME }}\"","      args:","        executable: /bin/zsh","      tags:","        - oh-my-zsh","    # - name: Install zsh","    #   apt: name=zsh","    # - name: Change shell","    #   shell: chsh -s `which zsh`","    # - name: Install ohmyzsh",>128
+|<"    #   shell: sh -c \"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\" \"\" --unattended","","#   sh install.sh","# - name: Install zsh plugins","#   shell: sed -i 's(git/git zsh-autosuggetions)' ~/.zshrc","# - name: Source zsh config","#   shell: source ~/.zshrc"
+"6	LINE	0
+	
+|3,0,6,1,1,0,1676469440,""
+"7	LINE	0
+	# Load Angular CLI autocompletion.
+	source <(ng completion script)
+|3,0,7,1,2,0,1676469440,"# Load Angular CLI autocompletion.","source <(ng completion script)"
+"8	LINE	0
+	tags: [ example, note-taking, foo, bar ]
+|3,0,8,1,1,0,1675080472,"tags: [ example, note-taking, foo, bar ]"
+"9	LINE	0
+	# Podcast
+|3,0,9,1,1,0,1674500924,"# Podcast"
+"a@	CHAR	0
+	:s/Cool/Donej
+|3,2,10,0,1,0,1670154430,":s/Cool/Donej"
+"e	CHAR	0
+	0
+|3,0,14,0,1,0,1647550022,"0"
+"h	CHAR	0
+	h
+|3,0,17,0,1,0,1635451434,"h"
+"j	CHAR	0
+	jk
+|3,0,19,0,1,0,1670154184,"jk"
+"k	CHAR	0
+	kk
+|3,0,20,0,1,0,1647243705,"kk"
+"l	CHAR	0
+	x
+|3,0,21,0,1,0,1645344143,"x"
+"q	CHAR	0
+	
+|3,0,26,0,1,0,1664802496,""
+"r	CHAR	0
+	2904
+|3,0,27,0,1,0,1647550022,"2904"
+"w	CHAR	0
+	0$a,0,0,0��aj@w
+|3,0,32,0,1,0,1647554043,"0$a,0,0,0��aj@w"
+"y	CHAR	0
+	g:pad#title_first_line
+|3,0,34,0,1,0,1671834552,"g:pad#title_first_line"
+"-	CHAR	0
+	STORE
+|3,0,36,0,1,0,1727542584,"STORE"
+
+# Marques dans le fichier :
+'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
+|4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
+'0  3  8  ~/.stow-local-ignore
+|4,48,3,8,1727542855,"~/.stow-local-ignore"
+'1  1  17  ~/.stowrc
+|4,49,1,17,1727542745,"~/.stowrc"
+'2  1  16  ~/.stowrc
+|4,50,1,16,1727542695,"~/.stowrc"
+'3  1  8  ~/.stowrc
+|4,51,1,8,1727542587,"~/.stowrc"
+'4  1  8  ~/.stowrc
+|4,52,1,8,1727542587,"~/.stowrc"
+'5  1  0  ~/.stowrc
+|4,53,1,0,1727542564,"~/.stowrc"
+'6  1  0  ~/.stowrc
+|4,54,1,0,1727542564,"~/.stowrc"
+'7  1  0  ~/.stowrc
+|4,55,1,0,1727542564,"~/.stowrc"
+'8  1  0  ~/.stowrc
+|4,56,1,0,1727542564,"~/.stowrc"
+'9  41  16  ~/.taskrc
+|4,57,41,16,1724084002,"~/.taskrc"
+
+# Liste de sauts (le plus récent en premier) :
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  1  0  ~/.stow-local-ignore
+|4,39,1,0,1727542820,"~/.stow-local-ignore"
+-'  1  0  ~/.stow-local-ignore
+|4,39,1,0,1727542820,"~/.stow-local-ignore"
+-'  1  17  ~/.stowrc
+|4,39,1,17,1727542745,"~/.stowrc"
+-'  1  17  ~/.stowrc
+|4,39,1,17,1727542745,"~/.stowrc"
+-'  1  17  ~/.stowrc
+|4,39,1,17,1727542745,"~/.stowrc"
+-'  1  17  ~/.stowrc
+|4,39,1,17,1727542745,"~/.stowrc"
+-'  1  16  ~/.stowrc
+|4,39,1,16,1727542695,"~/.stowrc"
+-'  1  16  ~/.stowrc
+|4,39,1,16,1727542695,"~/.stowrc"
+-'  1  16  ~/.stowrc
+|4,39,1,16,1727542695,"~/.stowrc"
+-'  1  16  ~/.stowrc
+|4,39,1,16,1727542695,"~/.stowrc"
+-'  1  8  ~/.stowrc
+|4,39,1,8,1727542587,"~/.stowrc"
+-'  1  8  ~/.stowrc
+|4,39,1,8,1727542587,"~/.stowrc"
+-'  1  8  ~/.stowrc
+|4,39,1,8,1727542587,"~/.stowrc"
+-'  1  8  ~/.stowrc
+|4,39,1,8,1727542587,"~/.stowrc"
+-'  1  0  ~/.stowrc
+|4,39,1,0,1727542564,"~/.stowrc"
+-'  1  0  ~/.stowrc
+|4,39,1,0,1727542564,"~/.stowrc"
+-'  1  0  ~/.stowrc
+|4,39,1,0,1727542564,"~/.stowrc"
+-'  1  0  ~/.stowrc
+|4,39,1,0,1727542564,"~/.stowrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  41  16  ~/.taskrc
+|4,39,41,16,1724084002,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+-'  22  0  ~/.taskrc
+|4,39,22,0,1724083992,"~/.taskrc"
+
+# Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/.stow-local-ignore
+	*	1727542855	0
+	"	3	8
+	^	3	9
+	.	3	8
+	+	1	0
+	+	3	8
+
+> ~/.stowrc
+	*	1727542743	0
+	"	1	17
+	^	1	16
+	.	1	15
+	+	1	8
+	+	1	15
+
+> ~/.taskrc
+	*	1724084000	0
+	"	41	16
+	^	41	17
+	.	41	16
+	+	41	16
+
+> ~/Documents/HEIG/HEIG2/04-archiDep/subjects/automated-testing/README.md
+	*	1718540113	0
+	"	294	0
+
+> ~/Documents/HEIG/HEIG2/04-archiDep/subjects/continuous/README.md
+	*	1718540081	0
+	"	192	0
+
+> ~/Documents/HEIG/HEIG2/04-archiDep/subjects/git-hooks/README.md
+	*	1718540028	0
+	"	130	0
+
+> ~/Documents/test/js/test.js
+	*	1718394378	0
+	"	1	12
+
+> ~/.config/cheat/cheatsheets/personal/angular_cheatsheet.md
+	*	1715339059	0
+	"	10	3
+
+> ~/Desktop/test 2/word/vbaProject.bin
+	*	1701719227	0
+	"	29	0
+
+> ~/Documents/test/c/forex/log.txt
+	*	1701601723	0
+	"	6	10
+	.	2	0
+	+	2	0
+
+> ~/Desktop/rendu/neos-front/src/environments/environment.ts
+	*	1691575229	0
+	"	4	1
+
+> ~/Desktop/rendu/neos-front/src/environments/environment.development.ts
+	*	1691575213	0
+	"	5	0
+
+> ~/Documents/HEIG/HEIG3/09_TB/app/neos-front/src/app/app.component.ts
+	*	1690880630	0
+	"	37	0
+
+> ~/Documents/HEIG/HEIG3/09_TB/app/neos-front/src/app/common/api.ts
+	*	1690792751	0
+	"	53	0
+
+> ~/Documents/HEIG/HEIG3/09_TB/app/neos-back/db.js
+	*	1690792680	0
+	"	20	0
+
+> ~/Documents/test/c/jsmn/Makefile
+	*	1690750024	0
+	"	17	0
+
+> ~/.config/lvim/lazy-lock.json
+	*	1688416077	0
+	"	2	37
+	^	2	34
+	.	2	33
+	+	2	33
+
+> ~/.config/lvim/NERD_tree_1
+	*	1688416068	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Prog/durabilia/src/app/home/home.component.html
+	*	1688129109	0
+	"	3	0
+
+> ~/Documents/Prog/vue/vue_chat/src/components/BaseComboBox.vue
+	*	1687892568	0
+	"	32	22
+
+> ~/Documents/Prog/shroomshare-front/src/app/auth/auth-interceptor.service.ts
+	*	1687694160	0
+	"	19	4
+
+> ~/Documents/Prog/durabilia/src/app/services/watched-video.service.spec.ts
+	*	1687599164	0
+	"	1	0
+
+> ~/Documents/Prog/durabilia/src/app/services/api-interceptor.service.ts
+	*	1687597004	0
+	"	1	0
+
+> ~/Documents/Prog/durabilia/src/app/services/http.service.spec.ts
+	*	1687597001	0
+	"	1	0
+
+> ~/Documents/Prog/durabilia/src/app/services/http.service.ts
+	*	1687596997	0
+	"	5	0
+
+> ~/Documents/Prog/durabilia/src/app/services/project.service.ts
+	*	1687596992	0
+	"	9	0
+
+> ~/Documents/HEIG/HEIG2/16-visualDon/examen-visualdon-22/README.md
+	*	1687461172	0
+	"	1	7
+
+> ~/Documents/HEIG/HEIG3/09_TB/tb/app/neos-front/node_modules/default-passive-events/src/index.js
+	*	1687442465	0
+	"	1	0
+
+> ~/Documents/HEIG/HEIG3/09_TB/tb/app/neos-front/node_modules/default-passive-events/src/utils.js
+	*	1687442432	0
+	"	1	0
+
+> ~/Documents/Prog/vue/examen/src/components/Modal.vue
+	*	1687193928	0
+	"	5	9
+
+> ~/Documents/Prog/vue/examen/src/components/TheNav.vue
+	*	1687193729	0
+	"	4	8
+
+> ~/Documents/Prog/vue/vue_chat/src/components/BaseForm.vue
+	*	1687193675	0
+	"	24	25
+
+> ~/Documents/Prog/ShroomShare/src/routes/auth.js
+	*	1685826236	0
+	"	56	37
+
+> ~/Documents/Prog/ShroomShare/src/routes/_auth.js
+	*	1685818580	0
+	"	60	0
+
+> ~/Documents/Prog/ShroomShare/src/middlewares/authMiddlewares.js
+	*	1685818571	0
+	"	9	9
+
+> ~/Desktop/ansible/local.yml
+	*	1681498437	0
+	"	13	6
+	.	14	0
+	+	1	0
+	+	2	0
+	+	13	0
+	+	14	0
+
+> ~/Desktop/ansible/tasks/zsh-setup.yml
+	*	1681498310	0
+	"	25	8
+	.	1	0
+	+	1	0
+
+> ~/Desktop/Dockerfile
+	*	1681415839	0
+	"	12	0
+
+> ~/Documents/Prog/shroomshare-front/src/app/filters/picker-city/picker-city.component.ts
+	*	1680955172	0
+	"	34	2
+
+> ~/Google Drive/vimwiki/common/note.md
+	*	1679940797	0
+	"	116	0
+
+> ~/Google Drive/vimwiki/index.md
+	*	1679927559	0
+	"	11	0
+	^	111	0
+	.	111	0
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	40
+	+	1	2
+	+	1	0
+	+	10	11
+	+	12	12
+	+	15	8
+	+	15	10
+	+	15	13
+	+	15	9
+	+	15	12
+	+	15	15
+	+	15	10
+	+	15	14
+	+	15	0
+	+	14	0
+	+	131	0
+	+	131	3
+	+	131	4
+	+	131	0
+	+	21	0
+	+	21	16
+	+	22	0
+	+	23	39
+	+	23	0
+	+	102	26
+	+	102	22
+	+	102	11
+	+	102	0
+	+	102	52
+	+	102	0
+	+	102	15
+	+	102	0
+	+	102	3
+	+	102	0
+	+	103	26
+	+	103	1
+	+	103	28
+	+	104	0
+	+	105	0
+	+	103	0
+	+	103	1
+	+	103	0
+	+	105	0
+	+	102	0
+	+	87	0
+	+	82	0
+	+	90	0
+	+	117	21
+	+	129	22
+	+	111	0
+
+> ~/Documents/Prog/laravel/laravel_form_email_exercice/laravel/resources/views/form.blade.php
+	*	1679221276	0
+	"	9	0
+
+> ~/Documents/HEIG/HEIG3/08_profilPro/note/note.md
+	*	1679062746	0
+	"	7	0
+
+> ~/Documents/test/js/rxjs/rxjs.js
+	*	1678807944	0
+	"	3	0
+
+> ~/Documents/test/js/rxjs/index.js
+	*	1678789042	0
+	"	1	0
+
+> ~/Documents/Prog/vue/getxpen/src/components/BaseForm.vue
+	*	1677762762	0
+	"	5	0
+	^	4	2
+	.	4	0
+	+	4	0
+
+> ~/Documents/Prog/arduinoColorPalette/src/index.html
+	*	1677750969	0
+	"	1	0
+
+> ~/Documents/Prog/arduinoColorPalette/dist/index.html
+	*	1677749770	0
+	"	1	0
+
+> ~/Documents/Prog/laravel/laravel_views_exemple/laravel/vendor/symfony/http-kernel/Kernel.php
+	*	1677359176	0
+	"	725	1
+
+> ~/Documents/Prog/laravel/laravel_views_exemple/laravel/artisan
+	*	1677359160	0
+	"	33	55
+
+> ~/.zshrc
+	*	1676469443	0
+	"	1	0
+	^	323	15
+	.	363	0
+	+	283	0
+	+	294	0
+	+	298	0
+	+	308	0
+	+	312	0
+	+	273	0
+	+	279	0
+	+	269	0
+	+	258	0
+	+	254	0
+	+	204	0
+	+	188	0
+	+	180	0
+	+	169	0
+	+	180	0
+	+	188	0
+	+	331	0
+	+	332	11
+	+	334	0
+	+	349	0
+	+	129	38
+	+	129	73
+	+	129	57
+	+	129	59
+	+	129	37
+	+	129	74
+	+	129	25
+	+	129	0
+	+	129	28
+	+	129	0
+	+	129	37
+	+	129	63
+	+	129	0
+	+	103	0
+	+	104	0
+	+	107	0
+	+	349	0
+	+	104	0
+	+	103	100
+	+	104	0
+	+	198	83
+	+	197	12
+	+	197	0
+	+	195	0
+	+	193	0
+	+	109	92
+	+	110	59
+	+	200	13
+	+	200	20
+	+	201	0
+	+	200	54
+	+	16	52
+	+	317	0
+	+	318	38
+	+	325	39
+	+	314	0
+	+	325	0
+	+	325	13
+	+	317	11
+	+	325	0
+	+	318	16
+	+	325	45
+	+	325	0
+	+	325	4
+	+	325	2
+	+	325	0
+	+	325	17
+	+	325	1
+	+	325	0
+	+	325	89
+	+	325	58
+	+	325	0
+	+	317	13
+	+	324	0
+	+	319	17
+	+	322	2
+	+	321	2
+	+	323	3
+	+	321	31
+	+	325	0
+	+	323	0
+	+	321	3
+	+	323	3
+	+	321	2
+	+	323	2
+	+	321	0
+	+	320	0
+	+	323	65
+	+	316	50
+	+	21	16
+	+	22	16
+	+	23	9
+	+	199	20
+	+	211	23
+	+	199	21
+	+	218	16
+	+	224	6
+	+	221	6
+	+	323	12
+	+	363	0
+
+> ~/Desktop/starter-kit/angular_LOCAL_84457.json
+	*	1676383193	0
+	"	23	0
+
+> ~/Desktop/starter-kit/angular.json
+	*	1676383192	0
+	"	23	0
+
+> ~/Desktop/starter-kit/angular_BASE_84457.json
+	*	1676383174	0
+	"	25	0
+
+> ~/Desktop/starter-kit/angular_REMOTE_84457.json
+	*	1676383174	0
+	"	25	0
+
+> ~/Documents/Prog/shroomshare-front/src/environments/environment.build.ts
+	*	1676297843	0
+	"	3	18
+	^	3	13
+	.	3	12
+	+	3	12
+
+> ~/gdb-entitlement.xml
+	*	1676054041	0
+	"	2	0
+	.	1	0
+	+	1	0
+
+> ~/.local/share/nvim/mason/packages/cpptools/extension/README.md
+	*	1676043068	0
+	"	1	0
+
+> ~/Desktop/motivation/letter.tex
+	*	1675683104	0
+	"	45	0
+
+> ~/Google Drive/zettelkasten/templates/default.md
+	*	1675080538	0
+	"	4	2
+	^	2	16
+	.	2	15
+	+	4	0
+	+	3	13
+	+	2	15
+
+> ~/Documents/HEIG/HEIG3/05_labVeilTech/articles/domain.md
+	*	1674509181	0
+	"	22	0
+	^	52	224
+	.	52	223
+	+	1	0
+	+	19	227
+	+	8	13
+	+	7	74
+	+	8	0
+	+	7	0
+	+	11	25
+	+	19	412
+	+	15	37
+	+	23	300
+	+	24	0
+	+	52	292
+	+	52	121
+	+	20	0
+	+	21	1
+	+	54	649
+	+	54	165
+	+	54	423
+	+	54	641
+	+	52	223
+
+> ~/Documents/HEIG/HEIG3/05_labVeilTech/articles/refactoring.md
+	*	1674500182	0
+	"	3	2
+	^	8	0
+	.	9	0
+	+	9	0
+	+	604	0
+	+	9	0
+	+	1	23
+	+	2	0
+	+	3	253
+	+	4	229
+	+	5	112
+	+	7	371
+	+	7	310
+	+	7	161
+	+	6	0
+	+	7	38
+	+	9	0
+	+	7	0
+	+	7	158
+	+	8	0
+	+	9	0
+
+> ~/Google Drive/vimwiki/prog/ts/refactoring.md
+	*	1674499844	0
+	"	2	0
+
+> ~/Documents/HEIG/HEIG3/05_labVeilTech/articles/forth.md
+	*	1674499701	0
+	"	400	0
+
+> ~/Documents/HEIG/HEIG3/05_labVeilTech/articles/webcomponent.md
+	*	1674499583	0
+	"	118	0
+	^	76	33
+	.	112	63
+	+	4	0
+	+	5	78
+	+	6	0
+	+	7	120
+	+	8	178
+	+	9	133
+	+	11	92
+	+	12	0
+	+	13	0
+	+	118	0
+	+	14	0
+	+	13	6
+	+	37	0
+	+	38	0
+	+	39	230
+	+	40	0
+	+	41	86
+	+	42	0
+	+	43	0
+	+	116	0
+	+	43	6
+	+	44	0
+	+	118	764
+	+	116	13
+	+	117	0
+	+	115	0
+	+	118	34
+	+	77	0
+	+	78	0
+	+	85	0
+	+	111	0
+	+	85	6
+	+	112	0
+	+	86	0
+	+	75	0
+	+	76	24
+	+	1	1
+	+	2	0
+	+	7	1
+	+	8	1
+	+	9	1
+	+	10	0
+	+	12	0
+	+	76	32
+	+	112	63
+
+> ~/Google Drive/vimwiki/prog/esolang/forth.md
+	*	1674496976	0
+	"	16	28
+	.	1	0
+	+	426	0
+	+	1	0
+
+> ~/Documents/HEIG/HEIG3/05_labVeilTech/domain.md
+	*	1674496494	0
+	"	56	0
+	^	41	26
+	.	42	0
+	+	1	30
+	+	1	25
+	+	1	24
+	+	1	33
+	+	1	30
+	+	1	26
+	+	1	29
+	+	1	20
+	+	1	9
+	+	1	18
+	+	1	15
+	+	1	21
+	+	1	15
+	+	1	18
+	+	1	17
+	+	1	28
+	+	1	33
+	+	1	7
+	+	1	6
+	+	1	25
+	+	1	24
+	+	1	28
+	+	1	40
+	+	1	36
+	+	1	38
+	+	1	47
+	+	1	58
+	+	1	40
+	+	1	85
+	+	1	70
+	+	1	29
+	+	1	0
+	+	42	0
+	+	1	0
+	+	4	0
+	+	5	0
+	+	13	1
+	+	15	1
+	+	4	17
+	+	60	24
+	+	61	0
+	+	63	1
+	+	65	35
+	+	67	57
+	+	69	0
+	+	69	37
+	+	69	0
+	+	70	32
+	+	71	39
+	+	73	100
+	+	73	0
+	+	73	36
+	+	73	0
+	+	75	42
+	+	77	40
+	+	79	41
+	+	81	39
+	+	83	41
+	+	85	43
+	+	62	1
+	+	64	0
+	+	66	0
+	+	68	0
+	+	70	0
+	+	72	0
+	+	74	0
+	+	76	0
+	+	78	0
+	+	80	0
+	+	84	0
+	+	85	0
+	+	83	0
+	+	64	33
+	+	68	1
+	+	70	0
+	+	70	14
+	+	62	19
+	+	64	12
+	+	66	19
+	+	68	10
+	+	72	1
+	+	74	1
+	+	76	1
+	+	78	1
+	+	82	0
+	+	80	27
+	+	82	1
+	+	84	1
+	+	85	0
+	+	86	0
+	+	87	8
+	+	88	0
+	+	89	8
+	+	38	0
+	+	39	7
+	+	40	0
+	+	41	0
+	+	42	0
+	+	41	25
+	+	42	0
+
+> ~/Documents/HEIG/HEIG3/05_labVeilTech/articles/zod.md
+	*	1674496446	0
+	"	4	0
+	^	12	2
+	.	17	0
+	+	20	89
+	+	21	0
+	+	22	9
+	+	40	25
+	+	40	0
+	+	40	25
+	+	40	30
+	+	40	7
+	+	40	4
+	+	40	43
+	+	40	4
+	+	40	9
+	+	40	28
+	+	40	45
+	+	40	23
+	+	40	35
+	+	40	11
+	+	40	447
+	+	42	42
+	+	44	62
+	+	45	10
+	+	46	16
+	+	47	16
+	+	48	17
+	+	49	16
+	+	50	15
+	+	51	14
+	+	53	152
+	+	55	10
+	+	55	20
+	+	57	314
+	+	1	1
+	+	2	0
+	+	5	2
+	+	9	0
+	+	17	0
+	+	9	6
+	+	18	0
+	+	10	0
+	+	18	0
+	+	11	0
+	+	11	3
+	+	18	2
+	+	22	0
+	+	39	0
+	+	38	0
+	+	22	12
+	+	40	0
+	+	38	0
+	+	38	25
+	+	38	30
+	+	38	7
+	+	38	4
+	+	38	43
+	+	38	4
+	+	38	9
+	+	38	28
+	+	38	45
+	+	38	23
+	+	38	35
+	+	38	0
+	+	23	0
+	+	38	0
+	+	42	0
+	+	40	0
+	+	42	2
+	+	41	0
+	+	44	0
+	+	46	1
+	+	47	1
+	+	48	0
+	+	49	1
+	+	50	1
+	+	51	1
+	+	55	0
+	+	53	0
+	+	52	0
+	+	54	0
+	+	56	0
+	+	57	0
+	+	6	0
+	+	19	0
+	+	43	0
+	+	40	163
+	+	40	292
+	+	13	0
+	+	14	0
+	+	17	0
+	+	14	6
+	+	11	0
+	+	15	0
+	+	11	0
+	+	12	1
+	+	17	0
+
+> ~/Desktop/git/README.md
+	*	1672525671	0
+	"	3	0
+	^	5	0
+	.	3	0
+	+	1	19
+	+	2	0
+	+	3	0
+
+> ~/dotfiles/vim/.vim/vimrc
+	*	1671881012	0
+	"	1	0
+	.	580	0
+	+	430	57
+	+	442	0
+	+	52	0
+	+	52	12
+	+	52	47
+	+	580	3
+	+	580	0
+	+	580	3
+	+	580	30
+	+	580	37
+	+	580	0
+	+	580	31
+	+	580	38
+	+	580	31
+	+	580	30
+	+	580	25
+	+	580	29
+	+	580	51
+	+	580	42
+	+	580	0
+	+	580	81
+	+	580	45
+	+	580	30
+	+	580	42
+	+	580	39
+	+	580	33
+	+	580	39
+	+	580	34
+	+	580	32
+	+	580	0
+	+	580	29
+	+	580	0
+	+	52	0
+	+	580	0
+
+> ~/NoName
+	*	1671880822	0
+	"	1	22
+	^	1	1
+	.	2	0
+	+	1	41
+	+	2	20
+	+	1	9
+	+	2	38
+	+	2	0
+
+> ~/NERD_tree_2
+	*	1671879398	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_1
+	*	1671879356	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/dotfiles/vim/.vim/__pad__
+	*	1671840863	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/dotfiles/vim/.vim/bundle/vim-pad/doc/pad.txt
+	*	1671840703	0
+	"	132	2
+	^	234	67
+
+> ~/dotfiles/vim/.vim/bundle/vim-pad/doc/__pad__
+	*	1671840540	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/notes/prog/js/NERD_tree_1
+	*	1671839168	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/notes/prog/laravel/__pad__
+	*	1671839136	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/__pad__
+	*	1671839131	0
+	"	2	0
+	.	1	0
+	+	1	0
+
+> ~/notes/prog/js/animation.md
+	*	1671838873	0
+	"	19	0
+
+> ~/notes/prog/js/__pad__
+	*	1671838861	0
+	"	2	0
+	.	1	0
+	+	1	0
+
+> ~/Google Drive/vimwiki/__pad__
+	*	1671838818	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/dotfiles/vim/.vim/viminfo
+	*	1671838744	0
+	"	10	0
+
+> ~/notes/prog/ts/__pad__
+	*	1671838159	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/dotfiles/vim/.vim/NERD_tree_1
+	*	1671838112	0
+	"	14	0
+	.	1	0
+	+	1	0
+
+> /usr/local/Cellar/vim/9.0.1050/share/vim/vim90/doc/intro.txt
+	*	1671838041	0
+	"	421	1
+
+> ~/dotfiles/vim/.vim/tab
+	*	1671837888	0
+	"	1	0
+
+> ~/notes/prog/react/__pad__
+	*	1671837807	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/Google Drive/vimwiki/shell/powershell/00-snippets.md
+	*	1671837690	0
+	"	19	0
+
+> ~/Google Drive/vimwiki/shell/powershell/__pad__
+	*	1671837682	0
+	"	2	0
+	.	1	0
+	+	1	0
+
+> ~/notes/bash/__pad__
+	*	1671837492	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/notes/test/css/__pad__
+	*	1671837460	0
+	"	2	0
+	.	1	0
+	+	1	0
+
+> ~/notes/prog/node/__pad__
+	*	1671835648	0
+	"	26	0
+	.	1	0
+	+	1	0
+
+> ~/notes/prog/wordpress/themes.md
+	*	1671835554	0
+	"	1	0
+
+> ~/notes/prog/laravel/00_snippets.md
+	*	1671834997	0
+	"	1	0
+
+> ~/notes/bash/archidep-preparation-examen.md
+	*	1671834876	0
+	"	1	0
+
+> ~/notes/test/css/specificity.md
+	*	1671834772	0
+	"	17	0
+
+> ~/notes/test/css/css_custom_properties
+	*	1671834715	0
+	"	205	0
+	^	4	2
+	.	4	0
+	+	8	0
+	+	4	0
+
+> ~/notes/test/js-cheatsheet
+	*	1671833901	0
+	"	1	0
+
+> ~/notes/test/__pad__
+	*	1671833878	0
+	"	1	0
+	.	1	0
+	+	1	0
