@@ -109,9 +109,9 @@
     source $ZSH/oh-my-zsh.sh
     # required to make both fzf and zsh-vi-mode works
     zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh && bindkey "©" fzf-file-widget')
-	export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude .git"
-	export FZF_CTRL_T_OPTS="--height=100% --layout=reverse --preview 'bat --color=always --line-range :50 {}'"
-	export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
+	  export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude .git"
+	  export FZF_CTRL_T_OPTS="--height=100% --layout=reverse --preview 'bat --color=always --line-range :50 {}'"
+	  export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
     # fzf: CTRL-T allow file search
     # fzf: CTRL-R allow history research
     # 'fzf-tmux -r 30%': open fzf in a tmux pane on the right side occuping 30% of available space 
@@ -205,7 +205,7 @@
     # Alias vim 
     #==========================================================================
     alias v="${editor}"
-    alias lvim="/Users/sebastientraber/.local/bin/lvim"
+    alias lvim="${HOME}/.local/bin/lvim"
     alias vimrc="${editor} ~/.vim/vimrc"
     alias nvimrc="${editor} ~/.config/nvim/init.vim"
     alias vimplug="cd ~/.vim/pack/plugins/start"
@@ -214,10 +214,10 @@
     alias srcvimrc='source ~/.vim/.vimrc'
     alias svim='vim -u ~/.SpaceVim/vimrc'
     alias f="vifm"
-	  alias nvim-js='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-ts.vim'
-	  alias nvim-py='nvim -u /Users/sebastientraber/dotfiles/nvim/nvim/init-py.vim'
+	  alias nvim-js="nvim -u ${HOME}/dotfiles/nvim/nvim/init-ts.vim"
+	  alias nvim-py="nvim -u ${HOME}/dotfiles/nvim/nvim/init-py.vim"
     alias note="${editor} ~/Google\ Drive/vimwiki/common/note.md"
-    export WIKI='/Users/sebastientraber/Google Drive/vimwiki'
+    export WIKI="${HOME}/Google Drive/vimwiki"
 
     # @descritpion open chosen vim wiki
     # @param $1 vimwiki number, default value is 1
@@ -356,14 +356,14 @@
     #==========================================================================
 	  # >>> conda initialize >>>
 	  # !! Contents within this block are managed by 'conda init' !!
-	  __conda_setup="$('/Users/sebastientraber/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+	  __conda_setup="$("${HOME}/opt/anaconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
 	  if [ $? -eq 0 ]; then
 		  eval "$__conda_setup"
 	  else
-		  if [ -f "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-			  . "/Users/sebastientraber/opt/anaconda3/etc/profile.d/conda.sh"
+		  if [ -f "${HOME}/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+			  . "${HOME}/opt/anaconda3/etc/profile.d/conda.sh"
 		  else
-			  export PATH="/Users/sebastientraber/opt/anaconda3/bin:$PATH"
+			  export PATH="${HOME}/opt/anaconda3/bin:$PATH"
 		  fi
 	  fi
 	  unset __conda_setup
