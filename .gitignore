@@ -4,3 +4,4 @@ home/.zsh_criticalAliases
 !.config/lvim/
 !.config/nvim/
 !.config/vifm/
+!.config/vim/
