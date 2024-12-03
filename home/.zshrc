@@ -233,7 +233,7 @@
     		"${editor}" ~/Google\ Drive/vimwiki/index.md
     	fi
     }
-    alias w="~/dotfiles/vim/.vim/getIndex.ps1 && wiki"
+    alias w="~/dotfiles/.vim/getIndex.ps1 && wiki"
 
     # @description Perform a search in dash
     # @param $1 search querry
