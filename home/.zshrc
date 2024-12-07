@@ -217,7 +217,7 @@
 	  alias nvim-js="nvim -u ${HOME}/dotfiles/nvim/nvim/init-ts.vim"
 	  alias nvim-py="nvim -u ${HOME}/dotfiles/nvim/nvim/init-py.vim"
     alias note="${editor} ~/Google\ Drive/vimwiki/common/note.md"
-    export WIKI="${HOME}/Google Drive/vimwiki"
+    export WIKI="${HOME}/Google\ Drive/vimwiki"
 
     # @descritpion open chosen vim wiki
     # @param $1 vimwiki number, default value is 1
@@ -233,7 +233,7 @@
     		"${editor}" ~/Google\ Drive/vimwiki/index.md
     	fi
     }
-    alias w="~/dotfiles/.vim/getIndex.ps1 && wiki"
+    alias w="~/Google\ Drive/vimwiki/getIndex/bin/main ${WIKI} && wiki"
 
     # @description Perform a search in dash
     # @param $1 search querry
