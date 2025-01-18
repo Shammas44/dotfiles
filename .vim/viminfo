@@ -21,13 +21,19 @@ $Done
 
 # Historique ligne de commande (chronologie décroissante) :
 :q
-|2,0,1731230297,,"q"
+|2,0,1736542393,,"q"
+:e
+|2,0,1736542239,,"e"
+:10
+|2,0,1736541349,,"10"
+:Q
+|2,0,1736540196,,"Q"
+:ex
+|2,0,1736540030,,"ex"
 :x
 |2,0,1727542855,,"x"
 :set list
 |2,0,1701601298,,"set list"
-:e
-|2,0,1700314962,,"e"
 :qa!
 |2,0,1690880634,,"qa!"
 :w
@@ -214,14 +220,12 @@ $Done
 |2,0,1666985285,,"'<,'>g/r/ norm $ihellojkgUiw"
 :'<,'>g/r/ norm $i hello
 |2,0,1666985257,,"'<,'>g/r/ norm $i hello"
-:'<,'>g/users/ norm I-hello
-|2,0,1666985214,,"'<,'>g/users/ norm I-hello"
-:'<,'>norm g/users/ i-hello
-|2,0,1666985188,,"'<,'>norm g/users/ i-hello"
-:'<,'>norm i- hello els amis.
-|2,0,1666985157,,"'<,'>norm i- hello els amis."
 
 # Historique chaîne de recherche (chronologie décroissante) :
+? console
+|2,1,1736540682,,"console"
+? ^c
+|2,1,1736540609,,"^c"
 ?/export
 |2,1,1687442457,47,"export"
 ?/ng
@@ -418,10 +422,6 @@ $Done
 |2,1,1659096884,47,"start_with"
 ?/lara
 |2,1,1658325166,47,"lara"
-?/props
-|2,1,1658084698,47,"props"
-?/latex
-|2,1,1657805956,47,"latex"
 
 # Historique expression (chronologie décroissante) :
 =0+0+0
@@ -641,10 +641,13 @@ $Done
 "0	LINE	0
 	Copy code
 |3,0,0,1,1,0,1674499416,"Copy code"
-""1	LINE	0
-	.DS_Store
-|3,1,1,1,1,0,1727542693,".DS_Store"
+"1	LINE	0
+	```
+|3,0,1,1,1,0,1736540517,"```"
 "2	LINE	0
+	.DS_Store
+|3,0,2,1,1,0,1727542693,".DS_Store"
+"3	LINE	0
 	    - include: tasks/slack-setup.yml
 	    - include: tasks/personal-projects.yml
 	    - include: tasks/nvim-setup.yml
@@ -653,21 +656,21 @@ $Done
 	    - include: tasks/dotfiles.yml
 	    - include: tasks/productivity-tools.yml
 	    - include: tasks/lsp.yml
-|3,0,2,1,8,0,1681498419,"    - include: tasks/slack-setup.yml","    - include: tasks/personal-projects.yml","    - include: tasks/nvim-setup.yml","    - include: tasks/brave.yml","    - include: tasks/debugger.yml","    - include: tasks/dotfiles.yml","    - include: tasks/productivity-tools.yml","    - include: tasks/lsp.yml"
-"3	LINE	0
+|3,0,3,1,8,0,1681498419,"    - include: tasks/slack-setup.yml","    - include: tasks/personal-projects.yml","    - include: tasks/nvim-setup.yml","    - include: tasks/brave.yml","    - include: tasks/debugger.yml","    - include: tasks/dotfiles.yml","    - include: tasks/productivity-tools.yml","    - include: tasks/lsp.yml"
+"4	LINE	0
 	    - include: tasks/ssh.yml
 	    - include: tasks/git-setup.yml
 	    - include: tasks/core-setup.yml
 	    - include: tasks/node-setup.yml
 	    - include: tasks/npm-packages.yml
-|3,0,3,1,5,0,1681498415,"    - include: tasks/ssh.yml","    - include: tasks/git-setup.yml","    - include: tasks/core-setup.yml","    - include: tasks/node-setup.yml","    - include: tasks/npm-packages.yml"
-"4	LINE	0
+|3,0,4,1,5,0,1681498415,"    - include: tasks/ssh.yml","    - include: tasks/git-setup.yml","    - include: tasks/core-setup.yml","    - include: tasks/node-setup.yml","    - include: tasks/npm-packages.yml"
+"5	LINE	0
 	  vars:
 	    source_key: "./.ssh/id_rsa"
 	    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
 	    personal: "{{ lookup('env', 'HOME') }}/personal"
-|3,0,4,1,4,0,1681498401,"  vars:","    source_key: \"./.ssh/id_rsa\"","    dest_key: \"{{ lookup('env', 'HOME') }}/.ssh/id_rsa\"","    personal: \"{{ lookup('env', 'HOME') }}/personal\""
-"5	LINE	0
+|3,0,5,1,4,0,1681498401,"  vars:","    source_key: \"./.ssh/id_rsa\"","    dest_key: \"{{ lookup('env', 'HOME') }}/.ssh/id_rsa\"","    personal: \"{{ lookup('env', 'HOME') }}/personal\""
+"6	LINE	0
 	- hosts: localhost
 	  become: true
 	  tasks:
@@ -704,22 +707,20 @@ $Done
 	#   shell: sed -i 's(git/git zsh-autosuggetions)' ~/.zshrc
 	# - name: Source zsh config
 	#   shell: source ~/.zshrc
-|3,0,5,1,36,0,1681498385,"- hosts: localhost","  become: true","  tasks:","    - name: Install Oh My Zsh","      apt:","        name: \"{{ item }}\"","        state: present","      loop:","        - zsh","        - git","        - curl","      environment:","        DEBIAN_FRONTEND: noninteractive","      tags:","        - oh-my-zsh","","    - name: Install Oh My Zsh",>108
+|3,0,6,1,36,0,1681498385,"- hosts: localhost","  become: true","  tasks:","    - name: Install Oh My Zsh","      apt:","        name: \"{{ item }}\"","        state: present","      loop:","        - zsh","        - git","        - curl","      environment:","        DEBIAN_FRONTEND: noninteractive","      tags:","        - oh-my-zsh","","    - name: Install Oh My Zsh",>108
 |<"      shell: sh -c \"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"","      environment:","        HOME: \"{{ ansible_env.HOME }}\"","      args:","        executable: /bin/zsh","      tags:","        - oh-my-zsh","    # - name: Install zsh","    #   apt: name=zsh","    # - name: Change shell","    #   shell: chsh -s `which zsh`","    # - name: Install ohmyzsh",>128
 |<"    #   shell: sh -c \"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\" \"\" --unattended","","#   sh install.sh","# - name: Install zsh plugins","#   shell: sed -i 's(git/git zsh-autosuggetions)' ~/.zshrc","# - name: Source zsh config","#   shell: source ~/.zshrc"
-"6	LINE	0
-	
-|3,0,6,1,1,0,1676469440,""
 "7	LINE	0
 	# Load Angular CLI autocompletion.
 	source <(ng completion script)
 |3,0,7,1,2,0,1676469440,"# Load Angular CLI autocompletion.","source <(ng completion script)"
 "8	LINE	0
-	tags: [ example, note-taking, foo, bar ]
-|3,0,8,1,1,0,1675080472,"tags: [ example, note-taking, foo, bar ]"
+	# Load Angular CLI autocompletion.
+	source <(ng completion script)
+|3,0,8,1,2,0,1676469440,"# Load Angular CLI autocompletion.","source <(ng completion script)"
 "9	LINE	0
-	# Podcast
-|3,0,9,1,1,0,1674500924,"# Podcast"
+	tags: [ example, note-taking, foo, bar ]
+|3,0,9,1,1,0,1675080472,"tags: [ example, note-taking, foo, bar ]"
 "a@	CHAR	0
 	:s/Cool/Donej
 |3,2,10,0,1,0,1670154430,":s/Cool/Donej"
@@ -750,235 +751,298 @@ $Done
 "y	CHAR	0
 	g:pad#title_first_line
 |3,0,34,0,1,0,1671834552,"g:pad#title_first_line"
-"-	CHAR	0
-	STORE
-|3,0,36,0,1,0,1727542584,"STORE"
+""-	BLOCK	0
+	#
+|3,1,36,2,1,0,1736540342,"#"
 
 # Marques dans le fichier :
 'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
 |4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
-'0  3  8  ~/.stow-local-ignore
-|4,48,3,8,1727542855,"~/.stow-local-ignore"
-'1  1  17  ~/.stowrc
-|4,49,1,17,1727542745,"~/.stowrc"
-'2  1  16  ~/.stowrc
-|4,50,1,16,1727542695,"~/.stowrc"
-'3  1  8  ~/.stowrc
-|4,51,1,8,1727542587,"~/.stowrc"
-'4  1  8  ~/.stowrc
-|4,52,1,8,1727542587,"~/.stowrc"
-'5  1  0  ~/.stowrc
-|4,53,1,0,1727542564,"~/.stowrc"
-'6  1  0  ~/.stowrc
-|4,54,1,0,1727542564,"~/.stowrc"
-'7  1  0  ~/.stowrc
-|4,55,1,0,1727542564,"~/.stowrc"
-'8  1  0  ~/.stowrc
-|4,56,1,0,1727542564,"~/.stowrc"
-'9  41  16  ~/.taskrc
-|4,57,41,16,1724084002,"~/.taskrc"
+'0  10  0  ~/Google Drive/vimwiki/index.md
+|4,48,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
+'1  4  0  ~/Google Drive/vimwiki/index.md
+|4,49,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+'2  4  0  ~/Google Drive/vimwiki/index.md
+|4,50,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+'3  2  3  ~/Google Drive/vimwiki/index.md
+|4,51,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+'4  2  3  ~/Google Drive/vimwiki/index.md
+|4,52,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+'5  19  0  ~/Google Drive/vimwiki/index.md
+|4,53,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+'6  20  0  ~/Google Drive/vimwiki/index.md
+|4,54,20,0,1736540223,"~/Google Drive/vimwiki/index.md"
+'7  19  0  ~/Google Drive/vimwiki/index.md
+|4,55,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+'8  19  0  ~/Google Drive/vimwiki/index.md
+|4,56,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+'9  20  0  ~/Google Drive/vimwiki/index.md
+|4,57,20,0,1736540223,"~/Google Drive/vimwiki/index.md"
 
 # Liste de sauts (le plus récent en premier) :
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736542431,"~/Google Drive/vimwiki/index.md"
+-'  1  0  ~/Google Drive/vimwiki/index.md
+|4,39,1,0,1736542420,"~/Google Drive/vimwiki/index.md"
+-'  173  0  ~/Google Drive/vimwiki/index.md
+|4,39,173,0,1736542403,"~/Google Drive/vimwiki/index.md"
+-'  4  0  ~/Google Drive/vimwiki/index.md
+|4,39,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+-'  4  0  ~/Google Drive/vimwiki/index.md
+|4,39,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+-'  1  0  ~/Google Drive/vimwiki/index.md
+|4,39,1,0,1736542239,"~/Google Drive/vimwiki/index.md"
+-'  174  0  ~/Google Drive/vimwiki/index.md
+|4,39,174,0,1736542225,"~/Google Drive/vimwiki/index.md"
+-'  174  0  ~/Google Drive/vimwiki/index.md
+|4,39,174,0,1736542225,"~/Google Drive/vimwiki/index.md"
+-'  3  2  ~/Google Drive/vimwiki/index.md
+|4,39,3,2,1736542223,"~/Google Drive/vimwiki/index.md"
+-'  3  2  ~/Google Drive/vimwiki/index.md
+|4,39,3,2,1736542223,"~/Google Drive/vimwiki/index.md"
+-'  6  2  ~/Google Drive/vimwiki/index.md
+|4,39,6,2,1736542221,"~/Google Drive/vimwiki/index.md"
+-'  6  2  ~/Google Drive/vimwiki/index.md
+|4,39,6,2,1736542221,"~/Google Drive/vimwiki/index.md"
+-'  172  0  ~/Google Drive/vimwiki/index.md
+|4,39,172,0,1736542217,"~/Google Drive/vimwiki/index.md"
+-'  172  0  ~/Google Drive/vimwiki/index.md
+|4,39,172,0,1736542217,"~/Google Drive/vimwiki/index.md"
+-'  177  0  ~/Google Drive/vimwiki/index.md
+|4,39,177,0,1736541504,"~/Google Drive/vimwiki/index.md"
+-'  177  0  ~/Google Drive/vimwiki/index.md
+|4,39,177,0,1736541504,"~/Google Drive/vimwiki/index.md"
+-'  109  0  ~/Google Drive/vimwiki/index.md
+|4,39,109,0,1736541501,"~/Google Drive/vimwiki/index.md"
+-'  109  0  ~/Google Drive/vimwiki/index.md
+|4,39,109,0,1736541501,"~/Google Drive/vimwiki/index.md"
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736541350,"~/Google Drive/vimwiki/index.md"
+-'  25  0  ~/Google Drive/vimwiki/index.md
+|4,39,25,0,1736541340,"~/Google Drive/vimwiki/index.md"
+-'  25  0  ~/Google Drive/vimwiki/index.md
+|4,39,25,0,1736541340,"~/Google Drive/vimwiki/index.md"
+-'  2  3  ~/Google Drive/vimwiki/index.md
+|4,39,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+-'  2  3  ~/Google Drive/vimwiki/index.md
+|4,39,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+-'  1  2  ~/Google Drive/vimwiki/index.md
+|4,39,1,2,1736541282,"~/Google Drive/vimwiki/index.md"
+-'  3  2  ~/Google Drive/vimwiki/index.md
+|4,39,3,2,1736540682,"~/Google Drive/vimwiki/index.md"
+-'  4  0  ~/Google Drive/vimwiki/index.md
+|4,39,4,0,1736540517,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736540507,"~/Google Drive/vimwiki/index.md"
+-'  12  0  ~/Google Drive/vimwiki/index.md
+|4,39,12,0,1736540408,"~/Google Drive/vimwiki/index.md"
+-'  12  0  ~/Google Drive/vimwiki/index.md
+|4,39,12,0,1736540408,"~/Google Drive/vimwiki/index.md"
+-'  176  0  ~/Google Drive/vimwiki/index.md
+|4,39,176,0,1736540396,"~/Google Drive/vimwiki/index.md"
+-'  176  0  ~/Google Drive/vimwiki/index.md
+|4,39,176,0,1736540396,"~/Google Drive/vimwiki/index.md"
+-'  20  0  ~/Google Drive/vimwiki/index.md
+|4,39,20,0,1736540381,"~/Google Drive/vimwiki/index.md"
+-'  20  0  ~/Google Drive/vimwiki/index.md
+|4,39,20,0,1736540381,"~/Google Drive/vimwiki/index.md"
+-'  5  0  ~/Google Drive/vimwiki/index.md
+|4,39,5,0,1736540352,"~/Google Drive/vimwiki/index.md"
+-'  5  0  ~/Google Drive/vimwiki/index.md
+|4,39,5,0,1736540352,"~/Google Drive/vimwiki/index.md"
+-'  13  0  ~/Google Drive/vimwiki/index.md
+|4,39,13,0,1736540351,"~/Google Drive/vimwiki/index.md"
+-'  13  0  ~/Google Drive/vimwiki/index.md
+|4,39,13,0,1736540351,"~/Google Drive/vimwiki/index.md"
+-'  19  0  ~/Google Drive/vimwiki/index.md
+|4,39,19,0,1736540240,"~/Google Drive/vimwiki/index.md"
+-'  19  0  ~/Google Drive/vimwiki/index.md
+|4,39,19,0,1736540240,"~/Google Drive/vimwiki/index.md"
+-'  19  0  ~/Google Drive/vimwiki/index.md
+|4,39,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+-'  3  0  ~/Google Drive/vimwiki/index.md
+|4,39,3,0,1736540194,"~/Google Drive/vimwiki/index.md"
+-'  3  0  ~/Google Drive/vimwiki/index.md
+|4,39,3,0,1736540035,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736540032,"~/Google Drive/vimwiki/index.md"
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736540032,"~/Google Drive/vimwiki/index.md"
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736540032,"~/Google Drive/vimwiki/index.md"
+-'  177  0  ~/Google Drive/vimwiki/index.md
+|4,39,177,0,1736540030,"~/Google Drive/vimwiki/index.md"
+-'  176  0  ~/Google Drive/vimwiki/index.md
+|4,39,176,0,1736540030,"~/Google Drive/vimwiki/index.md"
+-'  176  0  ~/Google Drive/vimwiki/index.md
+|4,39,176,0,1736540030,"~/Google Drive/vimwiki/index.md"
+-'  14  0  ~/Google Drive/vimwiki/index.md
+|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
+-'  15  0  ~/Google Drive/vimwiki/index.md
+|4,39,15,0,1736540028,"~/Google Drive/vimwiki/index.md"
+-'  14  0  ~/Google Drive/vimwiki/index.md
+|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
+-'  15  0  ~/Google Drive/vimwiki/index.md
+|4,39,15,0,1736540028,"~/Google Drive/vimwiki/index.md"
+-'  14  0  ~/Google Drive/vimwiki/index.md
+|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
+-'  14  0  ~/Google Drive/vimwiki/index.md
+|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736540026,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736540026,"~/Google Drive/vimwiki/index.md"
 -'  3  8  ~/.stow-local-ignore
 |4,39,3,8,1727542855,"~/.stow-local-ignore"
 -'  3  8  ~/.stow-local-ignore
 |4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  1  0  ~/.stow-local-ignore
-|4,39,1,0,1727542820,"~/.stow-local-ignore"
--'  1  0  ~/.stow-local-ignore
-|4,39,1,0,1727542820,"~/.stow-local-ignore"
--'  1  17  ~/.stowrc
-|4,39,1,17,1727542745,"~/.stowrc"
--'  1  17  ~/.stowrc
-|4,39,1,17,1727542745,"~/.stowrc"
--'  1  17  ~/.stowrc
-|4,39,1,17,1727542745,"~/.stowrc"
--'  1  17  ~/.stowrc
-|4,39,1,17,1727542745,"~/.stowrc"
--'  1  16  ~/.stowrc
-|4,39,1,16,1727542695,"~/.stowrc"
--'  1  16  ~/.stowrc
-|4,39,1,16,1727542695,"~/.stowrc"
--'  1  16  ~/.stowrc
-|4,39,1,16,1727542695,"~/.stowrc"
--'  1  16  ~/.stowrc
-|4,39,1,16,1727542695,"~/.stowrc"
--'  1  8  ~/.stowrc
-|4,39,1,8,1727542587,"~/.stowrc"
--'  1  8  ~/.stowrc
-|4,39,1,8,1727542587,"~/.stowrc"
--'  1  8  ~/.stowrc
-|4,39,1,8,1727542587,"~/.stowrc"
--'  1  8  ~/.stowrc
-|4,39,1,8,1727542587,"~/.stowrc"
--'  1  0  ~/.stowrc
-|4,39,1,0,1727542564,"~/.stowrc"
--'  1  0  ~/.stowrc
-|4,39,1,0,1727542564,"~/.stowrc"
--'  1  0  ~/.stowrc
-|4,39,1,0,1727542564,"~/.stowrc"
--'  1  0  ~/.stowrc
-|4,39,1,0,1727542564,"~/.stowrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  41  16  ~/.taskrc
-|4,39,41,16,1724084002,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
--'  22  0  ~/.taskrc
-|4,39,22,0,1724083992,"~/.taskrc"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  3  8  ~/.stow-local-ignore
+|4,39,3,8,1727542855,"~/.stow-local-ignore"
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/Google Drive/vimwiki/index.md
+	*	1736542392	0
+	"	10	0
+	^	15	0
+	.	15	0
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	40
+	+	1	2
+	+	1	0
+	+	11	11
+	+	12	12
+	+	15	8
+	+	15	10
+	+	15	13
+	+	15	9
+	+	15	12
+	+	15	15
+	+	15	10
+	+	15	14
+	+	15	0
+	+	14	0
+	+	131	0
+	+	131	3
+	+	131	4
+	+	131	0
+	+	21	0
+	+	21	16
+	+	22	0
+	+	23	39
+	+	23	0
+	+	102	26
+	+	102	22
+	+	102	11
+	+	102	0
+	+	102	52
+	+	102	0
+	+	102	15
+	+	102	0
+	+	102	3
+	+	102	0
+	+	103	26
+	+	103	1
+	+	103	28
+	+	104	0
+	+	105	0
+	+	103	0
+	+	103	1
+	+	103	0
+	+	105	0
+	+	102	0
+	+	87	0
+	+	82	0
+	+	90	0
+	+	117	21
+	+	129	22
+	+	111	0
+	+	10	0
+	+	15	0
 
 > ~/.stow-local-ignore
 	*	1727542855	0
@@ -1164,65 +1228,6 @@ $Done
 > ~/Google Drive/vimwiki/common/note.md
 	*	1679940797	0
 	"	116	0
-
-> ~/Google Drive/vimwiki/index.md
-	*	1679927559	0
-	"	11	0
-	^	111	0
-	.	111	0
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	40
-	+	1	2
-	+	1	0
-	+	10	11
-	+	12	12
-	+	15	8
-	+	15	10
-	+	15	13
-	+	15	9
-	+	15	12
-	+	15	15
-	+	15	10
-	+	15	14
-	+	15	0
-	+	14	0
-	+	131	0
-	+	131	3
-	+	131	4
-	+	131	0
-	+	21	0
-	+	21	16
-	+	22	0
-	+	23	39
-	+	23	0
-	+	102	26
-	+	102	22
-	+	102	11
-	+	102	0
-	+	102	52
-	+	102	0
-	+	102	15
-	+	102	0
-	+	102	3
-	+	102	0
-	+	103	26
-	+	103	1
-	+	103	28
-	+	104	0
-	+	105	0
-	+	103	0
-	+	103	1
-	+	103	0
-	+	105	0
-	+	102	0
-	+	87	0
-	+	82	0
-	+	90	0
-	+	117	21
-	+	129	22
-	+	111	0
 
 > ~/Documents/Prog/laravel/laravel_form_email_exercice/laravel/resources/views/form.blade.php
 	*	1679221276	0

@@ -17,7 +17,7 @@ lvim.plugins = {
     end
   },
 
-  { 'goolord/alpha-nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
+  { 'goolord/alpha-nvim',        dependencies = { 'nvim-tree/nvim-web-devicons' } },
 
   { "folke/todo-comments.nvim", },
 

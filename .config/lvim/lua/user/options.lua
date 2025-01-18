@@ -19,7 +19,7 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 vim.opt.rnu = true
 vim.opt.autochdir = true -- PWD always follows the file I'm editing.
 vim.opt.clipboard = ""
-vim.opt.wrap = true -- Display long lines on multiples lines
+vim.opt.wrap = true      -- Display long lines on multiples lines
 vim.opt.linebreak = true -- Avoid word beaing cut on wrap
 -- vim.opt.colorcolumn = 80 -- Display a vertical line at X column
 -- vim.opt.smartcase = true
@@ -34,4 +34,3 @@ vim.cmd("nnoremap <C-Q> <cmd>lua require('telescope.actions').send_selected_to_q
 vim.cmd("set listchars=space:·,tab:>-,trail:~,extends:>,precedes:<|set list")
 vim.o.foldmethod = 'marker'
 vim.o.foldmarker = '#region,#endregion'
-
