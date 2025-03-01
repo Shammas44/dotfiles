@@ -68,6 +68,8 @@ dap.configurations.javascript = {
   },
 }
 
+dap.configurations.typescript = dap.configurations.javascript
+
 dap.configurations.cpp = {
   {
     name = "Launch file",
