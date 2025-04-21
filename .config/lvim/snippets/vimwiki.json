@@ -115,5 +115,147 @@
       "|     |     |     |     |     |     |     |     |     |     |"
     ],
     "description": "Crée un tableau de 10 colonne"
+  },
+  {
+    "progress 5%": {
+      "prefix": "bar5",
+      "body": [
+        "█░░░░░░░░░░░░░░░░░░░ 5%"
+      ],
+      "description": "Progress bar at 5%"
+    },
+    "progress 10%": {
+      "prefix": "bar10",
+      "body": [
+        "██░░░░░░░░░░░░░░░░░░ 10%"
+      ],
+      "description": "Progress bar at 10%"
+    },
+    "progress 15%": {
+      "prefix": "bar15",
+      "body": [
+        "███░░░░░░░░░░░░░░░░░ 15%"
+      ],
+      "description": "Progress bar at 15%"
+    },
+    "progress 20%": {
+      "prefix": "bar20",
+      "body": [
+        "████░░░░░░░░░░░░░░░░ 20%"
+      ],
+      "description": "Progress bar at 20%"
+    },
+    "progress 25%": {
+      "prefix": "bar25",
+      "body": [
+        "█████░░░░░░░░░░░░░░░ 25%"
+      ],
+      "description": "Progress bar at 25%"
+    },
+    "progress 30%": {
+      "prefix": "bar30",
+      "body": [
+        "██████░░░░░░░░░░░░░░ 30%"
+      ],
+      "description": "Progress bar at 30%"
+    },
+    "progress 35%": {
+      "prefix": "bar35",
+      "body": [
+        "███████░░░░░░░░░░░░░ 35%"
+      ],
+      "description": "Progress bar at 35%"
+    },
+    "progress 40%": {
+      "prefix": "bar40",
+      "body": [
+        "████████░░░░░░░░░░░░ 40%"
+      ],
+      "description": "Progress bar at 40%"
+    },
+    "progress 45%": {
+      "prefix": "bar45",
+      "body": [
+        "█████████░░░░░░░░░░░ 45%"
+      ],
+      "description": "Progress bar at 45%"
+    },
+    "progress 50%": {
+      "prefix": "bar50",
+      "body": [
+        "██████████░░░░░░░░░░ 50%"
+      ],
+      "description": "Progress bar at 50%"
+    },
+    "progress 55%": {
+      "prefix": "bar55",
+      "body": [
+        "███████████░░░░░░░░░ 55%"
+      ],
+      "description": "Progress bar at 55%"
+    },
+    "progress 60%": {
+      "prefix": "bar60",
+      "body": [
+        "████████████░░░░░░░░ 60%"
+      ],
+      "description": "Progress bar at 60%"
+    },
+    "progress 65%": {
+      "prefix": "bar65",
+      "body": [
+        "█████████████░░░░░░░ 65%"
+      ],
+      "description": "Progress bar at 65%"
+    },
+    "progress 70%": {
+      "prefix": "bar70",
+      "body": [
+        "██████████████░░░░░░ 70%"
+      ],
+      "description": "Progress bar at 70%"
+    },
+    "progress 75%": {
+      "prefix": "bar75",
+      "body": [
+        "███████████████░░░░░ 75%"
+      ],
+      "description": "Progress bar at 75%"
+    },
+    "progress 80%": {
+      "prefix": "bar80",
+      "body": [
+        "████████████████░░░░ 80%"
+      ],
+      "description": "Progress bar at 80%"
+    },
+    "progress 85%": {
+      "prefix": "bar85",
+      "body": [
+        "█████████████████░░░ 85%"
+      ],
+      "description": "Progress bar at 85%"
+    },
+    "progress 90%": {
+      "prefix": "bar90",
+      "body": [
+        "██████████████████░░ 90%"
+      ],
+      "description": "Progress bar at 90%"
+    },
+    "progress 95%": {
+      "prefix": "bar95",
+      "body": [
+        "███████████████████░ 95%"
+      ],
+      "description": "Progress bar at 95%"
+    },
+    "progress 100%": {
+      "prefix": "bar100",
+      "body": [
+        "████████████████████ 100%"
+      ],
+      "description": "Progress bar at 100%"
+    }
   }
 }
