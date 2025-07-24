@@ -21,7 +21,7 @@ $Done
 
 # Historique ligne de commande (chronologie décroissante) :
 :q
-|2,0,1736542393,,"q"
+|2,0,1753370188,,"q"
 :e
 |2,0,1736542239,,"e"
 :10
@@ -758,46 +758,74 @@ $Done
 # Marques dans le fichier :
 'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
 |4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
-'0  10  0  ~/Google Drive/vimwiki/index.md
-|4,48,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
-'1  4  0  ~/Google Drive/vimwiki/index.md
-|4,49,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+'0  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,48,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+'1  10  0  ~/Google Drive/vimwiki/index.md
+|4,49,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
 '2  4  0  ~/Google Drive/vimwiki/index.md
 |4,50,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
-'3  2  3  ~/Google Drive/vimwiki/index.md
-|4,51,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+'3  4  0  ~/Google Drive/vimwiki/index.md
+|4,51,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
 '4  2  3  ~/Google Drive/vimwiki/index.md
 |4,52,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
-'5  19  0  ~/Google Drive/vimwiki/index.md
-|4,53,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
-'6  20  0  ~/Google Drive/vimwiki/index.md
-|4,54,20,0,1736540223,"~/Google Drive/vimwiki/index.md"
-'7  19  0  ~/Google Drive/vimwiki/index.md
-|4,55,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+'5  2  3  ~/Google Drive/vimwiki/index.md
+|4,53,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+'6  19  0  ~/Google Drive/vimwiki/index.md
+|4,54,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+'7  20  0  ~/Google Drive/vimwiki/index.md
+|4,55,20,0,1736540223,"~/Google Drive/vimwiki/index.md"
 '8  19  0  ~/Google Drive/vimwiki/index.md
 |4,56,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
-'9  20  0  ~/Google Drive/vimwiki/index.md
-|4,57,20,0,1736540223,"~/Google Drive/vimwiki/index.md"
+'9  19  0  ~/Google Drive/vimwiki/index.md
+|4,57,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
 
 # Liste de sauts (le plus récent en premier) :
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  5  0  ~/Documents/test/c/lib/logger/Makefile
+|4,39,5,0,1753370139,"~/Documents/test/c/lib/logger/Makefile"
+-'  1  0  ~/Documents/test/c/lib/logger/Makefile
+|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
 -'  10  0  ~/Google Drive/vimwiki/index.md
 |4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
 -'  11  0  ~/Google Drive/vimwiki/index.md
 |4,39,11,0,1736542431,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736542431,"~/Google Drive/vimwiki/index.md"
 -'  1  0  ~/Google Drive/vimwiki/index.md
 |4,39,1,0,1736542420,"~/Google Drive/vimwiki/index.md"
+-'  1  0  ~/Google Drive/vimwiki/index.md
+|4,39,1,0,1736542420,"~/Google Drive/vimwiki/index.md"
+-'  173  0  ~/Google Drive/vimwiki/index.md
+|4,39,173,0,1736542403,"~/Google Drive/vimwiki/index.md"
 -'  173  0  ~/Google Drive/vimwiki/index.md
 |4,39,173,0,1736542403,"~/Google Drive/vimwiki/index.md"
 -'  4  0  ~/Google Drive/vimwiki/index.md
 |4,39,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
 -'  4  0  ~/Google Drive/vimwiki/index.md
 |4,39,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+-'  4  0  ~/Google Drive/vimwiki/index.md
+|4,39,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+-'  4  0  ~/Google Drive/vimwiki/index.md
+|4,39,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+-'  1  0  ~/Google Drive/vimwiki/index.md
+|4,39,1,0,1736542239,"~/Google Drive/vimwiki/index.md"
 -'  1  0  ~/Google Drive/vimwiki/index.md
 |4,39,1,0,1736542239,"~/Google Drive/vimwiki/index.md"
 -'  174  0  ~/Google Drive/vimwiki/index.md
 |4,39,174,0,1736542225,"~/Google Drive/vimwiki/index.md"
 -'  174  0  ~/Google Drive/vimwiki/index.md
 |4,39,174,0,1736542225,"~/Google Drive/vimwiki/index.md"
+-'  174  0  ~/Google Drive/vimwiki/index.md
+|4,39,174,0,1736542225,"~/Google Drive/vimwiki/index.md"
+-'  174  0  ~/Google Drive/vimwiki/index.md
+|4,39,174,0,1736542225,"~/Google Drive/vimwiki/index.md"
+-'  3  2  ~/Google Drive/vimwiki/index.md
+|4,39,3,2,1736542223,"~/Google Drive/vimwiki/index.md"
+-'  3  2  ~/Google Drive/vimwiki/index.md
+|4,39,3,2,1736542223,"~/Google Drive/vimwiki/index.md"
 -'  3  2  ~/Google Drive/vimwiki/index.md
 |4,39,3,2,1736542223,"~/Google Drive/vimwiki/index.md"
 -'  3  2  ~/Google Drive/vimwiki/index.md
@@ -806,6 +834,14 @@ $Done
 |4,39,6,2,1736542221,"~/Google Drive/vimwiki/index.md"
 -'  6  2  ~/Google Drive/vimwiki/index.md
 |4,39,6,2,1736542221,"~/Google Drive/vimwiki/index.md"
+-'  6  2  ~/Google Drive/vimwiki/index.md
+|4,39,6,2,1736542221,"~/Google Drive/vimwiki/index.md"
+-'  6  2  ~/Google Drive/vimwiki/index.md
+|4,39,6,2,1736542221,"~/Google Drive/vimwiki/index.md"
+-'  172  0  ~/Google Drive/vimwiki/index.md
+|4,39,172,0,1736542217,"~/Google Drive/vimwiki/index.md"
+-'  172  0  ~/Google Drive/vimwiki/index.md
+|4,39,172,0,1736542217,"~/Google Drive/vimwiki/index.md"
 -'  172  0  ~/Google Drive/vimwiki/index.md
 |4,39,172,0,1736542217,"~/Google Drive/vimwiki/index.md"
 -'  172  0  ~/Google Drive/vimwiki/index.md
@@ -814,32 +850,66 @@ $Done
 |4,39,177,0,1736541504,"~/Google Drive/vimwiki/index.md"
 -'  177  0  ~/Google Drive/vimwiki/index.md
 |4,39,177,0,1736541504,"~/Google Drive/vimwiki/index.md"
+-'  177  0  ~/Google Drive/vimwiki/index.md
+|4,39,177,0,1736541504,"~/Google Drive/vimwiki/index.md"
+-'  177  0  ~/Google Drive/vimwiki/index.md
+|4,39,177,0,1736541504,"~/Google Drive/vimwiki/index.md"
+-'  109  0  ~/Google Drive/vimwiki/index.md
+|4,39,109,0,1736541501,"~/Google Drive/vimwiki/index.md"
+-'  109  0  ~/Google Drive/vimwiki/index.md
+|4,39,109,0,1736541501,"~/Google Drive/vimwiki/index.md"
 -'  109  0  ~/Google Drive/vimwiki/index.md
 |4,39,109,0,1736541501,"~/Google Drive/vimwiki/index.md"
 -'  109  0  ~/Google Drive/vimwiki/index.md
 |4,39,109,0,1736541501,"~/Google Drive/vimwiki/index.md"
 -'  10  0  ~/Google Drive/vimwiki/index.md
 |4,39,10,0,1736541350,"~/Google Drive/vimwiki/index.md"
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736541350,"~/Google Drive/vimwiki/index.md"
 -'  25  0  ~/Google Drive/vimwiki/index.md
 |4,39,25,0,1736541340,"~/Google Drive/vimwiki/index.md"
 -'  25  0  ~/Google Drive/vimwiki/index.md
 |4,39,25,0,1736541340,"~/Google Drive/vimwiki/index.md"
+-'  25  0  ~/Google Drive/vimwiki/index.md
+|4,39,25,0,1736541340,"~/Google Drive/vimwiki/index.md"
+-'  25  0  ~/Google Drive/vimwiki/index.md
+|4,39,25,0,1736541340,"~/Google Drive/vimwiki/index.md"
+-'  2  3  ~/Google Drive/vimwiki/index.md
+|4,39,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+-'  2  3  ~/Google Drive/vimwiki/index.md
+|4,39,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
 -'  2  3  ~/Google Drive/vimwiki/index.md
 |4,39,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
 -'  2  3  ~/Google Drive/vimwiki/index.md
 |4,39,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
 -'  1  2  ~/Google Drive/vimwiki/index.md
 |4,39,1,2,1736541282,"~/Google Drive/vimwiki/index.md"
+-'  1  2  ~/Google Drive/vimwiki/index.md
+|4,39,1,2,1736541282,"~/Google Drive/vimwiki/index.md"
+-'  3  2  ~/Google Drive/vimwiki/index.md
+|4,39,3,2,1736540682,"~/Google Drive/vimwiki/index.md"
 -'  3  2  ~/Google Drive/vimwiki/index.md
 |4,39,3,2,1736540682,"~/Google Drive/vimwiki/index.md"
 -'  4  0  ~/Google Drive/vimwiki/index.md
 |4,39,4,0,1736540517,"~/Google Drive/vimwiki/index.md"
+-'  4  0  ~/Google Drive/vimwiki/index.md
+|4,39,4,0,1736540517,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736540507,"~/Google Drive/vimwiki/index.md"
 -'  11  0  ~/Google Drive/vimwiki/index.md
 |4,39,11,0,1736540507,"~/Google Drive/vimwiki/index.md"
 -'  12  0  ~/Google Drive/vimwiki/index.md
 |4,39,12,0,1736540408,"~/Google Drive/vimwiki/index.md"
 -'  12  0  ~/Google Drive/vimwiki/index.md
 |4,39,12,0,1736540408,"~/Google Drive/vimwiki/index.md"
+-'  12  0  ~/Google Drive/vimwiki/index.md
+|4,39,12,0,1736540408,"~/Google Drive/vimwiki/index.md"
+-'  12  0  ~/Google Drive/vimwiki/index.md
+|4,39,12,0,1736540408,"~/Google Drive/vimwiki/index.md"
+-'  176  0  ~/Google Drive/vimwiki/index.md
+|4,39,176,0,1736540396,"~/Google Drive/vimwiki/index.md"
+-'  176  0  ~/Google Drive/vimwiki/index.md
+|4,39,176,0,1736540396,"~/Google Drive/vimwiki/index.md"
 -'  176  0  ~/Google Drive/vimwiki/index.md
 |4,39,176,0,1736540396,"~/Google Drive/vimwiki/index.md"
 -'  176  0  ~/Google Drive/vimwiki/index.md
@@ -848,6 +918,14 @@ $Done
 |4,39,20,0,1736540381,"~/Google Drive/vimwiki/index.md"
 -'  20  0  ~/Google Drive/vimwiki/index.md
 |4,39,20,0,1736540381,"~/Google Drive/vimwiki/index.md"
+-'  20  0  ~/Google Drive/vimwiki/index.md
+|4,39,20,0,1736540381,"~/Google Drive/vimwiki/index.md"
+-'  20  0  ~/Google Drive/vimwiki/index.md
+|4,39,20,0,1736540381,"~/Google Drive/vimwiki/index.md"
+-'  5  0  ~/Google Drive/vimwiki/index.md
+|4,39,5,0,1736540352,"~/Google Drive/vimwiki/index.md"
+-'  5  0  ~/Google Drive/vimwiki/index.md
+|4,39,5,0,1736540352,"~/Google Drive/vimwiki/index.md"
 -'  5  0  ~/Google Drive/vimwiki/index.md
 |4,39,5,0,1736540352,"~/Google Drive/vimwiki/index.md"
 -'  5  0  ~/Google Drive/vimwiki/index.md
@@ -856,16 +934,36 @@ $Done
 |4,39,13,0,1736540351,"~/Google Drive/vimwiki/index.md"
 -'  13  0  ~/Google Drive/vimwiki/index.md
 |4,39,13,0,1736540351,"~/Google Drive/vimwiki/index.md"
+-'  13  0  ~/Google Drive/vimwiki/index.md
+|4,39,13,0,1736540351,"~/Google Drive/vimwiki/index.md"
+-'  13  0  ~/Google Drive/vimwiki/index.md
+|4,39,13,0,1736540351,"~/Google Drive/vimwiki/index.md"
+-'  19  0  ~/Google Drive/vimwiki/index.md
+|4,39,19,0,1736540240,"~/Google Drive/vimwiki/index.md"
+-'  19  0  ~/Google Drive/vimwiki/index.md
+|4,39,19,0,1736540240,"~/Google Drive/vimwiki/index.md"
 -'  19  0  ~/Google Drive/vimwiki/index.md
 |4,39,19,0,1736540240,"~/Google Drive/vimwiki/index.md"
 -'  19  0  ~/Google Drive/vimwiki/index.md
 |4,39,19,0,1736540240,"~/Google Drive/vimwiki/index.md"
 -'  19  0  ~/Google Drive/vimwiki/index.md
 |4,39,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+-'  19  0  ~/Google Drive/vimwiki/index.md
+|4,39,19,0,1736540223,"~/Google Drive/vimwiki/index.md"
+-'  3  0  ~/Google Drive/vimwiki/index.md
+|4,39,3,0,1736540194,"~/Google Drive/vimwiki/index.md"
 -'  3  0  ~/Google Drive/vimwiki/index.md
 |4,39,3,0,1736540194,"~/Google Drive/vimwiki/index.md"
 -'  3  0  ~/Google Drive/vimwiki/index.md
 |4,39,3,0,1736540035,"~/Google Drive/vimwiki/index.md"
+-'  3  0  ~/Google Drive/vimwiki/index.md
+|4,39,3,0,1736540035,"~/Google Drive/vimwiki/index.md"
+-'  11  0  ~/Google Drive/vimwiki/index.md
+|4,39,11,0,1736540032,"~/Google Drive/vimwiki/index.md"
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736540032,"~/Google Drive/vimwiki/index.md"
+-'  10  0  ~/Google Drive/vimwiki/index.md
+|4,39,10,0,1736540032,"~/Google Drive/vimwiki/index.md"
 -'  11  0  ~/Google Drive/vimwiki/index.md
 |4,39,11,0,1736540032,"~/Google Drive/vimwiki/index.md"
 -'  10  0  ~/Google Drive/vimwiki/index.md
@@ -878,110 +976,16 @@ $Done
 |4,39,176,0,1736540030,"~/Google Drive/vimwiki/index.md"
 -'  176  0  ~/Google Drive/vimwiki/index.md
 |4,39,176,0,1736540030,"~/Google Drive/vimwiki/index.md"
--'  14  0  ~/Google Drive/vimwiki/index.md
-|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
--'  15  0  ~/Google Drive/vimwiki/index.md
-|4,39,15,0,1736540028,"~/Google Drive/vimwiki/index.md"
--'  14  0  ~/Google Drive/vimwiki/index.md
-|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
--'  15  0  ~/Google Drive/vimwiki/index.md
-|4,39,15,0,1736540028,"~/Google Drive/vimwiki/index.md"
--'  14  0  ~/Google Drive/vimwiki/index.md
-|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
--'  14  0  ~/Google Drive/vimwiki/index.md
-|4,39,14,0,1736540028,"~/Google Drive/vimwiki/index.md"
--'  11  0  ~/Google Drive/vimwiki/index.md
-|4,39,11,0,1736540026,"~/Google Drive/vimwiki/index.md"
--'  11  0  ~/Google Drive/vimwiki/index.md
-|4,39,11,0,1736540026,"~/Google Drive/vimwiki/index.md"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
--'  3  8  ~/.stow-local-ignore
-|4,39,3,8,1727542855,"~/.stow-local-ignore"
+-'  177  0  ~/Google Drive/vimwiki/index.md
+|4,39,177,0,1736540030,"~/Google Drive/vimwiki/index.md"
+-'  176  0  ~/Google Drive/vimwiki/index.md
+|4,39,176,0,1736540030,"~/Google Drive/vimwiki/index.md"
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/Documents/test/c/lib/logger/Makefile
+	*	1753370187	0
+	"	84	14
 
 > ~/Google Drive/vimwiki/index.md
 	*	1736542392	0
@@ -1949,9 +1953,3 @@ $Done
 > ~/notes/test/js-cheatsheet
 	*	1671833901	0
 	"	1	0
-
-> ~/notes/test/__pad__
-	*	1671833878	0
-	"	1	0
-	.	1	0
-	+	1	0
