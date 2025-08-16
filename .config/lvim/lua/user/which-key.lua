@@ -31,6 +31,11 @@ lvim.builtin.which_key.mappings["a"] = {
   ['6'] = { "<cmd>lua require('harpoon.ui').nav_file(6)<cr>", "6" },
 }
 
+-- lvim.builtin.which_key.mappings["g"] = {
+--   name = "Git",
+--   g = { "<cmd>FloatermNew lazygit -f .<cr>", "Lazygit" },
+-- }
+
 vim.keymap.set({ 'n', 'v' }, '<leader>]', ':Gen<CR>')
 vim.keymap.set('v', '<leader>og', ':Gen Enhance_Grammar_Spelling<CR>')
 
