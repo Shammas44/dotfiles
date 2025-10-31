@@ -21,6 +21,7 @@
   export PATH=$PATH:/usr/texbin:/usr/local/sbin/
   export PATH=$PATH:~/.gem/ruby/2.3.0/bin
   export PATH=$PATH:$HOME/.composer/vendor/bin
+  export PATH=$PATH:/usr/local/opt/libpq/bin
 	export PATH=/$PATH:$HOME/.local/bin:$PATH
 
 #==============================================================================
