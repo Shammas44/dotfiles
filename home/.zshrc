@@ -17,12 +17,13 @@
 	export PATH=$PATH:~/bin:/Applications/Postgres.app/Contents/Versions/12/bin
   export PATH=$PATH:/usr/local/bin
   export PATH=$PATH:/usr/local/opt/icu4c/bin
-  export PATH=$PATH:$HOME/Library/Python/3.9/bin
   export PATH=$PATH:/usr/texbin:/usr/local/sbin/
-  export PATH=$PATH:~/.gem/ruby/2.3.0/bin
-  export PATH=$PATH:$HOME/.composer/vendor/bin
   export PATH=$PATH:/usr/local/opt/libpq/bin
-	export PATH=/$PATH:$HOME/.local/bin:$PATH
+  export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
+  export PATH=$PATH:$HOME/Library/Python/3.9/bin
+	export PATH=/$PATH:$HOME/.local/bin
+  export PATH=$PATH:$HOME/Developer/PlaydateSDK/C_API
+  export PATH=$PATH:$HOME/.composer/vendor/bin
 
 #==============================================================================
 	# Set default text editor 
