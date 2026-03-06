@@ -139,6 +139,7 @@ lvim.plugins = {
       require("scope").setup()
     end
   },
+
 }
 
 lvim.builtin.nvimtree.filters = {
