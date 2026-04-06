@@ -24,6 +24,8 @@
 	export PATH=/$PATH:$HOME/.local/bin
   export PATH=$PATH:$HOME/Developer/PlaydateSDK/C_API
   export PATH=$PATH:$HOME/.composer/vendor/bin
+  export PATH="$PATH:$(npm config get prefix)/bin"
+
 
 #==============================================================================
 	# Set default text editor 
@@ -31,6 +33,7 @@
 	export EDITOR="lvim"
 	export VISUAL="lvim"
 	editor="lvim"
+  alias nvim2="NVIM_APPNAME=nvim2 nvim2"
 
 #==============================================================================
     # Zsh theme 
