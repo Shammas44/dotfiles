@@ -21,7 +21,7 @@ $Done
 
 # Historique ligne de commande (chronologie décroissante) :
 :q
-|2,0,1773164835,,"q"
+|2,0,1779300698,,"q"
 :e
 |2,0,1736542239,,"e"
 :10
@@ -758,28 +758,36 @@ $Done
 # Marques dans le fichier :
 'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
 |4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
-'0  8  10  ~/dotfiles/.config/nvim/init.vim
-|4,48,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
-'1  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,49,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
-'2  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,50,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
-'3  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
-|4,51,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
-'4  84  14  ~/Documents/test/c/lib/logger/Makefile
-|4,52,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
-'5  10  0  ~/Google Drive/vimwiki/index.md
-|4,53,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
-'6  4  0  ~/Google Drive/vimwiki/index.md
-|4,54,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+'0  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,48,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+'1  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,49,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+'2  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,50,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+'3  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,51,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+'4  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,52,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+'5  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,53,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+'6  10  0  ~/Google Drive/vimwiki/index.md
+|4,54,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
 '7  4  0  ~/Google Drive/vimwiki/index.md
 |4,55,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
-'8  2  3  ~/Google Drive/vimwiki/index.md
-|4,56,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
+'8  4  0  ~/Google Drive/vimwiki/index.md
+|4,56,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
 '9  2  3  ~/Google Drive/vimwiki/index.md
 |4,57,2,3,1736541311,"~/Google Drive/vimwiki/index.md"
 
 # Liste de sauts (le plus récent en premier) :
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
 -'  8  10  ~/dotfiles/.config/nvim/init.vim
 |4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
 -'  8  10  ~/dotfiles/.config/nvim/init.vim
@@ -788,6 +796,14 @@ $Done
 |4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
 -'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
 |4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
 -'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
 |4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
 -'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
@@ -800,6 +816,26 @@ $Done
 |4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
 -'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
 |4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  19  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,19,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,1,0,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  10  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,10,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  19  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,19,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,1,0,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  10  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,39,10,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
 -'  19  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
 |4,39,19,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
 -'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
@@ -828,6 +864,54 @@ $Done
 |4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
 -'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
 |4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,39,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+-'  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
 -'  84  14  ~/Documents/test/c/lib/logger/Makefile
 |4,39,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
 -'  84  14  ~/Documents/test/c/lib/logger/Makefile
@@ -892,94 +976,16 @@ $Done
 |4,39,5,0,1753370139,"~/Documents/test/c/lib/logger/Makefile"
 -'  5  0  ~/Documents/test/c/lib/logger/Makefile
 |4,39,5,0,1753370139,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  1  0  ~/Documents/test/c/lib/logger/Makefile
-|4,39,1,0,1753370136,"~/Documents/test/c/lib/logger/Makefile"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
--'  10  0  ~/Google Drive/vimwiki/index.md
-|4,39,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
+-'  5  0  ~/Documents/test/c/lib/logger/Makefile
+|4,39,5,0,1753370139,"~/Documents/test/c/lib/logger/Makefile"
+-'  5  0  ~/Documents/test/c/lib/logger/Makefile
+|4,39,5,0,1753370139,"~/Documents/test/c/lib/logger/Makefile"
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/Documents/Prog/gdb/SPECIFICATION.md
+	*	1779300697	0
+	"	198	23
 
 > ~/dotfiles/.config/nvim/init.vim
 	*	1773164834	0
@@ -1944,8 +1950,4 @@ $Done
 
 > ~/notes/prog/laravel/00_snippets.md
 	*	1671834997	0
-	"	1	0
-
-> ~/notes/bash/archidep-preparation-examen.md
-	*	1671834876	0
 	"	1	0

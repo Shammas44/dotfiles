@@ -375,3 +375,7 @@
 	  # <<< conda initialize <<<
     export HOMEBREW_NO_AUTO_UPDATE=1
 
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/sebastientraber/.local/bin:$PATH"
