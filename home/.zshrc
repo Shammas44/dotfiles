@@ -11,6 +11,7 @@
 	# neofetch
 	# Path to your oh-my-zsh installation.
 	export ZSH=$HOME/.oh-my-zsh
+  export MallocNanoZone=0
 
 	export DIR="$(pwd)"
 
