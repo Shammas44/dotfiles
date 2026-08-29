@@ -21,7 +21,7 @@ $Done
 
 # Historique ligne de commande (chronologie décroissante) :
 :q
-|2,0,1786867719,,"q"
+|2,0,1787424577,,"q"
 :e
 |2,0,1736542239,,"e"
 :10
@@ -758,30 +758,46 @@ $Done
 # Marques dans le fichier :
 'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
 |4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
-'0  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,48,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
-'1  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,49,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
-'2  8  10  ~/dotfiles/.config/nvim/init.vim
-|4,50,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
-'3  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,51,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
-'4  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,52,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
-'5  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
-|4,53,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
-'6  84  14  ~/Documents/test/c/lib/logger/Makefile
-|4,54,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
-'7  10  0  ~/Google Drive/vimwiki/index.md
-|4,55,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
-'8  4  0  ~/Google Drive/vimwiki/index.md
-|4,56,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
-'9  4  0  ~/Google Drive/vimwiki/index.md
-|4,57,4,0,1736542393,"~/Google Drive/vimwiki/index.md"
+'0  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,48,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+'1  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,49,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+'2  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,50,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+'3  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,51,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+'4  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,52,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+'5  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,53,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+'6  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,54,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+'7  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
+|4,55,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+'8  84  14  ~/Documents/test/c/lib/logger/Makefile
+|4,56,84,14,1753370188,"~/Documents/test/c/lib/logger/Makefile"
+'9  10  0  ~/Google Drive/vimwiki/index.md
+|4,57,10,0,1736542862,"~/Google Drive/vimwiki/index.md"
 
 # Liste de sauts (le plus récent en premier) :
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
 -'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
 |4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
 -'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
 |4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
 -'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
@@ -792,6 +808,54 @@ $Done
 |4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
 -'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
 |4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
 -'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
 |4,39,1,0,1779300422,"~/Documents/Prog/gdb/SPECIFICATION.md"
 -'  1  0  ~/Documents/Prog/gdb/SPECIFICATION.md
@@ -832,156 +896,96 @@ $Done
 |4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
 -'  8  10  ~/dotfiles/.config/nvim/init.vim
 |4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  1  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,1,1773164812,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164809,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  19  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,19,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  19  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,19,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  19  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,19,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  1  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,1,0,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  10  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,10,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
--'  19  2  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,39,19,2,1773164799,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+-'  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,39,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+	*	1787424574	0
+	"	1	0
 
 > ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
 	*	1786867718	0
@@ -1947,7 +1951,3 @@ $Done
 	"	26	0
 	.	1	0
 	+	1	0
-
-> ~/notes/prog/wordpress/themes.md
-	*	1671835554	0
-	"	1	0
