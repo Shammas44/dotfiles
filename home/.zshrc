@@ -31,7 +31,7 @@
 #==============================================================================
 	# Set default text editor 
 	#==========================================================================
-	export EDITOR="lvim"
+	export EDITOR="vim"
 	export VISUAL="lvim"
 	editor="lvim"
   alias nvim2="NVIM_APPNAME=nvim2 nvim2"
