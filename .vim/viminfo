@@ -21,7 +21,7 @@ $Done
 
 # Historique ligne de commande (chronologie décroissante) :
 :x
-|2,0,1790006257,,"x"
+|2,0,1790014783,,"x"
 :q
 |2,0,1788453572,,"q"
 :e
@@ -758,34 +758,74 @@ $Done
 # Marques dans le fichier :
 'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
 |4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
-'0  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
-|4,48,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
-'1  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,49,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
-'2  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,50,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
-'3  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,51,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
-'4  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,52,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
-'5  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,53,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
-'6  8  10  ~/dotfiles/.config/nvim/init.vim
-|4,54,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
-'7  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,55,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
-'8  7  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,56,7,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
-'9  1  0  ~/Documents/Prog/tradingEngine/lib/jsonv/en
-|4,57,1,0,1764935469,"~/Documents/Prog/tradingEngine/lib/jsonv/en"
+'0  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt
+|4,48,1,0,1790014783,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt"
+'1  5  108  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
+|4,49,5,108,1790014245,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
+'2  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
+|4,50,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
+'3  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,51,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+'4  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,52,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+'5  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,53,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+'6  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,54,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+'7  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
+|4,55,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+'8  8  10  ~/dotfiles/.config/nvim/init.vim
+|4,56,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
+'9  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
+|4,57,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
 
 # Liste de sauts (le plus récent en premier) :
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt
+|4,39,1,0,1790014783,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt"
+-'  5  108  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
+|4,39,5,108,1790014245,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
+-'  5  108  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
+|4,39,5,108,1790014245,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
+|4,39,1,0,1790013992,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
+|4,39,1,0,1790013992,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
+-'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
+|4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
+-'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
+|4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
+-'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
+|4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
 -'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
 |4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
 -'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
 |4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
 -'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
 |4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
+-'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
+|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
 -'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
 |4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
 -'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
@@ -799,6 +839,34 @@ $Done
 -'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
 |4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
 -'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
 |4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
 -'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
 |4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
@@ -806,6 +874,26 @@ $Done
 |4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
 -'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
 |4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
+-'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
+|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
 -'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
 |4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
 -'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
@@ -838,150 +926,80 @@ $Done
 |4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
 -'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
 |4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  57  0  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,57,0,1786867673,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
--'  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,39,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
+|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt
+	*	1790014782	0
+	"	1	0
+	^	2	0
+	.	1	177
+	+	1	177
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
+	*	1790014243	0
+	"	5	108
+	^	5	109
+	.	5	108
+	+	1	180
+	+	3	214
+	+	7	18
+	+	3	215
+	+	5	108
 
 > /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
 	*	1790006255	0
@@ -1939,15 +1957,3 @@ $Done
 > ~/Google Drive/vimwiki/shell/powershell/00-snippets.md
 	*	1671837690	0
 	"	19	0
-
-> ~/Google Drive/vimwiki/shell/powershell/__pad__
-	*	1671837682	0
-	"	2	0
-	.	1	0
-	+	1	0
-
-> ~/notes/bash/__pad__
-	*	1671837492	0
-	"	1	0
-	.	1	0
-	+	1	0
