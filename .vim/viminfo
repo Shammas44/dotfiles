@@ -21,7 +21,7 @@ $Done
 
 # Historique ligne de commande (chronologie décroissante) :
 :x
-|2,0,1790014783,,"x"
+|2,0,1790346445,,"x"
 :q
 |2,0,1788453572,,"q"
 :e
@@ -642,12 +642,15 @@ $Done
 	Copy code
 |3,0,0,1,1,0,1674499416,"Copy code"
 "1	LINE	0
-	```
-|3,0,1,1,1,0,1736540517,"```"
+	
+|3,0,1,1,1,0,1790343286,""
 "2	LINE	0
-	.DS_Store
-|3,0,2,1,1,0,1727542693,".DS_Store"
+	```
+|3,0,2,1,1,0,1736540517,"```"
 "3	LINE	0
+	.DS_Store
+|3,0,3,1,1,0,1727542693,".DS_Store"
+"4	LINE	0
 	    - include: tasks/slack-setup.yml
 	    - include: tasks/personal-projects.yml
 	    - include: tasks/nvim-setup.yml
@@ -656,21 +659,21 @@ $Done
 	    - include: tasks/dotfiles.yml
 	    - include: tasks/productivity-tools.yml
 	    - include: tasks/lsp.yml
-|3,0,3,1,8,0,1681498419,"    - include: tasks/slack-setup.yml","    - include: tasks/personal-projects.yml","    - include: tasks/nvim-setup.yml","    - include: tasks/brave.yml","    - include: tasks/debugger.yml","    - include: tasks/dotfiles.yml","    - include: tasks/productivity-tools.yml","    - include: tasks/lsp.yml"
-"4	LINE	0
+|3,0,4,1,8,0,1681498419,"    - include: tasks/slack-setup.yml","    - include: tasks/personal-projects.yml","    - include: tasks/nvim-setup.yml","    - include: tasks/brave.yml","    - include: tasks/debugger.yml","    - include: tasks/dotfiles.yml","    - include: tasks/productivity-tools.yml","    - include: tasks/lsp.yml"
+"5	LINE	0
 	    - include: tasks/ssh.yml
 	    - include: tasks/git-setup.yml
 	    - include: tasks/core-setup.yml
 	    - include: tasks/node-setup.yml
 	    - include: tasks/npm-packages.yml
-|3,0,4,1,5,0,1681498415,"    - include: tasks/ssh.yml","    - include: tasks/git-setup.yml","    - include: tasks/core-setup.yml","    - include: tasks/node-setup.yml","    - include: tasks/npm-packages.yml"
-"5	LINE	0
+|3,0,5,1,5,0,1681498415,"    - include: tasks/ssh.yml","    - include: tasks/git-setup.yml","    - include: tasks/core-setup.yml","    - include: tasks/node-setup.yml","    - include: tasks/npm-packages.yml"
+"6	LINE	0
 	  vars:
 	    source_key: "./.ssh/id_rsa"
 	    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
 	    personal: "{{ lookup('env', 'HOME') }}/personal"
-|3,0,5,1,4,0,1681498401,"  vars:","    source_key: \"./.ssh/id_rsa\"","    dest_key: \"{{ lookup('env', 'HOME') }}/.ssh/id_rsa\"","    personal: \"{{ lookup('env', 'HOME') }}/personal\""
-"6	LINE	0
+|3,0,6,1,4,0,1681498401,"  vars:","    source_key: \"./.ssh/id_rsa\"","    dest_key: \"{{ lookup('env', 'HOME') }}/.ssh/id_rsa\"","    personal: \"{{ lookup('env', 'HOME') }}/personal\""
+"7	LINE	0
 	- hosts: localhost
 	  become: true
 	  tasks:
@@ -707,20 +710,17 @@ $Done
 	#   shell: sed -i 's(git/git zsh-autosuggetions)' ~/.zshrc
 	# - name: Source zsh config
 	#   shell: source ~/.zshrc
-|3,0,6,1,36,0,1681498385,"- hosts: localhost","  become: true","  tasks:","    - name: Install Oh My Zsh","      apt:","        name: \"{{ item }}\"","        state: present","      loop:","        - zsh","        - git","        - curl","      environment:","        DEBIAN_FRONTEND: noninteractive","      tags:","        - oh-my-zsh","","    - name: Install Oh My Zsh",>108
+|3,0,7,1,36,0,1681498385,"- hosts: localhost","  become: true","  tasks:","    - name: Install Oh My Zsh","      apt:","        name: \"{{ item }}\"","        state: present","      loop:","        - zsh","        - git","        - curl","      environment:","        DEBIAN_FRONTEND: noninteractive","      tags:","        - oh-my-zsh","","    - name: Install Oh My Zsh",>108
 |<"      shell: sh -c \"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"","      environment:","        HOME: \"{{ ansible_env.HOME }}\"","      args:","        executable: /bin/zsh","      tags:","        - oh-my-zsh","    # - name: Install zsh","    #   apt: name=zsh","    # - name: Change shell","    #   shell: chsh -s `which zsh`","    # - name: Install ohmyzsh",>128
 |<"    #   shell: sh -c \"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\" \"\" --unattended","","#   sh install.sh","# - name: Install zsh plugins","#   shell: sed -i 's(git/git zsh-autosuggetions)' ~/.zshrc","# - name: Source zsh config","#   shell: source ~/.zshrc"
-"7	LINE	0
-	# Load Angular CLI autocompletion.
-	source <(ng completion script)
-|3,0,7,1,2,0,1676469440,"# Load Angular CLI autocompletion.","source <(ng completion script)"
 "8	LINE	0
 	# Load Angular CLI autocompletion.
 	source <(ng completion script)
 |3,0,8,1,2,0,1676469440,"# Load Angular CLI autocompletion.","source <(ng completion script)"
 "9	LINE	0
-	tags: [ example, note-taking, foo, bar ]
-|3,0,9,1,1,0,1675080472,"tags: [ example, note-taking, foo, bar ]"
+	# Load Angular CLI autocompletion.
+	source <(ng completion script)
+|3,0,9,1,2,0,1676469440,"# Load Angular CLI autocompletion.","source <(ng completion script)"
 "a@	CHAR	0
 	:s/Cool/Donej
 |3,2,10,0,1,0,1670154430,":s/Cool/Donej"
@@ -751,237 +751,319 @@ $Done
 "y	CHAR	0
 	g:pad#title_first_line
 |3,0,34,0,1,0,1671834552,"g:pad#title_first_line"
-""-	BLOCK	0
-	#
-|3,1,36,2,1,0,1736540342,"#"
+""-	CHAR	0
+	 
+|3,1,36,0,1,0,1790346294," "
 
 # Marques dans le fichier :
 'N  1  64  ~/.vim/bundle/calendar.vim/autoload/[calendar]
 |4,78,1,64,1633124770,"~/.vim/bundle/calendar.vim/autoload/[calendar]"
-'0  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt
-|4,48,1,0,1790014783,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt"
-'1  5  108  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
-|4,49,5,108,1790014245,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
-'2  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
-|4,50,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
-'3  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,51,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
-'4  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,52,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
-'5  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,53,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
-'6  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,54,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
-'7  198  23  ~/Documents/Prog/gdb/SPECIFICATION.md
-|4,55,198,23,1779300698,"~/Documents/Prog/gdb/SPECIFICATION.md"
-'8  8  10  ~/dotfiles/.config/nvim/init.vim
-|4,56,8,10,1773164835,"~/dotfiles/.config/nvim/init.vim"
-'9  16  0  ~/Documents/Prog/wasm/particle/NERD_tree_1
-|4,57,16,0,1773164803,"~/Documents/Prog/wasm/particle/NERD_tree_1"
+'0  9  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-2203572993.txt
+|4,48,9,0,1790346445,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-2203572993.txt"
+'1  6  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt
+|4,49,6,0,1790343290,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt"
+'2  7  140  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,50,7,140,1790337051,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+'3  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,51,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+'4  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,52,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+'5  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,53,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+'6  5  54  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+|4,54,5,54,1790161386,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt"
+'7  3  25  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3081890802.txt
+|4,55,3,25,1790097100,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3081890802.txt"
+'8  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt
+|4,56,1,0,1790014783,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt"
+'9  5  108  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
+|4,57,5,108,1790014245,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
 
 # Liste de sauts (le plus récent en premier) :
--'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt
-|4,39,1,0,1790014783,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt"
--'  5  108  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
-|4,39,5,108,1790014245,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
--'  5  108  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
-|4,39,5,108,1790014245,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
--'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
-|4,39,1,0,1790013992,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
--'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt
-|4,39,1,0,1790013992,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-31316938.txt"
--'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
-|4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
--'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
-|4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
--'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
-|4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
--'  1  225  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt
-|4,39,1,225,1790006257,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-456385830.txt"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  19  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,19,0,1788453572,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/Documents/Prog/gitproxy/AGENTS.md
-|4,39,1,0,1788453553,"~/Documents/Prog/gitproxy/AGENTS.md"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424577,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  0  ~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys
-|4,39,1,0,1787424567,"~/.gemini/antigravity-cli/brain/e7cae518-0d2b-499d-8777-f7470b9aa685/.sys"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
--'  1  3  ~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc
-|4,39,1,3,1786867719,"~/Documents/Prog/c/nestor/.worktrees/hexagonal-refactoring/output.nbc"
+-'  9  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-2203572993.txt
+|4,39,9,0,1790346445,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-2203572993.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-2203572993.txt
+|4,39,1,0,1790346156,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-2203572993.txt"
+-'  6  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt
+|4,39,6,0,1790343290,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt"
+-'  6  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt
+|4,39,6,0,1790343290,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt
+|4,39,1,0,1790342995,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt
+|4,39,1,0,1790342995,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt"
+-'  7  140  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,7,140,1790337051,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  7  140  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,7,140,1790337051,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  7  140  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,7,140,1790337051,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  7  140  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,7,140,1790337051,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  1  32  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,1,32,1790336687,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  1  32  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,1,32,1790336687,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  1  32  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,1,32,1790336687,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  1  32  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+|4,39,1,32,1790336687,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  44  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,3,44,1790334721,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+|4,39,1,0,1790334624,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  3  42  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,3,42,1790275099,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+|4,39,1,0,1790274997,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  1  0  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+|4,39,1,0,1790269606,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt"
+-'  5  54  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+|4,39,5,54,1790161386,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt"
+-'  5  54  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+|4,39,5,54,1790161386,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt"
+-'  5  54  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+|4,39,5,54,1790161386,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt"
+-'  5  54  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+|4,39,5,54,1790161386,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt"
+-'  5  54  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+|4,39,5,54,1790161386,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt"
+-'  5  54  /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+|4,39,5,54,1790161386,"/private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt"
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-2203572993.txt
+	*	1790346442	0
+	"	9	0
+	^	9	66
+	.	9	65
+	+	1	52
+	+	2	1
+	+	3	44
+	+	4	53
+	+	5	78
+	+	7	117
+	+	9	65
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1339469278.txt
+	*	1790343287	0
+	"	6	0
+	^	6	2
+	.	6	0
+	+	1	195
+	+	3	29
+	+	4	1
+	+	3	29
+	+	4	64
+	+	5	113
+	+	6	84
+	+	6	0
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-358148584.txt
+	*	1790337050	0
+	"	7	140
+	^	7	178
+	.	7	177
+	+	1	144
+	+	1	171
+	+	3	54
+	+	5	124
+	+	7	177
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-4154338945.txt
+	*	1790334719	0
+	"	3	44
+	^	3	45
+	.	3	44
+	+	1	132
+	+	3	44
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3355251735.txt
+	*	1790275098	0
+	"	3	42
+	^	3	50
+	.	3	49
+	+	3	49
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1062525821.txt
+	*	1790269604	0
+	"	1	0
+	^	2	0
+	.	2	0
+	+	1	151
+	+	1	1
+	+	4	65
+	+	5	58
+	+	1	40
+	+	2	0
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1365013753.txt
+	*	1790161382	0
+	"	5	54
+	^	5	55
+	.	5	54
+	+	1	104
+	+	3	51
+	+	5	54
+
+> /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-3081890802.txt
+	*	1790097097	0
+	"	3	25
+	^	3	26
+	.	3	25
+	+	1	167
+	+	3	25
 
 > /private/var/folders/gr/hsjthpqj71v53t2s_5zpv29m0000gn/T/jetski-prompt-1540205197.txt
 	*	1790014782	0
@@ -1917,43 +1999,3 @@ $Done
 	"	2	0
 	.	1	0
 	+	1	0
-
-> ~/Google Drive/vimwiki/__pad__
-	*	1671838818	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/dotfiles/vim/.vim/viminfo
-	*	1671838744	0
-	"	10	0
-
-> ~/notes/prog/ts/__pad__
-	*	1671838159	0
-	"	7	0
-	.	1	0
-	+	1	0
-
-> ~/dotfiles/vim/.vim/NERD_tree_1
-	*	1671838112	0
-	"	14	0
-	.	1	0
-	+	1	0
-
-> /usr/local/Cellar/vim/9.0.1050/share/vim/vim90/doc/intro.txt
-	*	1671838041	0
-	"	421	1
-
-> ~/dotfiles/vim/.vim/tab
-	*	1671837888	0
-	"	1	0
-
-> ~/notes/prog/react/__pad__
-	*	1671837807	0
-	"	7	0
-	.	1	0
-	+	1	0
-
-> ~/Google Drive/vimwiki/shell/powershell/00-snippets.md
-	*	1671837690	0
-	"	19	0
