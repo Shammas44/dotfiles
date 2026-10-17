@@ -380,3 +380,4 @@
 
 # Added by Antigravity CLI installer
 export PATH="/Users/sebastientraber/.local/bin:$PATH"
+export NODE_PATH="$(npm root -)"
